@@ -15,10 +15,10 @@ app.use(express.static(path.resolve(__dirname, '../frontend/build')));
 
 // render react app
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
 });
 
 // run server
 app.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}\nenv: ${process.env.NODE_ENV}`);
+  console.log(`Server listening on ${PORT}\nenv: ${process.env.NODE_ENV}`);
 });

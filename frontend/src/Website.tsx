@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 import i18n from './config/lang.config';
 
@@ -15,7 +15,7 @@ export default function Website() {
 
   // handle dark mode switch and add class to html tag
   useEffect(() => {
-    darkMode ? html.classList.add('dark') : html.classList.remove('dark')
+    darkMode ? html.classList.add('dark') : html.classList.remove('dark');
   }, [darkMode, html.classList]);
 
   // toggle mode
@@ -28,9 +28,7 @@ export default function Website() {
 
   // toggle language
   const toggleLanguage = () => {
-    (i18n.language === 'en')
-      ? i18n.changeLanguage('pl')
-      : i18n.changeLanguage('en');
+    i18n.language === 'en' ? i18n.changeLanguage('pl') : i18n.changeLanguage('en');
     localStorage.setItem('lang', i18n.language);
   };
 
@@ -38,15 +36,25 @@ export default function Website() {
     <div className="h-screen w-screen bg-white dark:bg-gray-900">
       <div className="text-gray-900 dark:text-white">{t('title')}</div>
 
-      <label className="relative inline-flex items-center cursor-pointer">
-        <input type="checkbox" className="sr-only peer" defaultChecked={darkMode} onClick={() => toggleMode()} />
-        <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+      <label className="relative inline-flex cursor-pointer items-center">
+        <input
+          type="checkbox"
+          className="peer sr-only"
+          defaultChecked={darkMode}
+          onClick={() => toggleMode()}
+        />
+        <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
         <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Dark mode</span>
       </label>
 
-      <label className="relative inline-flex items-center cursor-pointer">
-        <input type="checkbox" className="sr-only peer" defaultChecked={i18n.language === 'en'} onClick={() => toggleLanguage()} />
-        <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+      <label className="relative inline-flex cursor-pointer items-center">
+        <input
+          type="checkbox"
+          className="peer sr-only"
+          defaultChecked={i18n.language === 'en'}
+          onClick={() => toggleLanguage()}
+        />
+        <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
         <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Language</span>
       </label>
     </div>
