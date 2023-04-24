@@ -5,12 +5,16 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        title: 'Portfolio website'
+        title: 'Portfolio website',
+        about: 'About me',
+        projects: 'My projects'
       }
     },
     pl: {
       translation: {
-        title: 'Strona portfolio'
+        title: 'Strona portfolio',
+        about: 'O mnie',
+        projects: 'Projekty'
       }
     }
   },
