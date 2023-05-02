@@ -14,6 +14,19 @@ import { ReactComponent as Moon } from './assets/svg/moon.svg';
 import { ReactComponent as Pol } from './assets/svg/pol.svg';
 import { ReactComponent as Eng } from './assets/svg/eng.svg';
 
+import { ReactComponent as JavaScript } from './assets/svg/javascript.svg';
+import { ReactComponent as TypeScript } from './assets/svg/typescript.svg';
+import { ReactComponent as React } from './assets/svg/react.svg';
+import { ReactComponent as Tailwind } from './assets/svg/tailwind.svg';
+import { ReactComponent as Bootstrap } from './assets/svg/bootstrap.svg';
+import { ReactComponent as JQuery } from './assets/svg/jquery.svg';
+import { ReactComponent as Node } from './assets/svg/node.svg';
+import { ReactComponent as Mongo } from './assets/svg/mongo.svg';
+import { ReactComponent as MySql } from './assets/svg/mysql.svg';
+import { ReactComponent as Git } from './assets/svg/git.svg';
+
+import Badge from './components/Badge';
+
 export default function Website() {
   // local state
   const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark' ? true : false);
@@ -133,8 +146,69 @@ export default function Website() {
         </div>
       </aside>
       <div className="p-4 sm:ml-64">
-        <div className="text-gray-900 dark:text-white">{t('title')}</div>
+        {/* <h1 className="text-gray-900 dark:text-white">Łukasz Śliwiński - portfolio</h1> */}
+        <section className='max-w-[70rem] mx-auto h-full min-h-fit px-20'>
+          <header className="flex flex-col items-center w-full mb-12">
+            <h2 className="text-5xl font-normal dark:text-white">{t('about')}</h2>
+            <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
+          </header>
+          <div className='grid grid-cols-2 gap-16'>
+            <div>
+              <h3 className='text-lg mb-1 font-medium'>{t('about')}</h3>
+              <article className='text-justify'>
+                Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
+                W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
+                W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
+                sposoby komunikacji między nimi, bazy danych, tworzenie szablonów responsywnych i system kontroli wersji.
+                Obecnie doskonalę swoje umiejętności pracując jako Junior Frontend Developer i uczę się nowych technologii po godzinach.
+                Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
+                W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
+                W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
+                sposoby komunikacji między nimi, bazy danych, tworzenie szablonów responsywnych i system kontroli wersji.
+                Obecnie doskonalę swoje umiejętności pracując jako Junior Frontend Developer i uczę się nowych technologii po godzinach.
+              </article>
+            </div>
+            <div className='mb-2'>
+              <h3 className='text-lg mb-1 font-medium'>Frontend technologies</h3>
+              <div className='flex flex-wrap mb-3'>
+                <Badge icon={<JavaScript className="w-6 h-6" />} label={'JavaScript'} />
+                <Badge icon={<TypeScript className="w-6 h-6" />} label={'TypeScript'} />
+                <Badge icon={<React className="w-6 h-6" />} label={'React.js'} />
+                <Badge icon={<Tailwind className="w-6 h-6" />} label={'Tailwindcss'} />
+                <Badge icon={<Bootstrap className="w-6 h-6" />} label={'Bootstrap'} />
+                <Badge icon={<JQuery className="w-6 h-6" />} label={'jQuery'} />
+              </div>
+              <h3 className='text-lg mb-1 font-medium'>Other technologies</h3>
+              <div className='flex flex-wrap mb-3'>
+                <Badge icon={<Node className="w-6 h-6" />} label={'Node.js'} />
+                <Badge icon={<Mongo className="w-6 h-6" />} label={'MongoDB'} />
+                <Badge icon={<MySql className="w-6 h-6" />} label={'MySQL'} />
+                <Badge icon={<Git className="w-6 h-6" />} label={'Git'} />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
 }
+
+/*
+techonologies:
+
+frontend:
+JavaScript
+TypeScript
+React
+Tailwindcss
+Bootstrap
+JQuery
+
+other:
+Node
+MongoDB
+MySQL
+Git
+
+
+*/
