@@ -1,9 +1,12 @@
+// packages
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import 'flowbite';
 
+// language config
 import i18n from './config/lang.config';
 
+// icons
 import { ReactComponent as Menu } from './assets/svg/menu.svg';
 import { ReactComponent as LinkedIn } from './assets/svg/linkedin.svg';
 import { ReactComponent as GitHub } from './assets/svg/github.svg';
@@ -13,11 +16,15 @@ import { ReactComponent as Sun } from './assets/svg/sun.svg';
 import { ReactComponent as Moon } from './assets/svg/moon.svg';
 import { ReactComponent as Pol } from './assets/svg/pol.svg';
 import { ReactComponent as Eng } from './assets/svg/eng.svg';
+import { ReactComponent as Link } from './assets/svg/link.svg';
 
+// technologies icons
 import { ReactComponent as JavaScript } from './assets/svg/javascript.svg';
 import { ReactComponent as TypeScript } from './assets/svg/typescript.svg';
 import { ReactComponent as React } from './assets/svg/react.svg';
+import { ReactComponent as Redux } from './assets/svg/redux.svg';
 import { ReactComponent as Tailwind } from './assets/svg/tailwind.svg';
+import flowbitePng from './assets/png/flowbite.png';
 import { ReactComponent as Bootstrap } from './assets/svg/bootstrap.svg';
 import { ReactComponent as JQuery } from './assets/svg/jquery.svg';
 import { ReactComponent as Node } from './assets/svg/node.svg';
@@ -25,6 +32,9 @@ import { ReactComponent as Mongo } from './assets/svg/mongo.svg';
 import { ReactComponent as MySql } from './assets/svg/mysql.svg';
 import { ReactComponent as Git } from './assets/svg/git.svg';
 
+import screenTest from './assets/screens/screen-test.png';
+
+// components
 import Badge from './components/Badge';
 
 export default function Website() {
@@ -57,7 +67,7 @@ export default function Website() {
   };
 
   return (
-    <div className="h-screen w-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen w-screen bg-white dark:bg-gray-900">
       <button
         data-drawer-target="separator-sidebar"
         data-drawer-toggle="separator-sidebar"
@@ -91,7 +101,7 @@ export default function Website() {
           <ul className="mx-auto w-36 space-y-2 font-medium">
             <li>
               <a
-                href="#"
+                href="#about"
                 className="flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
                 <About
@@ -103,7 +113,7 @@ export default function Website() {
             </li>
             <li>
               <a
-                href="#"
+                href="#projects"
                 className="flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
                 <Projects
@@ -145,9 +155,10 @@ export default function Website() {
           </div>
         </div>
       </aside>
-      <div className="p-4 sm:ml-64">
+      <div className="px-4 sm:ml-64">
         {/* <h1 className="text-gray-900 dark:text-white">Łukasz Śliwiński - portfolio</h1> */}
-        <section className='max-w-[70rem] mx-auto h-full min-h-fit px-20'>
+
+        <section className='max-w-[70rem] mx-auto h-full min-h-screen px-20' id="about">
           <header className="flex flex-col items-center w-full mb-12">
             <h2 className="text-5xl font-normal dark:text-white">{t('about')}</h2>
             <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
@@ -171,10 +182,12 @@ export default function Website() {
             <div className='mb-2'>
               <h3 className='text-lg mb-1 font-medium'>Frontend technologies</h3>
               <div className='flex flex-wrap mb-3'>
-                <Badge icon={<JavaScript className="w-6 h-6" />} label={'JavaScript'} />
                 <Badge icon={<TypeScript className="w-6 h-6" />} label={'TypeScript'} />
+                <Badge icon={<JavaScript className="w-6 h-6" />} label={'JavaScript'} />
                 <Badge icon={<React className="w-6 h-6" />} label={'React.js'} />
+                <Badge icon={<Redux className="w-6 h-6" />} label={'Redux'} />
                 <Badge icon={<Tailwind className="w-6 h-6" />} label={'Tailwindcss'} />
+                <Badge icon={<img src={flowbitePng} className="w-6 h-6" />} label={'Flowbite'} />
                 <Badge icon={<Bootstrap className="w-6 h-6" />} label={'Bootstrap'} />
                 <Badge icon={<JQuery className="w-6 h-6" />} label={'jQuery'} />
               </div>
@@ -188,27 +201,121 @@ export default function Website() {
             </div>
           </div>
         </section>
+
+        <section className='max-w-[70rem] mx-auto h-full min-h-screen px-20' id="projects">
+          <header className="flex flex-col items-center w-full mb-12">
+            <h2 className="text-5xl font-normal dark:text-white">{t('projects')}</h2>
+            <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
+          </header>
+          <div className='flex flex-wrap justify-evenly gap-4 mx-auto'>
+
+
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <img className="rounded-t-lg" src={screenTest} alt="" />
+              <div className="p-5">
+                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
+                  <div className="flex space-x-2 items-center py-2">
+                    <TypeScript className="w-5 h-5" />
+                    <React className="w-5 h-5" />
+                    <Redux className="w-5 h-5" />
+                    <Tailwind className="w-5 h-5" />
+                    <Node className="w-5 h-5" />
+                    <Mongo className="w-5 h-5" />
+                  </div>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <div className="flex justify-evenly">
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Source code
+                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Live demo
+                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <img className="rounded-t-lg" src={screenTest} alt="" />
+              <div className="p-5">
+                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
+                  <div className="flex space-x-2 items-center py-2">
+                    <TypeScript className="w-5 h-5" />
+                    <React className="w-5 h-5" />
+                    <Tailwind className="w-5 h-5" />
+                    <img src={flowbitePng} className="w-5 h-5" />
+                    <Node className="w-5 h-5" />
+                  </div>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <div className="flex justify-evenly">
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Source code
+                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Live demo
+                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <img className="rounded-t-lg" src={screenTest} alt="" />
+              <div className="p-5">
+                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
+                  <div className="flex space-x-2 items-center py-2">
+                    <TypeScript className="w-5 h-5" />
+                    <React className="w-5 h-5" />
+                    <Redux className="w-5 h-5" />
+                    <Tailwind className="w-5 h-5" />
+                    <img src={flowbitePng} className="w-5 h-5" />
+                    <Node className="w-5 h-5" />
+                  </div>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <div className="flex justify-evenly">
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Source code
+                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Live demo
+                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <img className="rounded-t-lg" src={screenTest} alt="" />
+              <div className="p-5">
+                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
+                  <div className="flex space-x-2 items-center py-2">
+                    <TypeScript className="w-5 h-5" />
+                    <React className="w-5 h-5" />
+                    <Tailwind className="w-5 h-5" />
+                    <img src={flowbitePng} className="w-5 h-5" />
+                    <Node className="w-5 h-5" />
+                  </div>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <div className="flex justify-evenly">
+                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Source code
+                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                    <a href="#" className="hidden items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Live demo
+                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
       </div>
     </div>
   );
 }
-
-/*
-techonologies:
-
-frontend:
-JavaScript
-TypeScript
-React
-Tailwindcss
-Bootstrap
-JQuery
-
-other:
-Node
-MongoDB
-MySQL
-Git
-
-
-*/
