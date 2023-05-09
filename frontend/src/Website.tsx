@@ -36,6 +36,7 @@ import screenTest from './assets/screens/screen-test.png';
 
 // components
 import Badge from './components/Badge';
+import ProjectCard from './components/ProjectCard';
 
 export default function Website() {
   // local state
@@ -89,11 +90,11 @@ export default function Website() {
           <div className="h-96"></div>
 
           <div className="mx-auto my-6 flex w-36 justify-evenly">
-            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
               <LinkedIn className="h-8 w-8" aria-hidden="true" />
               <span className="sr-only">LinkedIn account</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
               <GitHub className="h-8 w-8" aria-hidden="true" />
               <span className="sr-only">GitHub account</span>
             </a>
@@ -158,15 +159,15 @@ export default function Website() {
       <div className="px-4 sm:ml-64">
         {/* <h1 className="text-gray-900 dark:text-white">Łukasz Śliwiński - portfolio</h1> */}
 
-        <section className='max-w-[70rem] mx-auto h-full min-h-screen px-20' id="about">
+        <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20" id="about">
           <header className="flex flex-col items-center w-full mb-12">
             <h2 className="text-5xl font-normal dark:text-white">{t('about')}</h2>
             <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
           </header>
-          <div className='grid grid-cols-2 gap-16'>
+          <div className="grid grid-cols-2 gap-16">
             <div>
-              <h3 className='text-lg mb-1 font-medium'>{t('about')}</h3>
-              <article className='text-justify'>
+              <h3 className="text-lg mb-1 font-medium">{t('about')}</h3>
+              <article className="text-justify">
                 Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
                 W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
                 W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
@@ -179,9 +180,9 @@ export default function Website() {
                 Obecnie doskonalę swoje umiejętności pracując jako Junior Frontend Developer i uczę się nowych technologii po godzinach.
               </article>
             </div>
-            <div className='mb-2'>
-              <h3 className='text-lg mb-1 font-medium'>Frontend technologies</h3>
-              <div className='flex flex-wrap mb-3'>
+            <div className="mb-2">
+              <h3 className="text-lg mb-1 font-medium">Frontend technologies</h3>
+              <div className="flex flex-wrap mb-3">
                 <Badge icon={<TypeScript className="w-6 h-6" />} label={'TypeScript'} />
                 <Badge icon={<JavaScript className="w-6 h-6" />} label={'JavaScript'} />
                 <Badge icon={<React className="w-6 h-6" />} label={'React.js'} />
@@ -191,8 +192,8 @@ export default function Website() {
                 <Badge icon={<Bootstrap className="w-6 h-6" />} label={'Bootstrap'} />
                 <Badge icon={<JQuery className="w-6 h-6" />} label={'jQuery'} />
               </div>
-              <h3 className='text-lg mb-1 font-medium'>Other technologies</h3>
-              <div className='flex flex-wrap mb-3'>
+              <h3 className="text-lg mb-1 font-medium">Other technologies</h3>
+              <div className="flex flex-wrap mb-3">
                 <Badge icon={<Node className="w-6 h-6" />} label={'Node.js'} />
                 <Badge icon={<Mongo className="w-6 h-6" />} label={'MongoDB'} />
                 <Badge icon={<MySql className="w-6 h-6" />} label={'MySQL'} />
@@ -202,115 +203,82 @@ export default function Website() {
           </div>
         </section>
 
-        <section className='max-w-[70rem] mx-auto h-full min-h-screen px-20' id="projects">
+        <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20" id="projects">
           <header className="flex flex-col items-center w-full mb-12">
             <h2 className="text-5xl font-normal dark:text-white">{t('projects')}</h2>
             <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
           </header>
-          <div className='flex flex-wrap justify-evenly gap-4 mx-auto'>
+          <div className="flex flex-wrap justify-evenly gap-4 mx-auto">
 
+            {/* Book store project card */}
+            <ProjectCard
+              screenSrc={screenTest}
+              title={'Book Store'}
+              description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/book-store-v2/'}
+              showLink={true}
+              linkUrl={'https://bookstore.lukaszsliwinski.pl/'}
+            >
+              <TypeScript className="w-5 h-5" />
+              <React className="w-5 h-5" />
+              <Redux className="w-5 h-5" />
+              <Tailwind className="w-5 h-5" />
+              <Node className="w-5 h-5" />
+              <Mongo className="w-5 h-5" />
+            </ProjectCard>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <img className="rounded-t-lg" src={screenTest} alt="" />
-              <div className="p-5">
-                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
-                  <div className="flex space-x-2 items-center py-2">
-                    <TypeScript className="w-5 h-5" />
-                    <React className="w-5 h-5" />
-                    <Redux className="w-5 h-5" />
-                    <Tailwind className="w-5 h-5" />
-                    <Node className="w-5 h-5" />
-                    <Mongo className="w-5 h-5" />
-                  </div>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <div className="flex justify-evenly">
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Source code
-                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Live demo
-                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                  </div>
-              </div>
-            </div>
+            {/* Weather app project card */}
+            <ProjectCard
+              screenSrc={screenTest}
+              title={'Weather App'}
+              description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/weather-app-v2/'}
+              showLink={true}
+              linkUrl={'https://weatherapp.lukaszsliwinski.pl/'}
+            >
+              <TypeScript className="w-5 h-5" />
+              <React className="w-5 h-5" />
+              <Tailwind className="w-5 h-5" />
+              <img src={flowbitePng} className="w-5 h-5" />
+              <Node className="w-5 h-5" />
+            </ProjectCard>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <img className="rounded-t-lg" src={screenTest} alt="" />
-              <div className="p-5">
-                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
-                  <div className="flex space-x-2 items-center py-2">
-                    <TypeScript className="w-5 h-5" />
-                    <React className="w-5 h-5" />
-                    <Tailwind className="w-5 h-5" />
-                    <img src={flowbitePng} className="w-5 h-5" />
-                    <Node className="w-5 h-5" />
-                  </div>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <div className="flex justify-evenly">
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Source code
-                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Live demo
-                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                  </div>
-              </div>
-            </div>
+            {/* Metronome project card */}
+            <ProjectCard
+              screenSrc={screenTest}
+              title={'Metronome'}
+              description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/metronome-v2/'}
+              showLink={true}
+              linkUrl={'https://metronome.lukaszsliwinski.pl'}
+            >
+              <TypeScript className="w-5 h-5" />
+              <React className="w-5 h-5" />
+              <Redux className="w-5 h-5" />
+              <Tailwind className="w-5 h-5" />
+              <img src={flowbitePng} className="w-5 h-5" />
+              <Node className="w-5 h-5" />
+            </ProjectCard>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <img className="rounded-t-lg" src={screenTest} alt="" />
-              <div className="p-5">
-                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
-                  <div className="flex space-x-2 items-center py-2">
-                    <TypeScript className="w-5 h-5" />
-                    <React className="w-5 h-5" />
-                    <Redux className="w-5 h-5" />
-                    <Tailwind className="w-5 h-5" />
-                    <img src={flowbitePng} className="w-5 h-5" />
-                    <Node className="w-5 h-5" />
-                  </div>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <div className="flex justify-evenly">
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Source code
-                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Live demo
-                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                  </div>
-              </div>
-            </div>
-
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <img className="rounded-t-lg" src={screenTest} alt="" />
-              <div className="p-5">
-                  <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">App name</h5>
-                  <div className="flex space-x-2 items-center py-2">
-                    <TypeScript className="w-5 h-5" />
-                    <React className="w-5 h-5" />
-                    <Tailwind className="w-5 h-5" />
-                    <img src={flowbitePng} className="w-5 h-5" />
-                    <Node className="w-5 h-5" />
-                  </div>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <div className="flex justify-evenly">
-                    <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Source code
-                      <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                    <a href="#" className="hidden items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Live demo
-                      <Link className="h-4 w-4 ml-2" aria-hidden="true" />
-                    </a>
-                  </div>
-              </div>
-            </div>
+            {/* Portfolio project card */}
+            <ProjectCard
+              screenSrc={screenTest}
+              title={'Protfolio website'}
+              description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/portfolio-v2/'}
+              showLink={false}
+              linkUrl={'#'}
+            >
+              <TypeScript className="w-5 h-5" />
+              <React className="w-5 h-5" />
+              <Tailwind className="w-5 h-5" />
+              <img src={flowbitePng} className="w-5 h-5" />
+              <Node className="w-5 h-5" />
+            </ProjectCard>
 
           </div>
         </section>
