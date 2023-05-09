@@ -32,7 +32,11 @@ import { ReactComponent as Mongo } from './assets/svg/mongo.svg';
 import { ReactComponent as MySql } from './assets/svg/mysql.svg';
 import { ReactComponent as Git } from './assets/svg/git.svg';
 
-import screenTest from './assets/screens/screen-test.png';
+// project screens
+import bookStoreScreen from './assets/screens/book-store-screen.png';
+import weatherAppScreen from './assets/screens/weather-app-screen.png';
+import metronomeScreen from './assets/screens/metronome-screen.png';
+import defaultScreen from './assets/screens/default-screen.png';
 
 // components
 import Badge from './components/Badge';
@@ -173,11 +177,8 @@ export default function Website() {
                 W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
                 sposoby komunikacji między nimi, bazy danych, tworzenie szablonów responsywnych i system kontroli wersji.
                 Obecnie doskonalę swoje umiejętności pracując jako Junior Frontend Developer i uczę się nowych technologii po godzinach.
-                Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
-                W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
-                W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
-                sposoby komunikacji między nimi, bazy danych, tworzenie szablonów responsywnych i system kontroli wersji.
-                Obecnie doskonalę swoje umiejętności pracując jako Junior Frontend Developer i uczę się nowych technologii po godzinach.
+
+                Napisać kilka słów nt używanych technologii oraz wykonanych projektów
               </article>
             </div>
             <div className="mb-2">
@@ -212,7 +213,7 @@ export default function Website() {
 
             {/* Book store project card */}
             <ProjectCard
-              screenSrc={screenTest}
+              screenSrc={bookStoreScreen}
               title={'Book Store'}
               description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
               showSource={true}
@@ -230,7 +231,7 @@ export default function Website() {
 
             {/* Weather app project card */}
             <ProjectCard
-              screenSrc={screenTest}
+              screenSrc={weatherAppScreen}
               title={'Weather App'}
               description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
               showSource={true}
@@ -247,7 +248,7 @@ export default function Website() {
 
             {/* Metronome project card */}
             <ProjectCard
-              screenSrc={screenTest}
+              screenSrc={metronomeScreen}
               title={'Metronome'}
               description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
               showSource={true}
@@ -265,9 +266,9 @@ export default function Website() {
 
             {/* Portfolio project card */}
             <ProjectCard
-              screenSrc={screenTest}
+              screenSrc={defaultScreen}
               title={'Protfolio website'}
-              description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+              description={'About project: this website'}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/portfolio-v2/'}
               showLink={false}
