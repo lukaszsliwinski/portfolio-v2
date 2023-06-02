@@ -8,7 +8,7 @@ import Projects from './layouts/Projects';
 
 export default function Website() {
   return (
-    <div className="min-h-screen w-screen bg-white dark:bg-gray-900 dark:text-white">
+    <div className="min-h-screen-mobile bg-white dark:bg-gray-900 dark:text-white">
       <Nav />
       <div className="px-4 sm:ml-64">
         <About />
