@@ -16,6 +16,9 @@ import { ReactComponent as Moon } from '../assets/svg/moon.svg';
 import { ReactComponent as Pol } from '../assets/svg/pol.svg';
 import { ReactComponent as Eng } from '../assets/svg/eng.svg';
 
+import profilePhoto from '../assets/img/profile.jpg';
+{/* <img className="w-36 my-6 rounded-full" src={profilePhoto} alt="profile photo"/> */}
+
 export default function Nav() {
   // dark mode state
   const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark' ? true : false);
@@ -62,21 +65,20 @@ export default function Nav() {
         className="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800">
-          {/* temporary empty space */}
-          <div className="h-96"></div>
-
-          <div className="mx-auto my-6 flex w-36 justify-evenly">
+        <div className="h-full overflow-y-auto bg-gray-50 px-8 py-4 dark:bg-gray-800">
+          <h1 className="text-xl font-MEDIUM dark:text-white">ŁUKASZ ŚLIWIŃSKI</h1>
+          <h2 className="text-xs text-gray-600 dark:text-gray-300">FRONTEND DEVELOPER</h2>
+          <div className="hidden mr-auto mt-2 flex w-16 justify-between">
             <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-              <LinkedIn className="h-8 w-8" aria-hidden="true" />
+              <LinkedIn className="h-6 w-6" aria-hidden="true" />
               <span className="sr-only">LinkedIn account</span>
             </a>
             <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-              <GitHub className="h-8 w-8" aria-hidden="true" />
+              <GitHub className="h-6 w-6" aria-hidden="true" />
               <span className="sr-only">GitHub account</span>
             </a>
           </div>
-          <ul className="mx-auto w-36 space-y-2 font-medium">
+          <ul className="my-8 space-y-2 font-medium">
             <li>
               <a
                 href="#about"
@@ -102,7 +104,7 @@ export default function Nav() {
               </a>
             </li>
           </ul>
-          <div className="mt-4 space-y-4 border-t border-gray-200 pt-4 font-medium dark:border-gray-700">
+          <div className="space-y-4 border-t border-gray-200 pt-4 font-medium dark:border-gray-700">
             <div className="mx-auto flex w-36 items-center justify-evenly">
               <Sun className="h-5 w-5 text-gray-500 dark:text-gray-400" />
               <label className="relative inline-flex cursor-pointer items-center">

@@ -8,7 +8,7 @@ import { ReactComponent as TypeScript } from './assets/svg/typescript.svg';
 import { ReactComponent as React } from './assets/svg/react.svg';
 import { ReactComponent as Redux } from './assets/svg/redux.svg';
 import { ReactComponent as Tailwind } from './assets/svg/tailwind.svg';
-import flowbitePng from './assets/png/flowbite.png';
+import flowbitePng from './assets/img/flowbite.png';
 import { ReactComponent as Bootstrap } from './assets/svg/bootstrap.svg';
 import { ReactComponent as JQuery } from './assets/svg/jquery.svg';
 import { ReactComponent as Node } from './assets/svg/node.svg';
@@ -17,10 +17,10 @@ import { ReactComponent as MySql } from './assets/svg/mysql.svg';
 import { ReactComponent as Git } from './assets/svg/git.svg';
 
 // project screens
-import bookStoreScreen from './assets/screens/book-store-screen.png';
-import weatherAppScreen from './assets/screens/weather-app-screen.png';
-import metronomeScreen from './assets/screens/metronome-screen.png';
-import defaultScreen from './assets/screens/default-screen.png';
+import bookStoreScreen from './assets/img/book-store-screen.png';
+import weatherAppScreen from './assets/img/weather-app-screen.png';
+import metronomeScreen from './assets/img/metronome-screen.png';
+import defaultScreen from './assets/img/default-screen.png';
 
 // components
 import Nav from './layouts/Nav';
