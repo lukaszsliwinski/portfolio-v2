@@ -18,6 +18,7 @@ import defaultScreen from '../assets/img/default-screen.png';
 
 // components
 import ProjectCard from '../components/ProjectCard';
+import TechIcon from '../components/TechIcon';
 
 export default function Projects() {
   // useTranslation fn
@@ -27,7 +28,7 @@ export default function Projects() {
     <section className="max-w-[70rem] mx-auto h-full min-h-screen p-20 pt-[5vh]" id="projects">
       <header className="flex flex-col items-center w-full mb-12">
         <h2 className="text-3xl uppercase dark:text-white">{t('projects')}</h2>
-        <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
+        <div className="w-10 h-0.5 mt-2 rounded bg-yellow-800"></div>
       </header>
       <div className="flex flex-wrap justify-center gap-14 mx-auto">
 
@@ -41,12 +42,12 @@ export default function Projects() {
           showLink={true}
           linkUrl={'https://bookstore.lukaszsliwinski.pl/'}
         >
-          <TypeScript className="w-5 h-5" />
-          <React className="w-5 h-5" />
-          <Redux className="w-5 h-5" />
-          <Tailwind className="w-5 h-5" />
-          <Node className="w-5 h-5" />
-          <Mongo className="w-5 h-5" />
+          <TechIcon project='BookStore' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
+          <TechIcon project='BookStore' tech='React.js'><React className="w-5 h-5" /></TechIcon>
+          <TechIcon project='BookStore' tech='Redux'><Redux className="w-5 h-5" /></TechIcon>
+          <TechIcon project='BookStore' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
+          <TechIcon project='BookStore' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
+          <TechIcon project='BookStore' tech='MongoDB'><Mongo className="w-5 h-5" /></TechIcon>
         </ProjectCard>
 
         {/* Weather app project card */}
@@ -59,11 +60,11 @@ export default function Projects() {
           showLink={true}
           linkUrl={'https://weatherapp.lukaszsliwinski.pl/'}
         >
-          <TypeScript className="w-5 h-5" />
-          <React className="w-5 h-5" />
-          <Tailwind className="w-5 h-5" />
-          <img src={flowbitePng} className="w-5 h-5" />
-          <Node className="w-5 h-5" />
+          <TechIcon project='WeatherApp' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='React.js'><React className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Flowbite'><img src={flowbitePng} className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
         </ProjectCard>
 
         {/* Metronome project card */}
@@ -76,29 +77,29 @@ export default function Projects() {
           showLink={true}
           linkUrl={'https://metronome.lukaszsliwinski.pl'}
         >
-          <TypeScript className="w-5 h-5" />
-          <React className="w-5 h-5" />
-          <Redux className="w-5 h-5" />
-          <Tailwind className="w-5 h-5" />
-          <img src={flowbitePng} className="w-5 h-5" />
-          <Node className="w-5 h-5" />
+          <TechIcon project='WeatherApp' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='React.js'><React className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Redux'><Redux className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Flowbite'><img src={flowbitePng} className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
         </ProjectCard>
 
         {/* Portfolio project card */}
         <ProjectCard
           screenSrc={defaultScreen}
-          title={'Protfolio website'}
+          title={'Portfolio website'}
           description={'About project: this website'}
           showSource={true}
           sourceUrl={'https://github.com/lukaszsliwinski/portfolio-v2/'}
           showLink={false}
           linkUrl={'#'}
         >
-          <TypeScript className="w-5 h-5" />
-          <React className="w-5 h-5" />
-          <Tailwind className="w-5 h-5" />
-          <img src={flowbitePng} className="w-5 h-5" />
-          <Node className="w-5 h-5" />
+          <TechIcon project='WeatherApp' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='React.js'><React className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Flowbte'><img src={flowbitePng} className="w-5 h-5" /></TechIcon>
+          <TechIcon project='WeatherApp' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
         </ProjectCard>
 
       </div>

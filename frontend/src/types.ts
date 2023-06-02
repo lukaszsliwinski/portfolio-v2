@@ -10,3 +10,9 @@ export interface IProjectCard {
   showLink: boolean,
   linkUrl: string,
 }
+
+export interface ITechIcon {
+  children: ReactNode,
+  tech: string,
+  project: string
+}

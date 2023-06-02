@@ -1,4 +1,3 @@
-
 // icons
 import { ReactComponent as GitHub } from '../assets/svg/github.svg';
 import { ReactComponent as Link } from '../assets/svg/link.svg';
@@ -11,8 +10,8 @@ export default function PorjectCard({children, screenSrc, title, description, sh
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <img className="rounded-t-lg" src={screenSrc} alt="apps screen" />
       <div className="flex flex-col p-5 h-60">
-        <h3 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{title}</h3>
-        <div className="flex space-x-2 items-center py-2">
+        <h3 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{title}</h3>
+        <div className="flex space-x-2 items-center py-3">
           {children}
         </div>
         <p className="mb-3 text-sm text-gray-700 dark:text-gray-400 text-justify">{description}</p>
