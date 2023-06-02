@@ -7,17 +7,12 @@ import i18n from '../config/lang.config';
 
 // icons
 import { ReactComponent as Menu } from '../assets/svg/menu.svg';
-import { ReactComponent as LinkedIn } from '../assets/svg/linkedin.svg';
-import { ReactComponent as GitHub } from '../assets/svg/github.svg';
 import { ReactComponent as About } from '../assets/svg/about.svg';
 import { ReactComponent as Projects } from '../assets/svg/projects.svg';
 import { ReactComponent as Sun } from '../assets/svg/sun.svg';
 import { ReactComponent as Moon } from '../assets/svg/moon.svg';
 import { ReactComponent as Pol } from '../assets/svg/pol.svg';
 import { ReactComponent as Eng } from '../assets/svg/eng.svg';
-
-import profilePhoto from '../assets/img/profile.jpg';
-{/* <img className="w-36 my-6 rounded-full" src={profilePhoto} alt="profile photo"/> */}
 
 export default function Nav() {
   // dark mode state
@@ -68,16 +63,6 @@ export default function Nav() {
         <div className="h-full overflow-y-auto bg-gray-50 px-8 py-4 dark:bg-gray-800">
           <h1 className="text-xl font-MEDIUM dark:text-white">ŁUKASZ ŚLIWIŃSKI</h1>
           <h2 className="text-xs text-gray-600 dark:text-gray-300">FRONTEND DEVELOPER</h2>
-          <div className="hidden mr-auto mt-2 flex w-16 justify-between">
-            <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-              <LinkedIn className="h-6 w-6" aria-hidden="true" />
-              <span className="sr-only">LinkedIn account</span>
-            </a>
-            <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-              <GitHub className="h-6 w-6" aria-hidden="true" />
-              <span className="sr-only">GitHub account</span>
-            </a>
-          </div>
           <ul className="my-8 space-y-2 font-medium">
             <li>
               <a

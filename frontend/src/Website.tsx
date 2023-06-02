@@ -16,6 +16,13 @@ import { ReactComponent as Mongo } from './assets/svg/mongo.svg';
 import { ReactComponent as MySql } from './assets/svg/mysql.svg';
 import { ReactComponent as Git } from './assets/svg/git.svg';
 
+// icons
+import { ReactComponent as LinkedIn } from './assets/svg/linkedin.svg';
+import { ReactComponent as GitHub } from './assets/svg/github.svg';
+
+// profile photo
+import profilePhoto from './assets/img/profile.jpg';
+
 // project screens
 import bookStoreScreen from './assets/img/book-store-screen.png';
 import weatherAppScreen from './assets/img/weather-app-screen.png';
@@ -32,7 +39,7 @@ export default function Website() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen w-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen w-screen bg-white dark:bg-gray-900 dark:text-white">
       <Nav />
       <div className="px-4 sm:ml-64">
         {/* <h1 className="text-gray-900 dark:text-white">Łukasz Śliwiński - portfolio</h1> */}
@@ -46,6 +53,7 @@ export default function Website() {
             <div>
               <h3 className="text-lg mb-1 font-medium">{t('about')}</h3>
               <article className="text-justify">
+                <img className="w-28 float-left rounded mr-2 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
                 Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
                 W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
                 W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
@@ -54,6 +62,16 @@ export default function Website() {
 
                 Napisać kilka słów nt używanych technologii oraz wykonanych projektów
               </article>
+              <div className="flex justify-evenly w-72 mx-auto my-6">
+                <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>
+                  LinkedIn
+                  <LinkedIn className="h-4 w-4 ml-2" aria-hidden="true" />
+                </a>
+                <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer"  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>
+                  GitHub
+                  <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
+                </a>
+              </div>
             </div>
             <div className="mb-2">
               <h3 className="text-lg mb-1 font-medium">Frontend technologies</h3>
