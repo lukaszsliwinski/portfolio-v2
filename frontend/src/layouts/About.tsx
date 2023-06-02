@@ -30,15 +30,14 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20" id="about">
+    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20 pt-[15vh]" id="about">
       <header className="flex flex-col items-center w-full mb-12">
-        <h2 className="text-5xl font-normal dark:text-white">{t('about')}</h2>
-        <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
+        <h2 className="text-2xl uppercase dark:text-white">{t('about')}</h2>
+        <div className="w-10 h-0.5 mt-2 rounded bg-yellow-800"></div>
       </header>
       <div className="grid grid-cols-2 gap-16">
         <div>
-          <h3 className="text-lg mb-1 font-medium">{t('about')}</h3>
-          <article className="text-justify">
+          <article className="text-justify text-[15px]">
             <img className="w-28 float-left rounded-sm  mr-2 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
             Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
             W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
@@ -60,7 +59,7 @@ export default function About() {
           </div>
         </div>
         <div className="mb-2">
-          <h3 className="text-lg mb-1 font-medium">Frontend stack</h3>
+          <h3 className="mb-1 font-medium">Frontend stack</h3>
           <div className="flex flex-wrap mb-3">
             <Badge icon={<TypeScript className="w-6 h-6" />} label={'TypeScript'} />
             <Badge icon={<JavaScript className="w-6 h-6" />} label={'JavaScript'} />
@@ -71,7 +70,7 @@ export default function About() {
             <Badge icon={<Bootstrap className="w-6 h-6" />} label={'Bootstrap'} />
             <Badge icon={<JQuery className="w-6 h-6" />} label={'jQuery'} />
           </div>
-          <h3 className="text-lg mb-1 font-medium">Other</h3>
+          <h3 className="mb-1 font-medium">Other</h3>
           <div className="flex flex-wrap mb-3">
             <Badge icon={<Node className="w-6 h-6" />} label={'Node.js'} />
             <Badge icon={<Mongo className="w-6 h-6" />} label={'MongoDB'} />

@@ -61,7 +61,7 @@ export default function Nav() {
         aria-label="Sidebar"
       >
         <div className="h-full overflow-y-auto bg-gray-50 px-8 py-4 dark:bg-gray-800">
-          <h1 className="text-xl font-MEDIUM dark:text-white">ŁUKASZ ŚLIWIŃSKI</h1>
+          <h1 className="text-xl dark:text-white">ŁUKASZ ŚLIWIŃSKI</h1>
           <h2 className="text-xs text-gray-600 dark:text-gray-300">FRONTEND DEVELOPER</h2>
           <ul className="my-8 space-y-2 font-medium">
             <li>
