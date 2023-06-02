@@ -15,7 +15,7 @@ import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
 import { ReactComponent as MySql } from '../assets/svg/mysql.svg';
 import { ReactComponent as Git } from '../assets/svg/git.svg';
 
-// icons
+// link icons
 import { ReactComponent as LinkedIn } from '../assets/svg/linkedin.svg';
 import { ReactComponent as GitHub } from '../assets/svg/github.svg';
 
