@@ -32,13 +32,13 @@ export default function About() {
   return (
     <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20 pt-[15vh]" id="about">
       <header className="flex flex-col items-center w-full mb-12">
-        <h2 className="text-2xl uppercase dark:text-white">{t('about')}</h2>
+        <h2 className="text-3xl uppercase dark:text-white">{t('about')}</h2>
         <div className="w-10 h-0.5 mt-2 rounded bg-yellow-800"></div>
       </header>
       <div className="grid grid-cols-2 gap-16">
         <div>
           <article className="text-justify text-[15px]">
-            <img className="w-28 float-left rounded-sm  mr-2 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
+            <img className="w-32 float-left rounded-sm  mr-6 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
             Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
             W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
             W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,

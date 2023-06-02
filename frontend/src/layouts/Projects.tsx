@@ -24,12 +24,12 @@ export default function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20" id="projects">
+    <section className="max-w-[70rem] mx-auto h-full min-h-screen p-20 pt-[5vh]" id="projects">
       <header className="flex flex-col items-center w-full mb-12">
-        <h2 className="text-5xl font-normal dark:text-white">{t('projects')}</h2>
+        <h2 className="text-3xl uppercase dark:text-white">{t('projects')}</h2>
         <div className="w-10 h-1 mt-4 rounded bg-yellow-800"></div>
       </header>
-      <div className="flex flex-wrap justify-evenly gap-4 mx-auto">
+      <div className="flex flex-wrap justify-center gap-14 mx-auto">
 
         {/* Book store project card */}
         <ProjectCard
