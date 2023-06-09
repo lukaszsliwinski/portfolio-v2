@@ -14,7 +14,7 @@ export default function PorjectCard({children, screenSrc, title, description, sh
         <div className="flex space-x-2 items-center py-3">
           {children}
         </div>
-        <p className="mb-3 text-sm text-gray-700 dark:text-gray-400 text-justify">{description}</p>
+        <p className="mb-3 text-sm leading-6 text-gray-700 dark:text-gray-400 text-justify">{description}</p>
         <div className="flex justify-evenly mt-auto">
           <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className={`${showSource ? 'inline-flex' : 'hidden'} items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>
             Source code
