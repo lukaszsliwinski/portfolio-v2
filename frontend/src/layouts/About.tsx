@@ -30,14 +30,14 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-2 xs:px-12 xl:px-20 md:pt-[15vh]" id="about">
+    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-2 xs:px-12 xl:px-20 md:pt-[8vh]" id="about">
       <header className="flex flex-col items-center w-full mb-12">
         <h2 className="text-2xl font-medium dark:text-white">{t('about')}</h2>
         <div className="w-6 h-0.5 mt-2 rounded bg-yellow-800"></div>
       </header>
       <div className="grid lg:grid-cols-2 gap-16">
         <div>
-          <article className="text-justify text-[13px] xs:text-sm leading-6 xs:leading-7">
+          <article className="text-justify text-xs xs:text-sm leading-6 xs:leading-7">
             <img className="w-20 xs:w-32 float-left rounded-sm  mr-3 xs:mr-6 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
             Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
             W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.

@@ -12,7 +12,7 @@ export default function Website() {
       <Nav />
       <div className="px-4 md:ml-64">
         <About />
-        {/* <Projects /> */}
+        <Projects />
       </div>
     </div>
   );

@@ -3,8 +3,11 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', 'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fontSize: {
+        xs: '13px',
+      },
       screens: {
-        xxs: '360px',
+        '2xs': '360px',
         xs: '480px'
       },
       minHeight: {
