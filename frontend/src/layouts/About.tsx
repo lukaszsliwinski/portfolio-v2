@@ -30,15 +30,15 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-20 pt-[15vh]" id="about">
+    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-2 xs:px-12 xl:px-20 md:pt-[15vh]" id="about">
       <header className="flex flex-col items-center w-full mb-12">
         <h2 className="text-2xl font-medium dark:text-white">{t('about')}</h2>
         <div className="w-6 h-0.5 mt-2 rounded bg-yellow-800"></div>
       </header>
-      <div className="grid grid-cols-2 gap-16">
+      <div className="grid lg:grid-cols-2 gap-16">
         <div>
-          <article className="text-justify text-[14px] leading-7">
-            <img className="w-32 float-left rounded-sm  mr-6 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
+          <article className="text-justify text-[13px] xs:text-sm leading-6 xs:leading-7">
+            <img className="w-20 xs:w-32 float-left rounded-sm  mr-3 xs:mr-6 mt-2 shadow-sm" src={profilePhoto} alt="profile photo"/>
             Jestem programistą aplikacji internetowych specjalizującym się we frontendzie.
             W trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap i Node.js.
             W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia frontend-u i backend-u aplikacji,
@@ -47,12 +47,12 @@ export default function About() {
 
             Napisać kilka słów nt używanych technologii oraz wykonanych projektów
           </article>
-          <div className="flex justify-evenly w-72 mx-auto my-6">
-            <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+          <div className="flex justify-evenly flex-wrap xs:w-72 mx-auto my-6">
+            <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className='inline-flex items-center m-1 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               LinkedIn
               <LinkedIn className="h-4 w-4 ml-2" aria-hidden="true" />
             </a>
-            <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer"  className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+            <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer"  className='inline-flex items-center m-1 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               GitHub
               <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
             </a>
