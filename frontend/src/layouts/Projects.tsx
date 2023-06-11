@@ -27,8 +27,8 @@ export default function Projects() {
   return (
     <section className="max-w-[70rem] mx-auto h-full min-h-screen px-2 xs:px-12 xl:px-20 py-[8vh]" id="projects">
       <header className="flex flex-col items-center w-full mb-12">
-        <h2 className="text-2xl font-medium dark:text-white">{t('projects')}</h2>
-        <div className="w-6 h-0.5 mt-2 rounded bg-yellow-800"></div>
+        <h2 className="text-2xl font-medium dark:text-neutral-200">{t('projects')}</h2>
+        <div className="w-6 h-0.5 mt-2 rounded bg-indigo-600"></div>
       </header>
       <div className="grid xl:grid-cols-2 gap-10 mx-auto">
 

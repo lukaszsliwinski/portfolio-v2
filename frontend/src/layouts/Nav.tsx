@@ -49,7 +49,7 @@ export default function Nav() {
         data-drawer-toggle="separator-sidebar"
         aria-controls="separator-sidebar"
         type="button"
-        className="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+        className="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-neutral-500 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600 md:hidden"
       >
         <Menu className="h-6 w-6" aria-hidden="true" />
         <span className="sr-only">Open sidebar</span>
@@ -60,17 +60,17 @@ export default function Nav() {
         className="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform md:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full overflow-y-auto bg-gray-50 px-8 py-4 dark:bg-gray-800">
-          <h1 className="text-xl font-medium dark:text-white">ŁUKASZ ŚLIWIŃSKI</h1>
-          <h2 className="text-sm text-gray-600 dark:text-gray-300">FRONTEND DEVELOPER</h2>
+        <div className="h-full overflow-y-auto bg-neutral-100 px-8 py-4 dark:bg-neutral-800">
+          <h1 className="text-xl font-medium dark:text-neutral-200">ŁUKASZ ŚLIWIŃSKI</h1>
+          <h2 className="text-sm text-neutral-600 dark:text-neutral-300">FRONTEND DEVELOPER</h2>
           <ul className="my-8 space-y-2 font-medium">
             <li>
               <a
                 href="#about"
-                className="flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="flex items-center rounded-lg p-2 text-neutral-900 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
               >
                 <About
-                  className="h-6 w-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  className="h-6 w-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
                   aria-hidden="true"
                 />
                 <span className="ml-3">{t('about')}</span>
@@ -79,19 +79,19 @@ export default function Nav() {
             <li>
               <a
                 href="#projects"
-                className="flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="flex items-center rounded-lg p-2 text-neutral-900 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
               >
                 <Projects
-                  className="h-6 w-6 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  className="h-6 w-6 flex-shrink-0 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
                   aria-hidden="true"
                 />
                 <span className="ml-3 flex-1 whitespace-nowrap">{t('projects')}</span>
               </a>
             </li>
           </ul>
-          <div className="space-y-4 border-t border-gray-200 pt-4 font-medium dark:border-gray-700">
+          <div className="space-y-4 border-t border-neutral-200 pt-4 font-medium dark:border-neutral-700">
             <div className="mx-auto flex w-36 items-center justify-evenly">
-              <Sun className="h-5 w-5 text-gray-500 dark:text-gray-400" />
+              <Sun className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
               <label className="relative inline-flex cursor-pointer items-center">
                 <input
                   type="checkbox"
@@ -99,9 +99,9 @@ export default function Nav() {
                   defaultChecked={darkMode}
                   onClick={() => toggleMode()}
                 />
-                <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
+                <div className="peer h-6 w-11 rounded-full bg-neutral-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-neutral-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:border-neutral-600 dark:bg-neutral-700 dark:peer-focus:ring-indigo-800"></div>
               </label>
-              <Moon className="h-5 w-5 text-gray-500 dark:text-gray-400" />
+              <Moon className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
             </div>
 
             <div className="mx-auto flex w-36 items-center justify-evenly">
@@ -113,7 +113,7 @@ export default function Nav() {
                   defaultChecked={i18n.language === 'en'}
                   onClick={() => toggleLanguage()}
                 />
-                <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
+                <div className="peer h-6 w-11 rounded-full bg-neutral-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-neutral-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:border-neutral-600 dark:bg-neutral-700 dark:peer-focus:ring-indigo-800"></div>
               </label>
               <Eng className="h-8 w-8" />
             </div>

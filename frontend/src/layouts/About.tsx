@@ -32,8 +32,8 @@ export default function About() {
   return (
     <section className="max-w-[70rem] mx-auto h-full min-h-screen px-2 xs:px-12 xl:px-20 md:pt-[8vh]" id="about">
       <header className="flex flex-col items-center w-full mb-12">
-        <h2 className="text-2xl font-medium dark:text-white">{t('about')}</h2>
-        <div className="w-6 h-0.5 mt-2 rounded bg-yellow-800"></div>
+        <h2 className="text-2xl font-medium dark:text-neutral-200">{t('about')}</h2>
+        <div className="w-6 h-0.5 mt-2 rounded bg-indigo-600"></div>
       </header>
       <div className="grid lg:grid-cols-2 gap-16">
         <div>
@@ -48,11 +48,11 @@ export default function About() {
             Napisać kilka słów nt używanych technologii oraz wykonanych projektów
           </article>
           <div className="flex justify-evenly flex-wrap xs:w-72 mx-auto my-6">
-            <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className='inline-flex items-center m-1 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+            <a href="https://www.linkedin.com/in/lsliwinski/" target="_blank" rel="noopener noreferrer" className='inline-flex items-center m-1 px-3 py-2 text-sm font-medium text-center text-neutral-100 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800'>
               LinkedIn
               <LinkedIn className="h-4 w-4 ml-2" aria-hidden="true" />
             </a>
-            <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer"  className='inline-flex items-center m-1 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+            <a href="https://github.com/lukaszsliwinski/" target="_blank" rel="noopener noreferrer"  className='inline-flex items-center m-1 px-3 py-2 text-sm font-medium text-center text-neutral-100 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800'>
               GitHub
               <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
             </a>

@@ -4,7 +4,7 @@
 
 /* scrollbar */
 html {
-  scrollbar-color: #1e3a8a #2563eb;
+  scrollbar-color: #4f46e5 transparent;
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
@@ -14,13 +14,13 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #1e3a8a;
+  background: #4f46e5;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: #1e3a8a;
+  background: #4f46e5;
 }
 
 html::-webkit-scrollbar-track {
-  background: #2563eb;
+  background: transparent;
 }

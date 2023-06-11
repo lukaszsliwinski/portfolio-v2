@@ -7,20 +7,20 @@ import { IProjectCard } from '../types';
 
 export default function PorjectCard({children, screenSrc, title, description, showSource, sourceUrl, showLink, linkUrl}: IProjectCard) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
+    <div className="max-w-sm bg-white border border-neutral-200 rounded-lg shadow dark:bg-neutral-800 dark:border-neutral-700 mx-auto">
       <img className="rounded-t-lg" src={screenSrc} alt="apps screen" />
       <div className="flex flex-col p-5 lg:h-60">
-        <h3 className="text-lg xs:text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{title}</h3>
+        <h3 className="text-lg xs:text-xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-200">{title}</h3>
         <div className="flex space-x-2 items-center py-3">
           {children}
         </div>
-        <p className="mb-3 text-xs xs:text-sm leading-6 text-gray-700 dark:text-gray-400 text-justify">{description}</p>
+        <p className="mb-3 text-xs xs:text-sm leading-6 text-neutral-700 dark:text-neutral-400 text-justify">{description}</p>
         <div className="flex justify-evenly flex-wrap mt-auto">
-          <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className={`${showSource ? 'inline-flex' : 'hidden'} items-center m-1 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>
+          <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className={`${showSource ? 'inline-flex' : 'hidden'} items-center m-1 px-3 py-2 text-sm font-medium text-center text-neutral-100 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}>
             Source code
             <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
           </a>
-          <a href={linkUrl} target="_blank" rel="noopener noreferrer"  className={`${showLink ? 'inline-flex' : 'hidden'} items-center m-1 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}>
+          <a href={linkUrl} target="_blank" rel="noopener noreferrer"  className={`${showLink ? 'inline-flex' : 'hidden'} items-center m-1 px-3 py-2 text-sm font-medium text-center text-neutral-100 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}>
             Live link
             <Link className="h-4 w-4 ml-2" aria-hidden="true" />
           </a>
