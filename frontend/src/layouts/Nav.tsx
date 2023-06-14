@@ -14,6 +14,9 @@ import { ReactComponent as Moon } from '../assets/svg/moon.svg';
 import { ReactComponent as Pol } from '../assets/svg/pol.svg';
 import { ReactComponent as Eng } from '../assets/svg/eng.svg';
 
+// components
+import Scrollspy from 'react-scrollspy';
+
 export default function Nav() {
   // dark mode state
   const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark' ? true : false);
@@ -63,11 +66,16 @@ export default function Nav() {
         <div className="flex flex-col h-full overflow-y-auto bg-neutral-100 p-4 dark:bg-neutral-800">
           <h1 className="text-2xl font-medium dark:text-neutral-200">ŁUKASZ ŚLIWIŃSKI</h1>
           <h2 className="text-sm tracking-widest text-neutral-600 dark:text-neutral-300">FRONTEND DEVELOPER</h2>
-          <ul className="my-8 space-y-2 font-medium">
+          <Scrollspy
+            className="my-8 space-y-2 font-medium text-neutral-900 dark:text-neutral-200"
+            items={['about', 'projects']}
+            currentClassName="text-indigo-600 dark:text-indigo-500"
+            offset={-100}
+          >
             <li>
               <a
                 href="#about"
-                className="flex items-center rounded-lg p-2 text-neutral-900 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
+                className="flex items-center rounded-lg p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700"
               >
                 <About
                   className="h-6 w-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
@@ -79,7 +87,7 @@ export default function Nav() {
             <li>
               <a
                 href="#projects"
-                className="flex items-center rounded-lg p-2 text-neutral-900 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
+                className="flex items-center rounded-lg p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700"
               >
                 <Projects
                   className="h-6 w-6 flex-shrink-0 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
@@ -88,7 +96,7 @@ export default function Nav() {
                 <span className="ml-3 flex-1 whitespace-nowrap">{t('projects')}</span>
               </a>
             </li>
-          </ul>
+          </Scrollspy>
           <div className="space-y-4 border-t border-neutral-200 pt-4 font-medium dark:border-neutral-700">
             <div className="mx-auto flex w-36 items-center justify-evenly">
               <Sun className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
