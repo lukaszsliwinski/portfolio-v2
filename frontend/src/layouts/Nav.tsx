@@ -60,9 +60,9 @@ export default function Nav() {
         className="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform md:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full overflow-y-auto bg-neutral-100 px-8 py-4 dark:bg-neutral-800">
-          <h1 className="text-xl font-medium dark:text-neutral-200">ŁUKASZ ŚLIWIŃSKI</h1>
-          <h2 className="text-sm text-neutral-600 dark:text-neutral-300">FRONTEND DEVELOPER</h2>
+        <div className="h-full overflow-y-auto bg-neutral-100 p-4 dark:bg-neutral-800">
+          <h1 className="text-2xl font-medium dark:text-neutral-200">ŁUKASZ ŚLIWIŃSKI</h1>
+          <h2 className="text-sm tracking-widest text-neutral-600 dark:text-neutral-300">FRONTEND DEVELOPER</h2>
           <ul className="my-8 space-y-2 font-medium">
             <li>
               <a
