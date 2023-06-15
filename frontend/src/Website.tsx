@@ -1,5 +1,6 @@
 // packages
 import 'flowbite';
+import '@animxyz/core';
 
 // components
 import Nav from './layouts/Nav';
