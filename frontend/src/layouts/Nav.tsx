@@ -59,16 +59,17 @@ export default function Nav() {
         <span className="sr-only">Open sidebar</span>
       </button>
 
-      <XyzTransition xyz="fade left skew-left-1 flip-left-100%" appear
-      >
+      <XyzTransition xyz="fade left skew-left-1 flip-left-100%" appear>
         <aside
           id="separator-sidebar"
           className="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform md:translate-x-0"
           aria-label="Sidebar"
         >
-          <div className="flex flex-col h-full overflow-y-auto bg-neutral-100 p-4 dark:bg-neutral-800">
+          <div className="flex h-full flex-col overflow-y-auto bg-neutral-100 p-4 dark:bg-neutral-800">
             <h1 className="text-2xl font-medium dark:text-neutral-200">ŁUKASZ ŚLIWIŃSKI</h1>
-            <h2 className="text-sm tracking-widest text-neutral-600 dark:text-neutral-300">FRONTEND DEVELOPER</h2>
+            <h2 className="text-sm tracking-widest text-neutral-600 dark:text-neutral-300">
+              FRONTEND DEVELOPER
+            </h2>
             <Scrollspy
               className="my-8 space-y-2 font-medium text-neutral-900 dark:text-neutral-200"
               items={['about', 'projects']}
@@ -110,7 +111,7 @@ export default function Nav() {
                     defaultChecked={darkMode}
                     onClick={() => toggleMode()}
                   />
-                  <div className="peer h-6 w-11 rounded-full bg-neutral-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-neutral-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:border-neutral-600 dark:bg-neutral-700 dark:peer-focus:ring-indigo-800"></div>
+                  <div className="peer h-6 w-11 rounded-full bg-neutral-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-neutral-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:border-neutral-600 dark:bg-neutral-700 dark:peer-focus:ring-indigo-800"></div>
                 </label>
                 <Moon className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
               </div>
@@ -124,12 +125,12 @@ export default function Nav() {
                     defaultChecked={i18n.language === 'en'}
                     onClick={() => toggleLanguage()}
                   />
-                  <div className="peer h-6 w-11 rounded-full bg-neutral-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-neutral-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:border-neutral-600 dark:bg-neutral-700 dark:peer-focus:ring-indigo-800"></div>
+                  <div className="peer h-6 w-11 rounded-full bg-neutral-200 after:absolute after:left-0.5 after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-neutral-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:border-neutral-600 dark:bg-neutral-700 dark:peer-focus:ring-indigo-800"></div>
                 </label>
                 <Eng className="h-8 w-8" />
               </div>
             </div>
-            <div className="mt-auto mx-auto">
+            <div className="mx-auto mt-auto">
               <p className="text-xs">&copy; 2023 ŁUKASZ ŚLIWIŃSKI</p>
             </div>
           </div>

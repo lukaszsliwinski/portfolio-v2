@@ -9,7 +9,7 @@ module.exports = {
         }
       },
       fontSize: {
-        xs: '13px',
+        xs: '13px'
       },
       screens: {
         '2xs': '360px',

@@ -5,24 +5,49 @@ import { ReactComponent as Link } from '../assets/svg/link.svg';
 // type
 import { IProjectCard } from '../types';
 
-export default function PorjectCard({children, screenSrc, title, description, showSource, sourceUrl, showLink, linkUrl}: IProjectCard) {
+export default function PorjectCard({
+  children,
+  screenSrc,
+  title,
+  description,
+  showSource,
+  sourceUrl,
+  showLink,
+  linkUrl
+}: IProjectCard) {
   return (
-    <div className="max-w-sm bg-white border border-neutral-200 rounded-lg shadow dark:bg-neutral-800 dark:border-neutral-700 mx-auto">
+    <div className="mx-auto max-w-sm rounded-lg border border-neutral-200 bg-white shadow dark:border-neutral-700 dark:bg-neutral-800">
       <img className="rounded-t-lg" src={screenSrc} alt="apps screen" />
       <div className="flex flex-col p-5 lg:h-60">
-        <h3 className="text-lg xs:text-xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-200">{title}</h3>
-        <div className="flex space-x-2 items-center py-3">
-          {children}
-        </div>
-        <p className="mb-3 text-xs xs:text-sm leading-6 text-neutral-700 dark:text-neutral-400 text-justify">{description}</p>
-        <div className="flex justify-evenly flex-wrap mt-auto">
-          <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className={`${showSource ? 'inline-flex' : 'hidden'} items-center m-1 px-3 py-2 text-sm font-medium text-center text-neutral-100 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}>
+        <h3 className="xs:text-xl text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-200">
+          {title}
+        </h3>
+        <div className="flex items-center space-x-2 py-3">{children}</div>
+        <p className="xs:text-sm mb-3 text-justify text-xs leading-6 text-neutral-700 dark:text-neutral-400">
+          {description}
+        </p>
+        <div className="mt-auto flex flex-wrap justify-evenly">
+          <a
+            href={sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${
+              showSource ? 'inline-flex' : 'hidden'
+            } m-1 items-center rounded-lg bg-indigo-700 px-3 py-2 text-center text-sm font-medium text-neutral-100 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}
+          >
             Source code
-            <GitHub className="h-4 w-4 ml-2" aria-hidden="true" />
+            <GitHub className="ml-2 h-4 w-4" aria-hidden="true" />
           </a>
-          <a href={linkUrl} target="_blank" rel="noopener noreferrer"  className={`${showLink ? 'inline-flex' : 'hidden'} items-center m-1 px-3 py-2 text-sm font-medium text-center text-neutral-100 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}>
+          <a
+            href={linkUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${
+              showLink ? 'inline-flex' : 'hidden'
+            } m-1 items-center rounded-lg bg-indigo-700 px-3 py-2 text-center text-sm font-medium text-neutral-100 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}
+          >
             Live link
-            <Link className="h-4 w-4 ml-2" aria-hidden="true" />
+            <Link className="ml-2 h-4 w-4" aria-hidden="true" />
           </a>
         </div>
       </div>

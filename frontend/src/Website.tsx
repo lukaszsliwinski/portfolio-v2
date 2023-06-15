@@ -9,7 +9,7 @@ import Projects from './layouts/Projects';
 
 export default function Website() {
   return (
-    <div className="min-h-screen-mobile tracking-wider bg-white dark:bg-neutral-900 dark:text-neutral-200">
+    <div className="min-h-screen-mobile bg-white tracking-wider dark:bg-neutral-900 dark:text-neutral-200">
       <Nav />
       <div className="px-4 md:ml-64">
         <About />

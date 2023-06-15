@@ -26,39 +26,55 @@ export default function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-[70rem] mx-auto h-full min-h-screen px-2 xs:px-12 xl:px-20 py-[8vh]" id="projects">
+    <section
+      className="xs:px-12 mx-auto h-full min-h-screen max-w-6xl px-2 py-[8vh] xl:px-20"
+      id="projects"
+    >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
-        appearVisible={{ threshold: .5, rootMargin: '0px' }}
+        appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="flex flex-col items-center w-full mb-12">
+        <header className="mb-12 flex w-full flex-col items-center">
           <h2 className="text-2xl font-medium dark:text-neutral-200">{t('projects')}</h2>
-          <div className="w-6 h-0.5 mt-2 rounded bg-indigo-600"></div>
+          <div className="mt-2 h-0.5 w-6 rounded bg-indigo-600"></div>
         </header>
       </XyzTransition>
       <XyzTransitionGroup
-        className="grid xl:grid-cols-2 gap-10 mx-auto"
+        className="mx-auto grid gap-10 xl:grid-cols-2"
         xyz="fade small appear-stagger duration-10"
-        appearVisible={{ threshold: .5, rootMargin: '0px' }}
+        appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-
         {/* Book store project card */}
         <div>
           <ProjectCard
             screenSrc={bookStoreScreen}
             title={'Book Store'}
-            description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+            description={
+              'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+            }
             showSource={true}
             sourceUrl={'https://github.com/lukaszsliwinski/book-store-v2/'}
             showLink={true}
             linkUrl={'https://bookstore.lukaszsliwinski.pl/'}
           >
-            <TechIcon project='BookStore' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
-            <TechIcon project='BookStore' tech='React.js'><React className="w-5 h-5" /></TechIcon>
-            <TechIcon project='BookStore' tech='Redux'><Redux className="w-5 h-5" /></TechIcon>
-            <TechIcon project='BookStore' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
-            <TechIcon project='BookStore' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
-            <TechIcon project='BookStore' tech='MongoDB'><Mongo className="w-5 h-5" /></TechIcon>
+            <TechIcon project="BookStore" tech="TypeScript">
+              <TypeScript className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="BookStore" tech="React.js">
+              <React className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="BookStore" tech="Redux">
+              <Redux className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="BookStore" tech="Tailwindcss">
+              <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="BookStore" tech="Node.js">
+              <Node className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="BookStore" tech="MongoDB">
+              <Mongo className="h-5 w-5" />
+            </TechIcon>
           </ProjectCard>
         </div>
 
@@ -67,17 +83,29 @@ export default function Projects() {
           <ProjectCard
             screenSrc={weatherAppScreen}
             title={'Weather App'}
-            description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+            description={
+              'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+            }
             showSource={true}
             sourceUrl={'https://github.com/lukaszsliwinski/weather-app-v2/'}
             showLink={true}
             linkUrl={'https://weatherapp.lukaszsliwinski.pl/'}
           >
-            <TechIcon project='WeatherApp' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='React.js'><React className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Flowbite'><img src={flowbitePng} className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
+            <TechIcon project="WeatherApp" tech="TypeScript">
+              <TypeScript className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="React.js">
+              <React className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Tailwindcss">
+              <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Flowbite">
+              <img src={flowbitePng} className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Node.js">
+              <Node className="h-5 w-5" />
+            </TechIcon>
           </ProjectCard>
         </div>
 
@@ -86,18 +114,32 @@ export default function Projects() {
           <ProjectCard
             screenSrc={metronomeScreen}
             title={'Metronome'}
-            description={'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'}
+            description={
+              'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+            }
             showSource={true}
             sourceUrl={'https://github.com/lukaszsliwinski/metronome-v2/'}
             showLink={true}
             linkUrl={'https://metronome.lukaszsliwinski.pl'}
           >
-            <TechIcon project='WeatherApp' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='React.js'><React className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Redux'><Redux className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Flowbite'><img src={flowbitePng} className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
+            <TechIcon project="WeatherApp" tech="TypeScript">
+              <TypeScript className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="React.js">
+              <React className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Redux">
+              <Redux className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Tailwindcss">
+              <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Flowbite">
+              <img src={flowbitePng} className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Node.js">
+              <Node className="h-5 w-5" />
+            </TechIcon>
           </ProjectCard>
         </div>
 
@@ -112,14 +154,23 @@ export default function Projects() {
             showLink={false}
             linkUrl={'#'}
           >
-            <TechIcon project='WeatherApp' tech='TypeScript'><TypeScript className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='React.js'><React className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Tailwindcss'><Tailwind className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Flowbte'><img src={flowbitePng} className="w-5 h-5" /></TechIcon>
-            <TechIcon project='WeatherApp' tech='Node.js'><Node className="w-5 h-5" /></TechIcon>
+            <TechIcon project="WeatherApp" tech="TypeScript">
+              <TypeScript className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="React.js">
+              <React className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Tailwindcss">
+              <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Flowbte">
+              <img src={flowbitePng} className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="WeatherApp" tech="Node.js">
+              <Node className="h-5 w-5" />
+            </TechIcon>
           </ProjectCard>
         </div>
-
       </XyzTransitionGroup>
     </section>
   );
