@@ -10,6 +10,7 @@ import { ReactComponent as Tailwind } from '../assets/svg/tailwind.svg';
 import flowbitePng from '../assets/img/flowbite.png';
 import { ReactComponent as Bootstrap } from '../assets/svg/bootstrap.svg';
 import { ReactComponent as JQuery } from '../assets/svg/jquery.svg';
+import testingLibraryPng from '../assets/img/testing-library.png';
 import { ReactComponent as Node } from '../assets/svg/node.svg';
 import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
 import { ReactComponent as MySql } from '../assets/svg/mysql.svg';
@@ -113,6 +114,9 @@ export default function About() {
             </div>
             <div className="2xs:w-fit m-1 w-full">
               <Badge icon={<JQuery className="h-6 w-6" />} label={'jQuery'} />
+            </div>
+            <div className="2xs:w-fit m-1 w-full">
+              <Badge icon={<img src={testingLibraryPng} className="h-6 w-6" />} label={'Testing Library'} />
             </div>
           </XyzTransitionGroup>
           <XyzTransition xyz="fade flip-left perspective-5 duration-10" appear>

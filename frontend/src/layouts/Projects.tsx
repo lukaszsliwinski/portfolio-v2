@@ -7,6 +7,7 @@ import { ReactComponent as React } from '../assets/svg/react.svg';
 import { ReactComponent as Redux } from '../assets/svg/redux.svg';
 import { ReactComponent as Tailwind } from '../assets/svg/tailwind.svg';
 import flowbitePng from '../assets/img/flowbite.png';
+import testingLibraryPng from '../assets/img/testing-library.png';
 import { ReactComponent as Node } from '../assets/svg/node.svg';
 import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
 
@@ -68,6 +69,9 @@ export default function Projects() {
             </TechIcon>
             <TechIcon project="BookStore" tech="Tailwindcss">
               <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="BookStore" tech="Testing Library">
+              <img src={testingLibraryPng} className="h-5 w-5" />
             </TechIcon>
             <TechIcon project="BookStore" tech="Node.js">
               <Node className="h-5 w-5" />
