@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 // technologies icons
 import { ReactComponent as TypeScript } from '../assets/svg/typescript.svg';
+import { ReactComponent as JavaScript } from '../assets/svg/javascript.svg';
 import { ReactComponent as React } from '../assets/svg/react.svg';
 import { ReactComponent as Redux } from '../assets/svg/redux.svg';
 import { ReactComponent as Tailwind } from '../assets/svg/tailwind.svg';
@@ -15,6 +16,7 @@ import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
 import bookStoreScreen from '../assets/img/book-store-screen.png';
 import weatherAppScreen from '../assets/img/weather-app-screen.png';
 import metronomeScreen from '../assets/img/metronome-screen.png';
+import ksmbScreen from '../assets/img/ksmb-screen.png';
 import defaultScreen from '../assets/img/default-screen.png';
 
 // components
@@ -142,6 +144,32 @@ export default function Projects() {
               <img src={flowbitePng} className="h-5 w-5" />
             </TechIcon>
             <TechIcon project="WeatherApp" tech="Node.js">
+              <Node className="h-5 w-5" />
+            </TechIcon>
+          </ProjectCard>
+        </div>
+
+        {/* KSMicroband project card */}
+        <div>
+          <ProjectCard
+            screenSrc={ksmbScreen}
+            title={'KSMicroband website'}
+            description={'About project: website of my music project'}
+            showSource={false}
+            sourceUrl={'#'}
+            showLink={true}
+            linkUrl={'https://ksmicroband.pl'}
+          >
+            <TechIcon project="KSMicroband" tech="JavaScript">
+              <JavaScript className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="KSMicroband" tech="React.js">
+              <React className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="KSMicroband" tech="Tailwindcss">
+              <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="KSMicroband" tech="Node.js">
               <Node className="h-5 w-5" />
             </TechIcon>
           </ProjectCard>
