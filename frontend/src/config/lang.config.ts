@@ -6,13 +6,17 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         about: 'About me',
-        projects: 'Projects'
+        projects: 'Projects',
+        webapps: 'Web applications',
+        websites: 'Websites'
       }
     },
     pl: {
       translation: {
         about: 'O mnie',
-        projects: 'Projekty'
+        projects: 'Projekty',
+        webapps: 'Aplikacje internetowe',
+        websites: 'Strony internetowe'
       }
     }
   },

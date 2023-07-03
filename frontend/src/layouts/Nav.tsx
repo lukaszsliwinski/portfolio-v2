@@ -8,7 +8,8 @@ import i18n from '../config/lang.config';
 // icons
 import { ReactComponent as Menu } from '../assets/svg/menu.svg';
 import { ReactComponent as About } from '../assets/svg/about.svg';
-import { ReactComponent as Projects } from '../assets/svg/projects.svg';
+import { ReactComponent as Webapp } from '../assets/svg/webapp.svg';
+import { ReactComponent as Website } from '../assets/svg/website.svg';
 import { ReactComponent as Sun } from '../assets/svg/sun.svg';
 import { ReactComponent as Moon } from '../assets/svg/moon.svg';
 import { ReactComponent as Pol } from '../assets/svg/pol.svg';
@@ -72,7 +73,7 @@ export default function Nav() {
             </h2>
             <Scrollspy
               className="my-8 space-y-2 font-medium text-neutral-900 dark:text-neutral-200"
-              items={['about', 'projects']}
+              items={['about', 'web-apps', 'websites']}
               currentClassName="text-indigo-600 dark:text-indigo-500"
               offset={-100}
             >
@@ -90,14 +91,26 @@ export default function Nav() {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href="#web-apps"
                   className="flex items-center rounded-lg p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700"
                 >
-                  <Projects
+                  <Webapp
                     className="h-6 w-6 flex-shrink-0 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
                     aria-hidden="true"
                   />
-                  <span className="ml-3 flex-1 whitespace-nowrap">{t('projects')}</span>
+                  <span className="ml-3 flex-1 whitespace-nowrap">{t('webapps')}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#websites"
+                  className="flex items-center rounded-lg p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700"
+                >
+                  <Website
+                    className="ml-0.5 h-5 w-5 flex-shrink-0 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3.5 flex-1 whitespace-nowrap">{t('websites')}</span>
                 </a>
               </li>
             </Scrollspy>
