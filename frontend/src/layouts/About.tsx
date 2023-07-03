@@ -51,14 +51,7 @@ export default function About() {
                 src={profilePhoto}
                 alt="profile photo"
               />
-              Jestem programistą aplikacji internetowych specjalizującym się we frontendzie. W
-              trakcie samodzielnej nauki poznałem takie technologie jak JavaScript, React, Bootstrap
-              i Node.js. W ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy
-              tworzenia frontend-u i backend-u aplikacji, sposoby komunikacji między nimi, bazy
-              danych, tworzenie szablonów responsywnych i system kontroli wersji. Obecnie doskonalę
-              swoje umiejętności pracując jako Junior Frontend Developer i uczę się nowych
-              technologii po godzinach. Napisać kilka słów nt używanych technologii oraz wykonanych
-              projektów
+              {t('bio')}
             </article>
             <div className="xs:w-72 mx-auto my-6 flex flex-wrap justify-evenly">
               <a
@@ -84,7 +77,7 @@ export default function About() {
         </XyzTransition>
         <div className="mb-2">
           <XyzTransition xyz="fade flip-left perspective-5 duration-10" appear>
-            <h3 className="mb-1 font-medium">Frontend stack</h3>
+            <h3 className="mb-1 font-medium">{t('stack')}</h3>
           </XyzTransition>
           <XyzTransitionGroup
             className="mb-3 flex flex-wrap"
@@ -116,11 +109,14 @@ export default function About() {
               <Badge icon={<JQuery className="h-6 w-6" />} label={'jQuery'} />
             </div>
             <div className="2xs:w-fit m-1 w-full">
-              <Badge icon={<img src={testingLibraryPng} className="h-6 w-6" />} label={'Testing Library'} />
+              <Badge
+                icon={<img src={testingLibraryPng} className="h-6 w-6" />}
+                label={'Testing Library'}
+              />
             </div>
           </XyzTransitionGroup>
           <XyzTransition xyz="fade flip-left perspective-5 duration-10" appear>
-            <h3 className="mb-1 font-medium">Other</h3>
+            <h3 className="mb-1 font-medium">{t('other')}</h3>
           </XyzTransition>
           <XyzTransitionGroup
             appear

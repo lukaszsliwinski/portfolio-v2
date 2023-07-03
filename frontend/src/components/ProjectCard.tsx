@@ -1,5 +1,5 @@
 // icons
-import { ReactComponent as GitHub } from '../assets/svg/github.svg';
+import { ReactComponent as Code } from '../assets/svg/code.svg';
 import { ReactComponent as Link } from '../assets/svg/link.svg';
 
 // type
@@ -18,7 +18,7 @@ export default function PorjectCard({
   return (
     <div className="mx-auto max-w-sm rounded-lg border border-neutral-200 bg-white shadow dark:border-neutral-700 dark:bg-neutral-800">
       <img className="rounded-t-lg" src={screenSrc} alt="apps screen" />
-      <div className="flex flex-col p-5 lg:h-60">
+      <div className="flex flex-col p-5 lg:h-72">
         <h3 className="xs:text-xl text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-200">
           {title}
         </h3>
@@ -35,8 +35,8 @@ export default function PorjectCard({
               showSource ? 'inline-flex' : 'hidden'
             } m-1 items-center rounded-lg bg-indigo-700 px-3 py-2 text-center text-sm font-medium text-neutral-100 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}
           >
-            Source code
-            <GitHub className="ml-2 h-4 w-4" aria-hidden="true" />
+            Code
+            <Code className="ml-2 h-4 w-4" aria-hidden="true" />
           </a>
           <a
             href={linkUrl}
@@ -46,7 +46,7 @@ export default function PorjectCard({
               showLink ? 'inline-flex' : 'hidden'
             } m-1 items-center rounded-lg bg-indigo-700 px-3 py-2 text-center text-sm font-medium text-neutral-100 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800`}
           >
-            Live link
+            Link
             <Link className="ml-2 h-4 w-4" aria-hidden="true" />
           </a>
         </div>

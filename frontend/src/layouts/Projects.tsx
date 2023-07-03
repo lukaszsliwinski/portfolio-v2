@@ -53,9 +53,7 @@ export default function Projects() {
             <ProjectCard
               screenSrc={bookStoreScreen}
               title={'Book Store'}
-              description={
-                'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-              }
+              description={t('bookstore')}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/book-store-v2/'}
               showLink={true}
@@ -90,9 +88,7 @@ export default function Projects() {
             <ProjectCard
               screenSrc={weatherAppScreen}
               title={'Weather App'}
-              description={
-                'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-              }
+              description={t('weatherapp')}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/weather-app-v2/'}
               showLink={true}
@@ -121,9 +117,7 @@ export default function Projects() {
             <ProjectCard
               screenSrc={metronomeScreen}
               title={'Metronome'}
-              description={
-                'Description: Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-              }
+              description={t('metronome')}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/metronome-v2/'}
               showLink={true}
@@ -170,13 +164,12 @@ export default function Projects() {
           xyz="fade small appear-stagger duration-10"
           appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
         >
-
           {/* KSMicroband project card */}
           <div>
             <ProjectCard
               screenSrc={ksmbScreen}
               title={'KSMicroband website'}
-              description={'About project: website of my music project'}
+              description={t('ksmicroband')}
               showSource={false}
               sourceUrl={'#'}
               showLink={true}
@@ -202,7 +195,7 @@ export default function Projects() {
             <ProjectCard
               screenSrc={defaultScreen}
               title={'Portfolio website'}
-              description={'About project: this website'}
+              description={t('portfolio')}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/portfolio-v2/'}
               showLink={false}
@@ -228,6 +221,5 @@ export default function Projects() {
         </XyzTransitionGroup>
       </section>
     </>
-
   );
 }
