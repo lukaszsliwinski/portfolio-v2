@@ -106,6 +106,9 @@ export default function Projects() {
               <TechIcon project="WeatherApp" tech="Flowbite">
                 <img src={flowbitePng} className="h-5 w-5" />
               </TechIcon>
+              <TechIcon project="WeatherApp" tech="Testing Library">
+                <img src={testingLibraryPng} className="h-5 w-5" />
+              </TechIcon>
               <TechIcon project="WeatherApp" tech="Node.js">
                 <Node className="h-5 w-5" />
               </TechIcon>
