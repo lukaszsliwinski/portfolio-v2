@@ -126,22 +126,25 @@ export default function Projects() {
               showLink={true}
               linkUrl={'https://metronome.lukaszsliwinski.pl'}
             >
-              <TechIcon project="WeatherApp" tech="TypeScript">
+              <TechIcon project="Metronome" tech="TypeScript">
                 <TypeScript className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="React.js">
+              <TechIcon project="Metronome" tech="React.js">
                 <React className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Redux">
+              <TechIcon project="Metronome" tech="Redux">
                 <Redux className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Tailwindcss">
+              <TechIcon project="Metronome" tech="Tailwindcss">
                 <Tailwind className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Flowbite">
+              <TechIcon project="Metronome" tech="Flowbite">
                 <img src={flowbitePng} className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Node.js">
+              <TechIcon project="Metronome" tech="Testing Library">
+                <img src={testingLibraryPng} className="h-5 w-5" />
+              </TechIcon>
+              <TechIcon project="Metronome" tech="Node.js">
                 <Node className="h-5 w-5" />
               </TechIcon>
             </ProjectCard>
@@ -204,19 +207,19 @@ export default function Projects() {
               showLink={false}
               linkUrl={'#'}
             >
-              <TechIcon project="WeatherApp" tech="TypeScript">
+              <TechIcon project="Portfolio" tech="TypeScript">
                 <TypeScript className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="React.js">
+              <TechIcon project="Portfolio" tech="React.js">
                 <React className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Tailwindcss">
+              <TechIcon project="Portfolio" tech="Tailwindcss">
                 <Tailwind className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Flowbte">
+              <TechIcon project="Portfolio" tech="Flowbte">
                 <img src={flowbitePng} className="h-5 w-5" />
               </TechIcon>
-              <TechIcon project="WeatherApp" tech="Node.js">
+              <TechIcon project="Portfolio" tech="Node.js">
                 <Node className="h-5 w-5" />
               </TechIcon>
             </ProjectCard>
