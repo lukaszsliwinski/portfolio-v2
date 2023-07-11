@@ -5,7 +5,8 @@ import '@animxyz/core';
 // components
 import Nav from './layouts/Nav';
 import About from './layouts/About';
-import Projects from './layouts/Projects';
+import WebApps from './layouts/WebApps';
+import Websites from './layouts/Websites';
 
 export default function Website() {
   return (
@@ -13,7 +14,8 @@ export default function Website() {
       <Nav />
       <div className="px-4 md:ml-64">
         <About />
-        <Projects />
+        <WebApps />
+        <Websites />
       </div>
     </div>
   );
