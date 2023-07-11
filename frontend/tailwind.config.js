@@ -13,7 +13,8 @@ module.exports = {
       },
       screens: {
         '2xs': '360px',
-        xs: '480px'
+        xs: '480px',
+        lg: '1100px'
       },
       minHeight: {
         'screen-mobile': 'calc(var(--vh, 1vh) * 100)'
