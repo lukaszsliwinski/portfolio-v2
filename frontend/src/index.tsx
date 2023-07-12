@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/global.css';
-import Website from './Website';
+import Portfolio from './Portfolio';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Website />
+    <Portfolio />
   </React.StrictMode>
 );
 
