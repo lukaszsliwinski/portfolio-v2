@@ -42,7 +42,7 @@ export default function About() {
           <div className="mt-2 h-0.5 w-6 rounded bg-indigo-600"></div>
         </header>
       </XyzTransition>
-      <div className="grid gap-10 xl:gap-16 lg:grid-cols-2">
+      <div className="grid gap-10 lg:grid-cols-2 xl:gap-16">
         <XyzTransition xyz="fade duration-30" appear>
           <div>
             <article className="xs:text-sm xs:leading-7 text-justify text-xs leading-6">
