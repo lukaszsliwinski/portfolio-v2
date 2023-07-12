@@ -2,7 +2,7 @@
 
 ## Preview
 
-<b>www.lukaszsliwinski.pl</b>
+<b>www.portfolio.lukaszsliwinski.pl</b>
 
 ## About project
 
