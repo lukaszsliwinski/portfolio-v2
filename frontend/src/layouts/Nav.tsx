@@ -10,6 +10,7 @@ import { ReactComponent as Menu } from '../assets/svg/menu.svg';
 import { ReactComponent as About } from '../assets/svg/about.svg';
 import { ReactComponent as Webapp } from '../assets/svg/webapp.svg';
 import { ReactComponent as Website } from '../assets/svg/website.svg';
+import { ReactComponent as Mobileapp } from '../assets/svg/mobileapp.svg';
 import { ReactComponent as Sun } from '../assets/svg/sun.svg';
 import { ReactComponent as Moon } from '../assets/svg/moon.svg';
 import { ReactComponent as Pol } from '../assets/svg/pol.svg';
@@ -54,7 +55,7 @@ export default function Nav() {
         data-drawer-toggle="separator-sidebar"
         aria-controls="separator-sidebar"
         type="button"
-        className="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-neutral-400 hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-neutral-600 md:hidden"
+        className="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-neutral-500 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600 md:hidden"
       >
         <Menu className="h-6 w-6" aria-hidden="true" />
         <span className="sr-only">Open sidebar</span>
@@ -71,7 +72,7 @@ export default function Nav() {
             <h2 className="text-sm tracking-widest text-neutral-300">FRONTEND DEVELOPER</h2>
             <Scrollspy
               className="my-8 space-y-2 font-medium text-neutral-200"
-              items={['about', 'web-apps', 'websites']}
+              items={['about', 'web-apps', 'websites', 'mobile-apps']}
               currentClassName="text-indigo-500"
               offset={-100}
             >
@@ -106,6 +107,18 @@ export default function Nav() {
                     aria-hidden="true"
                   />
                   <span className="ml-3.5 flex-1 whitespace-nowrap">{t('websites')}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#mobile-apps"
+                  className="flex items-center rounded-lg p-2 hover:bg-neutral-700"
+                >
+                  <Mobileapp
+                    className="ml-0.5 h-5 w-5 flex-shrink-0 text-neutral-400 transition duration-75 group-hover:text-neutral-200"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3.5 flex-1 whitespace-nowrap">{t('mobileapps')}</span>
                 </a>
               </li>
             </Scrollspy>

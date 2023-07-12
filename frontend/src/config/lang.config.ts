@@ -9,6 +9,7 @@ i18n.use(initReactI18next).init({
         projects: 'Projects',
         webapps: 'Web applications',
         websites: 'Websites',
+        mobileapps: 'Mobile applications',
         stack: 'Frontend stack',
         other: 'Other',
         bio: `Hi! I\xa0am a\xa0web developer and frontend passionate.
@@ -25,7 +26,8 @@ i18n.use(initReactI18next).init({
         metronome: `The application is a\xa0simulation of a\xa0usical metronome.
           You can set different meters and tempos and change them while playing the metronome.`,
         ksmicroband: 'Website of my musical project.',
-        portfolio: 'Portfolio website.'
+        portfolio: 'Portfolio website.',
+        metronomemobile: 'Metronome mobile en description.'
       }
     },
     pl: {
@@ -34,6 +36,7 @@ i18n.use(initReactI18next).init({
         projects: 'Projekty',
         webapps: 'Aplikacje internetowe',
         websites: 'Strony internetowe',
+        mobileapps: 'Aplikacje mobilne',
         stack: 'Technologie frontendowe',
         other: 'Pozostałe',
         bio: `Cześć! Jestem programistą aplikacji internetowych oraz pasjonatem frontendu.
@@ -50,7 +53,8 @@ i18n.use(initReactI18next).init({
         metronome: `Aplikacja symulująca działanie metronomu.
           Pozwala na ustawienie metrum oraz tempa, a\xa0także na zmianę parametrów w\xa0trakcie grania`,
         ksmicroband: 'Strona mojego projektu muzycznego.',
-        portfolio: 'Strona portfolio.'
+        portfolio: 'Strona portfolio.',
+        metronomemobile: 'Metronome mobile opis pl.'
       }
     }
   },

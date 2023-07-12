@@ -109,10 +109,10 @@ export default function About() {
               <Badge icon={<JQuery className="h-6 w-6" />} label={'jQuery'} />
             </div>
             <div className="2xs:w-fit m-1 w-full">
-              <Badge
-                icon={<img src={testingLibraryPng} className="h-6 w-6" />}
-                label={'Testing Library'}
-              />
+              <Badge icon={<img src={testingLibraryPng} className="h-6 w-6" />} label={'Testing Library'} />
+            </div>
+            <div className="2xs:w-fit m-1 w-full">
+              <Badge icon={<React className="h-6 w-6" />} label={'React Native'} />
             </div>
           </XyzTransitionGroup>
           <XyzTransition xyz="fade flip-left perspective-5 duration-10" appear>

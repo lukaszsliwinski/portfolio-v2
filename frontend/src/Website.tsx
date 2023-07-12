@@ -7,6 +7,7 @@ import Nav from './layouts/Nav';
 import About from './layouts/About';
 import WebApps from './layouts/WebApps';
 import Websites from './layouts/Websites';
+import MobileApps from './layouts/MobileApps';
 
 export default function Website() {
   return (
@@ -16,6 +17,7 @@ export default function Website() {
         <About />
         <WebApps />
         <Websites />
+        <MobileApps />
       </div>
     </div>
   );
