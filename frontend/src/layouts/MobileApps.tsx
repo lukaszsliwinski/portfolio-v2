@@ -7,7 +7,7 @@ import { ReactComponent as React } from '../assets/svg/react.svg';
 import { ReactComponent as Redux } from '../assets/svg/redux.svg';
 
 // project screens
-import metronomeScreen from '../assets/img/metronome-screen.png';
+import metronomeMobileScreen from '../assets/img/metronome-mobile-screen.png';
 
 // components
 import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
@@ -40,7 +40,7 @@ export default function MobileApps() {
         {/* Metronome mobile project card */}
         <div>
           <ProjectCard
-            screenSrc={metronomeScreen}
+            screenSrc={metronomeMobileScreen}
             title={'Metronome Mobile'}
             description={t('metronomemobile')}
             showSource={true}
