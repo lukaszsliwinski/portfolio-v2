@@ -115,13 +115,13 @@ export default function About() {
               <Badge icon={<React className="h-6 w-6" />} label={'React Native'} />
             </div>
           </XyzTransitionGroup>
-          <XyzTransition xyz="fade flip-left perspective-5 duration-10" appear>
+          <XyzTransition xyz="fade flip-left perspective-5 duration-10  delay-25" appear>
             <h3 className="mb-1 font-medium">{t('other')}</h3>
           </XyzTransition>
           <XyzTransitionGroup
             appear
             className="mb-3 flex flex-wrap"
-            xyz="fade flip-up right down appear-stagger delay-20"
+            xyz="fade flip-up right down appear-stagger delay-25"
           >
             <div className="2xs:w-fit m-1 w-full">
               <Badge icon={<Node className="h-6 w-6" />} label={'Node.js'} />
