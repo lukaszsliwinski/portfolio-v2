@@ -11,7 +11,7 @@ import { ReactComponent as Node } from '../assets/svg/node.svg';
 
 // project screens
 import ksmbScreen from '../assets/img/ksmb-screen.png';
-import defaultScreen from '../assets/img/default-screen.png';
+import portfolioScreen from '../assets/img/portfolio-screen.png';
 
 // components
 import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
@@ -70,7 +70,7 @@ export default function Websites() {
         {/* Portfolio project card */}
         <div>
           <ProjectCard
-            screenSrc={defaultScreen}
+            screenSrc={portfolioScreen}
             title={'Portfolio website'}
             description={t('portfolio')}
             showSource={true}
