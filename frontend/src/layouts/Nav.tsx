@@ -1,6 +1,7 @@
 // packages
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useWindowSize, useOnClickOutside } from 'usehooks-ts';
 
 // language config
 import i18n from '../config/lang.config';
@@ -24,16 +25,33 @@ export default function Nav() {
   // dark mode state
   const [darkMode, setDarkMode] = useState(localStorage.getItem('mode') === 'dark' ? true : false);
 
+  // navbar state
+  const [showNav, setShowNav] = useState(true);
+
   // get html tag
   const html = document.documentElement;
 
   // useTranslation fn
   const { t } = useTranslation();
 
+  // get screen size
+  const { width } = useWindowSize();
+
   // handle dark mode switch and add class to html tag
   useEffect(() => {
     darkMode ? html.classList.add('dark') : html.classList.remove('dark');
   }, [darkMode, html.classList]);
+
+  // nav always visible on md screen
+  useEffect(() => {
+    width < 768 ? setShowNav(false) : setShowNav(true);
+  }, [width]);
+
+  // aside ref and click outside handler
+  const asideRef = useRef<HTMLInputElement>(null);
+  useOnClickOutside(asideRef, () => {
+    if (width < 768) setShowNav(false);
+  });
 
   // toggle mode
   const toggleMode = () => {
@@ -51,20 +69,20 @@ export default function Nav() {
   return (
     <>
       <button
-        data-drawer-target="separator-sidebar"
-        data-drawer-toggle="separator-sidebar"
-        aria-controls="separator-sidebar"
+        onClick={() => setShowNav(!showNav)}
         type="button"
         className="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-neutral-500 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600 md:hidden"
       >
         <Menu className="h-6 w-6" aria-hidden="true" />
-        <span className="sr-only">Open sidebar</span>
       </button>
 
       <XyzTransition xyz="fade left skew-left-1 flip-left-100%" appear>
         <aside
-          id="separator-sidebar"
-          className="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform md:translate-x-0"
+          ref={asideRef}
+          className={`
+            fixed left-0 top-0 z-40 h-screen w-64 transition-transform
+            ${showNav ? 'translate-x-0' : '-translate-x-full'}
+          `}
           aria-label="Sidebar"
         >
           <div className="flex h-full flex-col overflow-y-auto bg-neutral-700 p-4 dark:bg-neutral-800">
