@@ -12,6 +12,7 @@ import { ReactComponent as Bootstrap } from '../assets/svg/bootstrap.svg';
 import { ReactComponent as JQuery } from '../assets/svg/jquery.svg';
 import testingLibraryPng from '../assets/img/testing-library.png';
 import { ReactComponent as Node } from '../assets/svg/node.svg';
+import { ReactComponent as Php } from '../assets/svg/php.svg';
 import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
 import { ReactComponent as MySql } from '../assets/svg/mysql.svg';
 import { ReactComponent as Git } from '../assets/svg/git.svg';
@@ -125,6 +126,9 @@ export default function About() {
           >
             <div className="2xs:w-fit m-1 w-full">
               <Badge icon={<Node className="h-6 w-6" />} label={'Node.js'} />
+            </div>
+            <div className="2xs:w-fit m-1 w-full">
+              <Badge icon={<Php className="h-6 w-6" />} label={'PHP'} />
             </div>
             <div className="2xs:w-fit m-1 w-full">
               <Badge icon={<Mongo className="h-6 w-6" />} label={'MongoDB'} />
