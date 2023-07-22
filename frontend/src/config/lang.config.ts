@@ -12,9 +12,9 @@ i18n.use(initReactI18next).init({
         mobileapps: 'Mobile apps',
         stack: 'Front-end stack',
         other: 'Other',
-        bio: `Hi! I am a\xa0web developer. In my work, I\xa0create the frontend of a\xa0system for managing the departments of a\xa0railway company.
+        bio: `Hi! I am a\xa0web developer. In my work, I\xa0create the front-end of a\xa0system for managing the departments of a\xa0railway company.
           After hours, I\xa0expand my knowledge and skills by developing my own applications and websites.
-          I\xa0use technologies such as TypeScript, React.js, Tailwindcss on the frontend and Node.js on the backend.
+          I\xa0use technologies such as TypeScript, React.js, Tailwindcss on the front-end and Node.js on the backend.
           Below I\xa0present some of my projects with source codes and links to the apps.
           I\xa0started learning how to test applications using the React Testing Library, and I\xa0am also learning of mobile app development using React Native.`,
         bookstore: `The application is a\xa0simulation of an online book store.
@@ -40,7 +40,7 @@ i18n.use(initReactI18next).init({
         other: 'Pozostałe',
         bio: `Cześć! Jestem programistą aplikacji web'owych. W\xa0swojej pracy tworzę front-end wewnętrznego systemu do zarządzania działami firmy kolejowej.
           Po godzinach poszerzam wiedzę oraz szlifuję umiejętności poprzez rozwijanie własnych aplikacji i\xa0stron internetowych.
-          Wykorzystuję takie technologie jak m.in. TypeScript, React.js, Tailwindcss po stronie frontend-u oraz Node.js po stronie backend-u.
+          Wykorzystuję takie technologie jak m.in. TypeScript, React.js, Tailwindcss po stronie front-end-u oraz Node.js po stronie backend-u.
           Poniżej przedstawiam kilka swoich wykonanych projektów wraz z\xa0kodami źródłowymi oraz linkami do aplikacji.
           Oprócz tworzenia programów rozpocząłem naukę testowania aplikacji z\xa0wykorzystaniem React Testing Library, a\xa0także uczę się tworzyć aplikacje mobilne przy pomocy React Native.`,
         bookstore: `Aplikacja jest symulacją internetowego sklepu z\xa0książkami.
