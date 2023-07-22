@@ -87,7 +87,7 @@ export default function Nav() {
         >
           <div className="flex h-full flex-col overflow-y-auto bg-neutral-700 p-4 dark:bg-neutral-800">
             <h1 className="text-2xl font-medium text-neutral-200">ŁUKASZ ŚLIWIŃSKI</h1>
-            <h2 className="text-sm tracking-widest text-neutral-300">FRONTEND DEVELOPER</h2>
+            <h2 className="text-sm tracking-widest text-neutral-300">FRONT-END DEVELOPER</h2>
             <Scrollspy
               className="my-8 space-y-2 font-medium text-neutral-200"
               items={['about', 'web-apps', 'websites', 'mobile-apps']}
