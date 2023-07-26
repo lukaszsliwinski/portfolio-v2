@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
         mobileapps: 'Mobile apps',
         stack: 'Front-end stack',
         other: 'Other',
-        bio: `Hi! I am a\xa0web developer. In my work, I\xa0create the front-end of a\xa0system for managing the departments of a\xa0railway company.
+        bio: `Hi! I am a\xa0web developer. In my current job, I\xa0create the front-end of a\xa0system for managing the departments of a\xa0railway company.
           After hours, I\xa0expand my knowledge and skills by developing my own applications and websites.
           I\xa0use technologies such as TypeScript, React.js, Tailwindcss on the front-end and Node.js on the backend.
           Below I\xa0present some of my projects with source codes and links to the apps.
