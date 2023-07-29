@@ -7,15 +7,15 @@ const app = express();
 require('dotenv').config();
 
 // port number
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(express.static('public'));
-app.use(express.static(path.resolve(__dirname, '../frontend/build')));
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // render react app
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
 // run server
