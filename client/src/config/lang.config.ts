@@ -24,7 +24,7 @@ i18n.use(initReactI18next).init({
           Write a\xa0city name above, to check weather conditions and forecast for next hours and days.`,
         metronome: `The application is a\xa0simulation of a\xa0usical metronome.
           You can set different meters and tempos and change them while playing the metronome.`,
-        ksmicroband: 'Website of my musical project.',
+        ksmicroband: 'Website of my musical project. In the website I developed custom music player.',
         portfolio: 'Portfolio website.',
         metronomemobile: 'This is my first mobile app that I\xa0made to learn the basics of mobile development and React Native. This app is a\xa0mobile version of my metronome web app.'
       }
@@ -50,7 +50,7 @@ i18n.use(initReactI18next).init({
           Po wpisaniu miasta dostajemy aktualne warunki pogodowe oraz prognozę na najbliższe godziny i\xa0dni.`,
         metronome: `Aplikacja symulująca działanie metronomu.
           Pozwala na ustawienie metrum oraz tempa, a\xa0także na zmianę parametrów w\xa0trakcie grania`,
-        ksmicroband: 'Strona mojego projektu muzycznego.',
+        ksmicroband: 'Strona mojego projektu muzycznego. Na stronie zaprogramowałem własny odtwarzacz muzyczny.',
         portfolio: 'Strona portfolio.',
         metronomemobile: 'Moja pierwsza aplikacja wykonana podczas nauki podstaw programowania mobilnego oraz React Native. Jest to mobilna wersja mojej aplikacji internetowej.'
       }
