@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 // technologies icons
 import { ReactComponent as TypeScript } from '../assets/svg/typescript.svg';
+import { ReactComponent as JavaScript } from '../assets/svg/javascript.svg';
 import { ReactComponent as React } from '../assets/svg/react.svg';
 import { ReactComponent as Redux } from '../assets/svg/redux.svg';
 import { ReactComponent as Tailwind } from '../assets/svg/tailwind.svg';
@@ -15,28 +16,29 @@ import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
 import bookStoreScreen from '../assets/img/book-store-screen.png';
 import weatherAppScreen from '../assets/img/weather-app-screen.png';
 import metronomeScreen from '../assets/img/metronome-screen.png';
+import ksmbScreen from '../assets/img/ksmb-screen.png';
 
 // components
 import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
 import ProjectCard from '../components/ProjectCard';
 import TechIcon from '../components/TechIcon';
 
-export default function WebApps() {
+export default function Projects() {
   // useTranslation fn
   const { t } = useTranslation();
 
   return (
     <section
-      className="xs:px-12 mx-auto h-full min-h-screen max-w-6xl px-2 py-[8vh] xl:px-20"
-      id="web-apps"
+      className="flex flex-col justify-center items-center xs:px-6 h-full min-h-screen px-2 md:pt-[8vh] xl:px-20 bg-neutral-200 text-main-dark"
+      id="projects"
     >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
         <header className="mb-12 flex w-full flex-col items-center">
-          <h2 className="text-2xl font-medium dark:text-neutral-200">{t('webapps')}</h2>
-          <div className="mt-2 h-0.5 w-6 rounded bg-indigo-600"></div>
+          <h2 className="text-3xl font-medium">{t('projects')}</h2>
+          <div className="mt-2 h-0.5 w-6 rounded bg-main-light"></div>
         </header>
       </XyzTransition>
       <XyzTransitionGroup
@@ -145,6 +147,33 @@ export default function WebApps() {
             </TechIcon>
           </ProjectCard>
         </div>
+
+        {/* KSMicroband project card */}
+        <div>
+          <ProjectCard
+            screenSrc={ksmbScreen}
+            title={'KSMicroband website'}
+            description={t('ksmicroband')}
+            showSource={false}
+            sourceUrl={'#'}
+            showLink={true}
+            linkUrl={'https://ksmicroband.pl'}
+          >
+            <TechIcon project="KSMicroband" tech="JavaScript">
+              <JavaScript className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="KSMicroband" tech="React.js">
+              <React className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="KSMicroband" tech="Tailwindcss">
+              <Tailwind className="h-5 w-5" />
+            </TechIcon>
+            <TechIcon project="KSMicroband" tech="Node.js">
+              <Node className="h-5 w-5" />
+            </TechIcon>
+          </ProjectCard>
+        </div>
+
       </XyzTransitionGroup>
     </section>
   );
