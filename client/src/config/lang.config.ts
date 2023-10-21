@@ -5,13 +5,9 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        about: 'About me',
-        projects: 'Projects',
-        webapps: 'Web apps',
-        websites: 'Websites',
-        mobileapps: 'Mobile apps',
-        stack: 'Front-end stack',
-        other: 'Other',
+        about: 'ABOUT',
+        technologies: 'TECHNOLOGIES',
+        projects: 'PROJECTS',
         bio: `Hi! I am a\xa0web developer. In my current job, I\xa0create the front\u2011end of a\xa0system for managing the departments of a\xa0railway company.
           After hours, I\xa0expand my knowledge and skills by developing my own applications and websites.
           I\xa0use technologies such as TypeScript, React.js, Tailwindcss on the front\u2011end and Node.js on the back\u2011end.
@@ -25,19 +21,14 @@ i18n.use(initReactI18next).init({
         metronome: `The application is a\xa0simulation of a\xa0usical metronome.
           You can set different meters and tempos and change them while playing the metronome.`,
         ksmicroband: 'Website of my musical project. In the website I developed custom music player.',
-        portfolio: 'Portfolio website.',
         metronomemobile: 'This is my first mobile app that I\xa0made to learn the basics of mobile development and React Native. This app is a\xa0mobile version of my metronome web app.'
       }
     },
     pl: {
       translation: {
-        about: 'O mnie',
-        projects: 'Projekty',
-        webapps: 'Aplikacje internetowe',
-        websites: 'Strony internetowe',
-        mobileapps: 'Aplikacje mobilne',
-        stack: `Technologie front-end'owe`,
-        other: 'Pozostałe',
+        about: 'O MNIE',
+        technologies: 'TECHNOLOGIE',
+        projects: 'PROJEKTY',
         bio: `Cześć! Jestem programistą aplikacji web'owych. W\xa0swojej pracy tworzę front\u2011end wewnętrznego systemu do zarządzania działami firmy kolejowej.
           Po godzinach poszerzam wiedzę oraz szlifuję umiejętności poprzez rozwijanie własnych aplikacji i\xa0stron internetowych.
           Wykorzystuję takie technologie jak m.in. TypeScript, React.js, Tailwindcss po stronie front\u2011end'u oraz Node.js po stronie back\u2011end'u.
@@ -51,7 +42,6 @@ i18n.use(initReactI18next).init({
         metronome: `Aplikacja symulująca działanie metronomu.
           Pozwala na ustawienie metrum oraz tempa, a\xa0także na zmianę parametrów w\xa0trakcie grania`,
         ksmicroband: 'Strona mojego projektu muzycznego. Na stronie zaprogramowałem własny odtwarzacz muzyczny.',
-        portfolio: 'Strona portfolio.',
         metronomemobile: 'Moja pierwsza aplikacja wykonana podczas nauki podstaw programowania mobilnego oraz React Native. Jest to mobilna wersja mojej aplikacji internetowej.'
       }
     }

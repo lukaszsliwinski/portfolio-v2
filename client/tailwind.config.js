@@ -6,7 +6,10 @@ module.exports = {
       colors: {
         neutral: {
           50: '#fafafa'
-        }
+        },
+        'main-light': '#607785',
+        'main-mid': '#1c2b32',
+        'main-dark': '#010a0f'
       },
       fontSize: {
         xs: '13px'
@@ -18,6 +21,9 @@ module.exports = {
       },
       minHeight: {
         'screen-mobile': 'calc(var(--vh, 1vh) * 100)'
+      },
+      backgroundImage: {
+        'wallpaper': 'url("./img/wallpaper.jpg")'
       }
     }
   },
