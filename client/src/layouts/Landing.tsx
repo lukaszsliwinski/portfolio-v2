@@ -10,14 +10,14 @@ export default function Landing() {
 
   return (
     <div
-      className="h-screen-mobile top-0 bg-cover bg-fixed bg-center bg-wallpaper"
+      className="h-screen-mobile top-0 bg-cover bg-fixed bg-center bg-wallpaper1"
       id="home"
     >
       <section
       className="flex flex-col justify-center items-center space-y-6 h-full min-h-screen w-screen bg-main-dark/30 text-neutral-200"
       >
         <img
-          className="w-44 rounded-full"
+          className="w-44 rounded-full shadow-2xl"
           src={profilePhoto}
           alt="profile photo"
         />
@@ -29,7 +29,6 @@ export default function Landing() {
         <a href="#about" className="m-1 inline-flex items-center rounded-lg border border-neutral-200 px-3 py-2 text-center text-sm font-medium text-neutral-200 hover:text-main-dark hover:bg-neutral-200 focus:outline-none focus:ring-4 focus:ring-neutral-200">
           <span>{t('about')}</span>
         </a>
-        {/* <div className="h-16"></div> */}
       </section>
     </div>
   );

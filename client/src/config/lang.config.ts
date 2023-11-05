@@ -7,6 +7,8 @@ i18n.use(initReactI18next).init({
       translation: {
         about: 'ABOUT',
         technologies: 'TECHNOLOGIES',
+        stack: 'FRONT-END STACK',
+        other: 'OTHER',
         projects: 'PROJECTS',
         bio: `Hi! I am a\xa0web developer. In my current job, I\xa0create the front\u2011end of a\xa0system for managing the departments of a\xa0railway company.
           After hours, I\xa0expand my knowledge and skills by developing my own applications and websites.
@@ -28,6 +30,8 @@ i18n.use(initReactI18next).init({
       translation: {
         about: 'O MNIE',
         technologies: 'TECHNOLOGIE',
+        stack: `TECHNOLOGIE FRONT-END'OWE`,
+        other: 'POZOSTAŁE',
         projects: 'PROJEKTY',
         bio: `Cześć! Jestem programistą aplikacji web'owych. W\xa0swojej pracy tworzę front\u2011end wewnętrznego systemu do zarządzania działami firmy kolejowej.
           Po godzinach poszerzam wiedzę oraz szlifuję umiejętności poprzez rozwijanie własnych aplikacji i\xa0stron internetowych.

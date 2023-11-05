@@ -23,7 +23,8 @@ module.exports = {
         'screen-mobile': 'calc(var(--vh, 1vh) * 100)'
       },
       backgroundImage: {
-        'wallpaper': 'url("./img/wallpaper.jpg")'
+        'wallpaper1': 'url("./img/wallpaper1.jpg")',
+        'wallpaper2': 'url("./img/wallpaper2.jpg")'
       }
     }
   },

@@ -1,97 +1,97 @@
 // packages
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Decal, Float, useTexture } from "@react-three/drei";
 import { useTranslation } from 'react-i18next';
 
 // technologies icons
-import { ReactComponent as JavaScript } from '../assets/svg/javascript.svg';
-import { ReactComponent as TypeScript } from '../assets/svg/typescript.svg';
-import { ReactComponent as React } from '../assets/svg/react.svg';
-import { ReactComponent as Angular } from '../assets/svg/angular.svg';
-import { ReactComponent as Redux } from '../assets/svg/redux.svg';
-import { ReactComponent as Tailwind } from '../assets/svg/tailwind.svg';
-import flowbitePng from '../assets/img/flowbite.png';
-import { ReactComponent as Bootstrap } from '../assets/svg/bootstrap.svg';
-import { ReactComponent as JQuery } from '../assets/svg/jquery.svg';
-import testingLibraryPng from '../assets/img/testing-library.png';
-import { ReactComponent as Node } from '../assets/svg/node.svg';
-import { ReactComponent as Php } from '../assets/svg/php.svg';
-import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
-import { ReactComponent as MySql } from '../assets/svg/mysql.svg';
-import { ReactComponent as Git } from '../assets/svg/git.svg';
+import javaScript from '../assets/svg/javascript.svg';
+import typeScript from '../assets/svg/typescript.svg';
+import react from '../assets/svg/react.svg';
+import angular from '../assets/svg/angular.svg';
+import redux from '../assets/svg/redux.svg';
+import tailwind from '../assets/svg/tailwind.svg';
+import flowbite from '../assets/img/flowbite.png';
+import bootstrap from '../assets/svg/bootstrap.svg';
+import jQuery from '../assets/svg/jquery.svg';
+import testingLibrary from '../assets/img/testing-library.png';
+import node from '../assets/svg/node.svg';
+import php from '../assets/svg/php.svg';
+import mongo from '../assets/svg/mongo.svg';
+import mySql from '../assets/svg/mysql.svg';
+import git from '../assets/svg/git.svg';
 
-// components
-import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
-import Badge from '../components/Badge';
+// ball 3d geometry
+function Geometry({ techIcon }: { techIcon: string }) {
+  const [decal] = useTexture([techIcon]);
+
+  return (
+    <Float speed={4.5} rotationIntensity={.5} floatIntensity={.3}>
+      <ambientLight intensity={0.15} />
+      <directionalLight position={[0, 0, 0.05]} />
+      <mesh castShadow receiveShadow scale={2}>
+        <icosahedronGeometry args={[1, 10]} />
+        <meshStandardMaterial
+          color="#f5f5f5"
+          polygonOffset
+          polygonOffsetFactor={-5}
+          flatShading
+        />
+        <Decal
+          position={[0, 0, 1]}
+          rotation={[2 * Math.PI, 0, 6.25]}
+          scale={[.7, .7, .7]}
+          map={decal}
+        />
+      </mesh>
+    </Float>
+  )
+}
+
+// ball component
+function TechBall({ techIcon }: { techIcon: string }) {
+  return (
+    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+      <OrbitControls enableZoom={false} />
+      <Geometry techIcon={techIcon}/>
+    </Canvas>
+  );
+}
 
 export default function Technologies() {
   // useTranslation fn
   const { t } = useTranslation();
 
   return (
-    <section
-      className="flex flex-col justify-center items-center xs:px-6 h-full min-h-screen px-2 md:pt-[8vh] xl:px-20 bg-main-mid text-neutral-200"
+    <div
+      className="h-screen-mobile top-0 bg-cover bg-fixed bg-center bg-wallpaper2"
       id="technologies"
     >
-      <XyzTransition
-        xyz="fade flip-left perspective-5 duration-10"
-        appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
-      >
-        <header className="mb-12 flex w-full flex-col items-center">
-          <h2 className="text-3xl font-medium">{t('technologies')}</h2>
-          <div className="mt-2 h-0.5 w-6 rounded bg-main-light"></div>
-        </header>
-      </XyzTransition>
-      <XyzTransitionGroup
-        className="mb-3 flex flex-wrap"
-        xyz="fade flip-up right down appear-stagger duration-2"
-        appear
-      >
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<TypeScript className="h-6 w-6" />} label={'TypeScript'} />
+      <section className="flex flex-col justify-center items-center h-full min-h-screen bg-main-dark/50 text-neutral-200">
+        <h2 className="text-2xl font-medium">{t('stack')}</h2>
+        <div className="mt-1 h-0.5 w-6 rounded bg-main-light"></div>
+        <div className="flex flex-wrap justify-center h-fit max-w-[1000px]">
+          <div className="w-36 h-36"><TechBall techIcon={javaScript} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={typeScript} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={react} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={angular} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={redux} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={tailwind} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={flowbite} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={bootstrap} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={jQuery} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={testingLibrary} /></div>
         </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<JavaScript className="h-6 w-6" />} label={'JavaScript'} />
+        <div className="h-12"></div>
+        <h2 className="text-2xl font-medium">{t('other')}</h2>
+        <div className="mt-1 h-0.5 w-6 rounded bg-main-light"></div>
+        <div className="flex flex-wrap justify-center h-fit max-w-[1000px]">
+          <div className="w-36 h-36"><TechBall techIcon={node} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={php} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={mongo} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={mySql} /></div>
+          <div className="w-36 h-36"><TechBall techIcon={git} /></div>
         </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<React className="h-6 w-6" />} label={'React.js'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Redux className="h-6 w-6" />} label={'Redux'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Angular className="h-6 w-6" />} label={'Angular'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Tailwind className="h-6 w-6" />} label={'Tailwindcss'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<img src={flowbitePng} className="h-6 w-6" />} label={'Flowbite'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Bootstrap className="h-6 w-6" />} label={'Bootstrap'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<JQuery className="h-6 w-6" />} label={'jQuery'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<img src={testingLibraryPng} className="h-6 w-6" />} label={'Testing Library'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Node className="h-6 w-6" />} label={'Node.js'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Php className="h-6 w-6" />} label={'PHP'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Mongo className="h-6 w-6" />} label={'MongoDB'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<MySql className="h-6 w-6" />} label={'MySQL'} />
-        </div>
-        <div className="2xs:w-fit m-1 w-full">
-          <Badge icon={<Git className="h-6 w-6" />} label={'Git'} />
-        </div>
-      </XyzTransitionGroup>
-      <div className="h-40"></div>
-    </section>
+      </section>
+    </div>
   );
 }
