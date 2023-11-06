@@ -39,7 +39,7 @@ export default function Technologies() {
     jQuery,
     testingLibrary
   ];
-  
+
   const otherTechList = [
     node,
     php,
@@ -53,7 +53,7 @@ export default function Technologies() {
       className="h-screen-mobile top-0 bg-cover bg-fixed bg-center bg-wallpaper2"
       id="technologies"
     >
-      <section className="flex flex-col justify-center items-center h-full min-h-screen bg-main-dark/50 text-neutral-200">
+      <section className="flex flex-col justify-center items-center h-full min-h-screen bg-main-mid/50 text-neutral-200">
         <h2 className="text-2xl font-medium">{t('stack')}</h2>
         <div className="mt-1 h-0.5 w-6 rounded bg-main-light"></div>
         <div className="flex flex-wrap justify-center h-fit max-w-[1000px]">
