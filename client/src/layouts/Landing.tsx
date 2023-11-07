@@ -17,13 +17,13 @@ export default function Landing() {
       className="flex flex-col justify-center items-center space-y-6 h-full min-h-screen w-screen bg-main-dark/30 text-neutral-200"
       >
         <img
-          className="w-44 rounded-full shadow-2xl"
+          className="w-32 xs:w-36 sm:w-40 lg:w-44 rounded-full shadow-2xl"
           src={profilePhoto}
           alt="profile photo"
         />
         <hgroup className="flex flex-col items-center space-y-2 tracking-widest">
-          <h1 className="text-6xl font-medium">ŁUKASZ ŚLIWIŃSKI</h1>
-          <h2 className="text-3xl">FRONT-END DEVELOPER</h2>
+          <h1 className="text-2xl 2xs:text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-medium">ŁUKASZ ŚLIWIŃSKI</h1>
+          <h2 className="text-base 2xs:text-lg xs:text-xl sm:text-2xl lg:text-3xl">FRONT-END DEVELOPER</h2>
         </hgroup>
 
         <a href="#about" className="m-1 inline-flex items-center rounded-lg border border-neutral-200 px-3 py-2 text-center text-sm font-medium text-neutral-200 hover:text-main-dark hover:bg-neutral-200 focus:outline-none focus:ring-4 focus:ring-neutral-200">

@@ -28,7 +28,7 @@ i18n.use(initReactI18next).init({
     },
     pl: {
       translation: {
-        about: 'O MNIE',
+        about: 'O\xa0MNIE',
         technologies: 'TECHNOLOGIE',
         stack: `TECHNOLOGIE FRONT-END'OWE`,
         other: 'POZOSTAŁE',

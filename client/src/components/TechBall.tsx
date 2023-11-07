@@ -8,7 +8,7 @@ export default function TechBall({ techIcon }: { techIcon: string }) {
     <Float speed={4.5} rotationIntensity={.15} >
       <ambientLight intensity={0.3} />
       <directionalLight position={[-.2, .3, 0.45]} />
-      <mesh scale={2}>
+      <mesh scale={1.8}>
         <icosahedronGeometry args={[1, 10]} />
         <meshStandardMaterial color="#607785" />
         <Decal

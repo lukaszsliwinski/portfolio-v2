@@ -29,14 +29,14 @@ export default function Projects() {
 
   return (
     <section
-      className="flex flex-col justify-center items-center xs:px-6 h-full min-h-screen px-2 md:pt-[8vh] xl:px-20 bg-neutral-200 text-main-dark"
+      className="flex flex-col justify-center items-center xs:px-6 h-full min-h-screen px-2"
       id="projects"
     >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="mb-12 flex w-full flex-col items-center">
+        <header className="my-20 flex w-full flex-col items-center">
           <h2 className="text-3xl font-medium">{t('projects')}</h2>
           <div className="mt-2 h-0.5 w-6 rounded bg-main-light"></div>
         </header>

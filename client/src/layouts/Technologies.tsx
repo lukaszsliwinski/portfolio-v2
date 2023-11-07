@@ -53,24 +53,23 @@ export default function Technologies() {
       className="h-screen-mobile top-0 bg-cover bg-fixed bg-center bg-wallpaper2"
       id="technologies"
     >
-      <section className="flex flex-col justify-center items-center h-full min-h-screen bg-main-mid/50 text-neutral-200">
-        <h2 className="text-2xl font-medium">{t('stack')}</h2>
+      <section className="flex flex-col justify-center items-center h-full min-h-screen py-20 md:py-16 bg-main-mid/50 text-neutral-200">
+        <h2 className="text-xl xs:text-2xl font-medium">{t('stack')}</h2>
         <div className="mt-1 h-0.5 w-6 rounded bg-main-light"></div>
         <div className="flex flex-wrap justify-center h-fit max-w-[1000px]">
           {frontTechList.map((tech, i) => (
-            <div className="w-36 h-36" key={i}>
+            <div className="w-28 h-28 2xs:w-32 2xs:h-32 xs:w-36 xs:h-36" key={i}>
               <Canvas>
                 <TechBall techIcon={tech} />
               </Canvas>
             </div>
           ))}
         </div>
-        <div className="h-12"></div>
-        <h2 className="text-2xl font-medium">{t('other')}</h2>
+        <h2 className="text-xl xs:text-2xl mt-12 font-medium">{t('other')}</h2>
         <div className="mt-1 h-0.5 w-6 rounded bg-main-light"></div>
         <div className="flex flex-wrap justify-center h-fit max-w-[1000px]">
           {otherTechList.map((tech, i) => (
-            <div className="w-36 h-36" key={i}>
+            <div className="w-28 h-28 2xs:w-32 2xs:h-32 xs:w-36 xs:h-36" key={i}>
               <Canvas>
                 <TechBall techIcon={tech} />
               </Canvas>
