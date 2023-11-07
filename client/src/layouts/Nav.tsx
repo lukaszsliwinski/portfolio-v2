@@ -30,12 +30,14 @@ export default function Nav() {
       <div className="flex items-center py-2 text-lg">
         <Scrollspy
           className="flex space-x-8 mx-8 font-medium text-neutral-200"
-          items={['about', 'technologies', 'projects']}
+          items={['home', 'about', 'technologies', 'projects']}
           currentClassName="text-main-light"
+          offset={-250}
         >
-          <li><a href="#about">{t('about')}</a></li>
-          <li><a href="#technologies">{t('technologies')}</a></li>
-          <li><a href="#projects">{t('projects')}</a></li>
+          <li><a href="#home"></a></li>
+          <li className="hover:underline underline-offset-4"><a href="#about">{t('about')}</a></li>
+          <li className="hover:underline underline-offset-4"><a href="#technologies">{t('technologies')}</a></li>
+          <li className="hover:underline underline-offset-4"><a href="#projects">{t('projects')}</a></li>
         </Scrollspy>
         <div className="border-l border-neutral-600 flex w-36 px-4 items-center justify-evenly">
           <Eng className="h-6 w-6" />
