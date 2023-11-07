@@ -29,7 +29,7 @@ export default function Projects() {
 
   return (
     <section
-      className="flex flex-col justify-center items-center xs:px-6 h-full min-h-screen px-2"
+      className="xs:px-6 flex h-full min-h-screen flex-col items-center justify-center px-2"
       id="projects"
     >
       <XyzTransition
@@ -38,7 +38,7 @@ export default function Projects() {
       >
         <header className="my-20 flex w-full flex-col items-center">
           <h2 className="text-3xl font-medium">{t('projects')}</h2>
-          <div className="mt-2 h-0.5 w-6 rounded bg-main-light"></div>
+          <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>
       <XyzTransitionGroup
@@ -173,7 +173,6 @@ export default function Projects() {
             </TechIcon>
           </ProjectCard>
         </div>
-
       </XyzTransitionGroup>
     </section>
   );

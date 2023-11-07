@@ -14,24 +14,21 @@ export default function About() {
 
   return (
     <section
-      className="flex flex-col justify-start lg:justify-center items-center xs:px-6 h-full min-h-screen px-3"
+      className="xs:px-6 flex h-full min-h-screen flex-col items-center justify-start px-3 lg:justify-center"
       id="about"
     >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="my-20 lg:mt-0 flex w-full flex-col items-center">
-          <h2 className="text-2xl xs:text-3xl font-medium">{t('about')}</h2>
-          <div className="mt-2 h-0.5 w-6 rounded bg-main-light"></div>
+        <header className="my-20 flex w-full flex-col items-center lg:mt-0">
+          <h2 className="xs:text-3xl text-2xl font-medium">{t('about')}</h2>
+          <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>
-      <XyzTransition
-        xyz="fade duration-30"
-        appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
-      >
+      <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
         <div>
-          <article className="xs:text-sm xs:leading-7 text-justify text-xs leading-6 max-w-4xl">
+          <article className="xs:text-sm xs:leading-7 max-w-4xl text-justify text-xs leading-6">
             {t('bio')}
           </article>
           <div className="xs:w-72 mx-auto my-6 flex flex-wrap justify-evenly">
@@ -39,7 +36,7 @@ export default function About() {
               href="https://www.linkedin.com/in/lsliwinski/"
               target="_blank"
               rel="noopener noreferrer"
-              className="m-1 inline-flex items-center rounded-lg border border-main-dark px-3 py-2 text-center text-sm font-medium text-main-dark hover:text-neutral-200 hover:bg-main-dark focus:outline-none focus:ring-4 focus:ring-main-light"
+              className="border-main-dark text-main-dark hover:bg-main-dark focus:ring-main-light m-1 inline-flex items-center rounded-lg border px-3 py-2 text-center text-sm font-medium hover:text-neutral-200 focus:outline-none focus:ring-4"
             >
               LinkedIn
               <LinkedIn className="ml-2 h-4 w-4" aria-hidden="true" />
@@ -48,7 +45,7 @@ export default function About() {
               href="https://github.com/lukaszsliwinski/"
               target="_blank"
               rel="noopener noreferrer"
-              className="m-1 inline-flex items-center rounded-lg border border-main-dark px-3 py-2 text-center text-sm font-medium text-main-dark hover:text-neutral-200 hover:bg-main-dark focus:outline-none focus:ring-4 focus:ring-main-light"
+              className="border-main-dark text-main-dark hover:bg-main-dark focus:ring-main-light m-1 inline-flex items-center rounded-lg border px-3 py-2 text-center text-sm font-medium hover:text-neutral-200 focus:outline-none focus:ring-4"
             >
               GitHub
               <GitHub className="ml-2 h-4 w-4" aria-hidden="true" />
