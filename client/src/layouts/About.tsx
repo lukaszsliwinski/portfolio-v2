@@ -22,7 +22,7 @@ export default function About() {
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
         <header className="my-20 flex w-full flex-col items-center lg:mt-0">
-          <h2 className="text-xl 2xs:text-2xl sm:text-3xl font-medium">{t('about')}</h2>
+          <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('about')}</h2>
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>

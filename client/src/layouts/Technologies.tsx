@@ -45,10 +45,7 @@ export default function Technologies() {
   const otherTechList = [node, php, mongo, mySql, git];
 
   return (
-    <div
-      className="min-h-screen bg-wallpaper2 top-0 bg-cover bg-fixed bg-center"
-      id="technologies"
-    >
+    <div className="bg-wallpaper2 top-0 min-h-screen bg-cover bg-fixed bg-center" id="technologies">
       <section className="bg-main-mid/50 flex h-full min-h-screen flex-col items-center justify-center py-20 text-neutral-200 md:py-16">
         <h2 className="2xs:text-xl xs:text-2xl text-md font-medium">{t('stack')}</h2>
         <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
@@ -62,13 +59,13 @@ export default function Technologies() {
               </BrowserView>
 
               {/* prevent from WebGLRenderer error on mobile */}
-              <MobileView className="flex justify-center items-center 2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+              <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
                 <TechBallMobile techIcon={tech} />
               </MobileView>
             </div>
           ))}
         </div>
-        <h2 className="mt-12 2xs:text-xl xs:text-2xl text-md font-medium">{t('other')}</h2>
+        <h2 className="2xs:text-xl xs:text-2xl text-md mt-12 font-medium">{t('other')}</h2>
         <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
         <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
           {otherTechList.map((tech, i) => (
@@ -80,7 +77,7 @@ export default function Technologies() {
               </BrowserView>
 
               {/* prevent from WebGLRenderer error on mobile */}
-              <MobileView className="flex justify-center items-center 2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+              <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
                 <TechBallMobile techIcon={tech} />
               </MobileView>
             </div>
