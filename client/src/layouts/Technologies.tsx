@@ -50,7 +50,7 @@ export default function Technologies() {
       id="technologies"
     >
       <section className="bg-main-mid/50 flex h-full min-h-screen flex-col items-center justify-center py-20 text-neutral-200 md:py-16">
-        <h2 className="xs:text-2xl text-xl font-medium">{t('stack')}</h2>
+        <h2 className="2xs:text-xl xs:text-2xl text-md font-medium">{t('stack')}</h2>
         <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
         <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
           {frontTechList.map((tech, i) => (
@@ -68,7 +68,7 @@ export default function Technologies() {
             </div>
           ))}
         </div>
-        <h2 className="xs:text-2xl mt-12 text-xl font-medium">{t('other')}</h2>
+        <h2 className="mt-12 2xs:text-xl xs:text-2xl text-md font-medium">{t('other')}</h2>
         <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
         <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
           {otherTechList.map((tech, i) => (
