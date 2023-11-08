@@ -1,9 +1,11 @@
 // packages
-import { Canvas } from '@react-three/fiber';
 import { useTranslation } from 'react-i18next';
+import { Canvas } from '@react-three/fiber';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 // components
 import TechBall from '../components/TechBall';
+import TechBallMobile from '../components/TechBallMobile';
 
 // technologies icons
 import javaScript from '../assets/icons/javascript.png';
@@ -44,7 +46,7 @@ export default function Technologies() {
 
   return (
     <div
-      className="h-screen-mobile bg-wallpaper2 top-0 bg-cover bg-fixed bg-center"
+      className="min-h-screen bg-wallpaper2 top-0 bg-cover bg-fixed bg-center"
       id="technologies"
     >
       <section className="bg-main-mid/50 flex h-full min-h-screen flex-col items-center justify-center py-20 text-neutral-200 md:py-16">
@@ -52,10 +54,17 @@ export default function Technologies() {
         <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
         <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
           {frontTechList.map((tech, i) => (
-            <div className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28" key={i}>
-              <Canvas>
-                <TechBall techIcon={tech} />
-              </Canvas>
+            <div key={i}>
+              <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                <Canvas>
+                  <TechBall techIcon={tech} />
+                </Canvas>
+              </BrowserView>
+
+              {/* prevent from WebGLRenderer error on mobile */}
+              <MobileView className="flex justify-center items-center 2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                <TechBallMobile techIcon={tech} />
+              </MobileView>
             </div>
           ))}
         </div>
@@ -63,10 +72,17 @@ export default function Technologies() {
         <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
         <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
           {otherTechList.map((tech, i) => (
-            <div className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28" key={i}>
-              <Canvas>
-                <TechBall techIcon={tech} />
-              </Canvas>
+            <div key={i}>
+              <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                <Canvas>
+                  <TechBall techIcon={tech} />
+                </Canvas>
+              </BrowserView>
+
+              {/* prevent from WebGLRenderer error on mobile */}
+              <MobileView className="flex justify-center items-center 2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                <TechBallMobile techIcon={tech} />
+              </MobileView>
             </div>
           ))}
         </div>

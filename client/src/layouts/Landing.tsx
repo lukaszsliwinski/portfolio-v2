@@ -9,7 +9,7 @@ export default function Landing() {
   const { t } = useTranslation();
 
   return (
-    <div className="h-screen-mobile bg-wallpaper1 top-0 bg-cover bg-fixed bg-center" id="home">
+    <div className="h-screen bg-wallpaper1 top-0 bg-cover bg-fixed bg-center" id="home">
       <section className="bg-main-dark/30 flex h-full min-h-screen w-screen flex-col items-center justify-center space-y-6 text-neutral-200">
         <img
           className="xs:w-36 w-32 rounded-full shadow-2xl sm:w-40 lg:w-44"

@@ -1,5 +1,4 @@
 // packages
-import 'flowbite';
 import '@animxyz/core';
 
 // components

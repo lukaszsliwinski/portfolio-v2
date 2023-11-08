@@ -19,14 +19,10 @@ module.exports = {
         xs: '480px',
         lg: '1100px'
       },
-      minHeight: {
-        'screen-mobile': 'calc(var(--vh, 1vh) * 100)'
-      },
       backgroundImage: {
         wallpaper1: 'url("./img/wallpaper1.jpg")',
         wallpaper2: 'url("./img/wallpaper2.jpg")'
       }
     }
-  },
-  plugins: [require('flowbite/plugin')]
+  }
 };
