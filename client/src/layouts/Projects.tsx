@@ -2,15 +2,15 @@
 import { useTranslation } from 'react-i18next';
 
 // technologies icons
-import { ReactComponent as TypeScript } from '../assets/svg/typescript.svg';
-import { ReactComponent as JavaScript } from '../assets/svg/javascript.svg';
-import { ReactComponent as React } from '../assets/svg/react.svg';
-import { ReactComponent as Redux } from '../assets/svg/redux.svg';
-import { ReactComponent as Tailwind } from '../assets/svg/tailwind.svg';
-import flowbitePng from '../assets/img/flowbite.png';
-import testingLibraryPng from '../assets/img/testing-library.png';
-import { ReactComponent as Node } from '../assets/svg/node.svg';
-import { ReactComponent as Mongo } from '../assets/svg/mongo.svg';
+import typeScript from '../assets/icons/typescript.png';
+import javaScript from '../assets/icons/javascript.png';
+import react from '../assets/icons/react.png';
+import redux from '../assets/icons/redux.png';
+import tailwind from '../assets/icons/tailwind.png';
+import flowbite from '../assets/icons/flowbite.png';
+import testingLibrary from '../assets/icons/testing-library.png';
+import node from '../assets/icons/node.png';
+import mongo from '../assets/icons/mongo.png';
 
 // project screens
 import bookStoreScreen from '../assets/img/book-store-screen.png';
@@ -57,27 +57,13 @@ export default function Projects() {
             showLink={true}
             linkUrl={'https://bookstore.lukaszsliwinski.pl/'}
           >
-            <TechIcon project="BookStore" tech="TypeScript">
-              <TypeScript className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="BookStore" tech="React.js">
-              <React className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="BookStore" tech="Redux">
-              <Redux className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="BookStore" tech="Tailwindcss">
-              <Tailwind className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="BookStore" tech="Testing Library">
-              <img src={testingLibraryPng} className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="BookStore" tech="Node.js">
-              <Node className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="BookStore" tech="MongoDB">
-              <Mongo className="h-5 w-5" />
-            </TechIcon>
+            <TechIcon project="BookStore" tech="TypeScript" icon={typeScript} />
+            <TechIcon project="BookStore" tech="React.js" icon={react} />
+            <TechIcon project="BookStore" tech="Redux" icon={redux} />
+            <TechIcon project="BookStore" tech="Tailwindcss" icon={tailwind} />
+            <TechIcon project="BookStore" tech="Testing Library" icon={testingLibrary} />
+            <TechIcon project="BookStore" tech="Node.js" icon={node} />
+            <TechIcon project="BookStore" tech="MongoDB" icon={mongo} />
           </ProjectCard>
         </div>
 
@@ -92,24 +78,12 @@ export default function Projects() {
             showLink={true}
             linkUrl={'https://weatherapp.lukaszsliwinski.pl/'}
           >
-            <TechIcon project="WeatherApp" tech="TypeScript">
-              <TypeScript className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="WeatherApp" tech="React.js">
-              <React className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="WeatherApp" tech="Tailwindcss">
-              <Tailwind className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="WeatherApp" tech="Flowbite">
-              <img src={flowbitePng} className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="WeatherApp" tech="Testing Library">
-              <img src={testingLibraryPng} className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="WeatherApp" tech="Node.js">
-              <Node className="h-5 w-5" />
-            </TechIcon>
+            <TechIcon project="WeatherApp" tech="TypeScript" icon={typeScript} />
+            <TechIcon project="WeatherApp" tech="React.js" icon={react} />
+            <TechIcon project="WeatherApp" tech="Tailwindcss" icon={tailwind} />
+            <TechIcon project="WeatherApp" tech="Flowbite" icon={flowbite} />
+            <TechIcon project="WeatherApp" tech="Testing Library" icon={testingLibrary} />
+            <TechIcon project="WeatherApp" tech="Node.js" icon={node} />
           </ProjectCard>
         </div>
 
@@ -124,27 +98,13 @@ export default function Projects() {
             showLink={true}
             linkUrl={'https://metronome.lukaszsliwinski.pl'}
           >
-            <TechIcon project="Metronome" tech="TypeScript">
-              <TypeScript className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="Metronome" tech="React.js">
-              <React className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="Metronome" tech="Redux">
-              <Redux className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="Metronome" tech="Tailwindcss">
-              <Tailwind className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="Metronome" tech="Flowbite">
-              <img src={flowbitePng} className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="Metronome" tech="Testing Library">
-              <img src={testingLibraryPng} className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="Metronome" tech="Node.js">
-              <Node className="h-5 w-5" />
-            </TechIcon>
+            <TechIcon project="Metronome" tech="TypeScript" icon={typeScript} />
+            <TechIcon project="Metronome" tech="React.js" icon={react} />
+            <TechIcon project="Metronome" tech="Redux" icon={redux} />
+            <TechIcon project="Metronome" tech="Tailwindcss" icon={tailwind} />
+            <TechIcon project="Metronome" tech="Flowbite" icon={flowbite} />
+            <TechIcon project="Metronome" tech="Testing Library" icon={testingLibrary} />
+            <TechIcon project="Metronome" tech="Node.js" icon={node} />
           </ProjectCard>
         </div>
 
@@ -159,18 +119,10 @@ export default function Projects() {
             showLink={true}
             linkUrl={'https://ksmicroband.pl'}
           >
-            <TechIcon project="KSMicroband" tech="JavaScript">
-              <JavaScript className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="KSMicroband" tech="React.js">
-              <React className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="KSMicroband" tech="Tailwindcss">
-              <Tailwind className="h-5 w-5" />
-            </TechIcon>
-            <TechIcon project="KSMicroband" tech="Node.js">
-              <Node className="h-5 w-5" />
-            </TechIcon>
+            <TechIcon project="KSMicroband" tech="JavaScript" icon={javaScript} />
+            <TechIcon project="KSMicroband" tech="React.js" icon={react} />
+            <TechIcon project="KSMicroband" tech="Tailwindcss" icon={tailwind} />
+            <TechIcon project="KSMicroband" tech="Node.js" icon={node} />
           </ProjectCard>
         </div>
       </XyzTransitionGroup>

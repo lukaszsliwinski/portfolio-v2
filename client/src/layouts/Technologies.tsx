@@ -6,21 +6,21 @@ import { useTranslation } from 'react-i18next';
 import TechBall from '../components/TechBall';
 
 // technologies icons
-import javaScript from '../assets/svg/javascript.svg';
-import typeScript from '../assets/svg/typescript.svg';
-import react from '../assets/svg/react.svg';
-import angular from '../assets/svg/angular.svg';
-import redux from '../assets/svg/redux.svg';
-import tailwind from '../assets/svg/tailwind.svg';
-import flowbite from '../assets/img/flowbite.png';
-import bootstrap from '../assets/svg/bootstrap.svg';
-import jQuery from '../assets/svg/jquery.svg';
-import testingLibrary from '../assets/img/testing-library.png';
-import node from '../assets/svg/node.svg';
-import php from '../assets/svg/php.svg';
-import mongo from '../assets/svg/mongo.svg';
-import mySql from '../assets/svg/mysql.svg';
-import git from '../assets/svg/git.svg';
+import javaScript from '../assets/icons/javascript.png';
+import typeScript from '../assets/icons/typescript.png';
+import react from '../assets/icons/react.png';
+import angular from '../assets/icons/angular.png';
+import redux from '../assets/icons/redux.png';
+import tailwind from '../assets/icons/tailwind.png';
+import flowbite from '../assets/icons/flowbite.png';
+import bootstrap from '../assets/icons/bootstrap.png';
+import jQuery from '../assets/icons/jquery.png';
+import testingLibrary from '../assets/icons/testing-library.png';
+import node from '../assets/icons/node.png';
+import php from '../assets/icons/php.png';
+import mongo from '../assets/icons/mongo.png';
+import mySql from '../assets/icons/mysql.png';
+import git from '../assets/icons/git.png';
 
 export default function Technologies() {
   // useTranslation fn

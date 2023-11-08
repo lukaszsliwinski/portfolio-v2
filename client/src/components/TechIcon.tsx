@@ -1,10 +1,10 @@
 // type
 import { ITechIcon } from '../types';
 
-export default function TechIcon({ children, tech, project }: ITechIcon) {
+export default function TechIcon({ project, tech, icon }: ITechIcon) {
   return (
     <div data-tooltip-target={`${project}-${tech}`}>
-      {children}
+      <img src={icon} className="h-5 w-5" />
       <div
         id={`${project}-${tech}`}
         role="tooltip"
