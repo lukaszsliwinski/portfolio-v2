@@ -1,7 +1,17 @@
+/** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}', 'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    screens: {
+      '2xs': '360px',
+      'xs': '480px',
+      ...defaultTheme.screens,
+      'lg': '1100px'
+    },
     extend: {
       colors: {
         neutral: {
@@ -12,12 +22,7 @@ module.exports = {
         'main-dark': '#010a0f'
       },
       fontSize: {
-        xs: '13px'
-      },
-      screens: {
-        '2xs': '360px',
-        xs: '480px',
-        lg: '1100px'
+        'xs': '13px'
       },
       backgroundImage: {
         wallpaper1: 'url("./img/wallpaper1.jpg")',
