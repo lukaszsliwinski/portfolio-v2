@@ -18,10 +18,10 @@ export default function PorjectCard({
   return (
     <div className="border-main-mid bg-main-mid mx-auto max-w-sm rounded-lg border-8 text-neutral-200 shadow-lg">
       <img src={screenSrc} alt="apps screen" />
-      <div className="flex flex-col p-5 lg:h-72">
+      <div className="flex flex-col p-5 lg:h-[26rem]">
         <h3 className="xs:text-xl text-lg font-semibold tracking-tight">{title}</h3>
         <div className="flex items-center space-x-2 py-3">{children}</div>
-        <p className="xs:text-sm mb-3 text-justify text-xs leading-6">{description}</p>
+        <p className="xs:text-sm mb-3 text-xs leading-6 whitespace-pre-line">{description}</p>
         <div className="mt-auto flex flex-wrap justify-evenly">
           <a
             href={sourceUrl}

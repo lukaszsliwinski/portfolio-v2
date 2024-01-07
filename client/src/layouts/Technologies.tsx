@@ -8,13 +8,14 @@ import TechBall from '../components/TechBall';
 import TechBallMobile from '../components/TechBallMobile';
 
 // technologies icons
-import javaScript from '../assets/icons/javascript.png';
 import typeScript from '../assets/icons/typescript.png';
+import javaScript from '../assets/icons/javascript.png';
 import react from '../assets/icons/react.png';
 import angular from '../assets/icons/angular.png';
 import redux from '../assets/icons/redux.png';
 import tailwind from '../assets/icons/tailwind.png';
 import flowbite from '../assets/icons/flowbite.png';
+import scss from '../assets/icons/scss.png';
 import bootstrap from '../assets/icons/bootstrap.png';
 import jQuery from '../assets/icons/jquery.png';
 import testingLibrary from '../assets/icons/testing-library.png';
@@ -30,13 +31,14 @@ export default function Technologies() {
 
   // lists with technologies
   const frontTechList = [
-    javaScript,
     typeScript,
+    javaScript,
     react,
     angular,
     redux,
     tailwind,
     flowbite,
+    scss,
     bootstrap,
     jQuery,
     testingLibrary

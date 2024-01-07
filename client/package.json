@@ -12,6 +12,7 @@
     "@types/react-scrollspy": "^3.3.5",
     "@types/three": "^0.158.1",
     "cra-template-typescript": "1.2.0",
+    "flowbite": "^1.6.4",
     "i18next": "^22.4.13",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",

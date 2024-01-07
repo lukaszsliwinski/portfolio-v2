@@ -29,5 +29,6 @@ module.exports = {
         wallpaper2: 'url("./img/wallpaper2.jpg")'
       }
     }
-  }
+  },
+  plugins: [require('flowbite/plugin')]
 };

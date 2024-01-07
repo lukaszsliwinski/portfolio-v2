@@ -15,17 +15,36 @@ i18n.use(initReactI18next).init({
           I\xa0use technologies such as TypeScript, React.js, Tailwindcss on the front\u2011end and Node.js on the back\u2011end.
           Below I\xa0present some of my projects with source codes and links to the apps.
           I\xa0started learning how to test applications using the React Testing Library, and I\xa0am also learning of mobile app development using React Native.`,
-        bookstore: `The application is a\xa0simulation of an online book store.
-          You can create an account, find a\xa0book, add books to cart and make fictitious order.
-          In your profile page you can change password and see the history of your orders.`,
-        weatherapp: `Application for checking actual weather in choosen city.
-          Write a\xa0city name above, to check weather conditions and forecast for next hours and days.`,
-        metronome: `The application is a\xa0simulation of a\xa0usical metronome.
-          You can set different meters and tempos and change them while playing the metronome.`,
-        ksmicroband:
-          'Website of my musical project. In the website I developed custom music player.',
-        metronomemobile:
-          'This is my first mobile app that I\xa0made to learn the basics of mobile development and React Native. This app is a\xa0mobile version of my metronome web app.'
+        radio: `The application is an online radio player streaming from 3rd party API.\n\nFeatures for all users:
+          -\xa0search station and play
+          -\xa0create an account and log in
+          \nFeatures only for logged in users:
+          -\xa0add station to favourites
+          -\xa0view the history of recently played stations
+          -\xa0change password`,
+        vocabularyquiz: `Language application that helps me learn english vocabulary after lessons.\n\nFeatures:
+          -\xa0app get list of categories from database and render categories on main page
+          -\xa0after selecting a\xa0category, app get random 10 words or phrases from chosen category
+          -\xa0for each word, the user provides a\xa0translation and checks its correctness
+          -\xa0after the last answer, the result is given`,
+        bookstore: `The application is a\xa0simulation of an online book store.\n\nFeatures:
+          -\xa0register and login module
+          -\xa0searching\xa0a book form 3rd party API
+          -\xa0adding books to cart and simulating an\xa0order
+          -\xa0profile page
+          -\xa0the history of orders stored in database`,
+        metronome: `The application is a\xa0simulation of a\xa0usical metronome.\n\nFeatures:
+          -\xa0set meter and tempo
+          -\xa0update meter and tempo while playing the metronome
+          -\xa0show tempo by glowing diode`,
+        weatherapp: `Web application for checking actual weather in choosen city.\n\nFeatures:
+          -\xa0current weather conditions in choosen city
+          -\xa0forecast for next hours and days`,
+        ksmicroband: `Website of my musical project with custom music player.\n\nPlayer features:
+          -\xa0get audio files from server by own API
+          -\xa0play / stop / next / previous buttons
+          -\xa0autoplay next song
+          -\xa0stop player after last song`
       }
     },
     pl: {
@@ -40,17 +59,36 @@ i18n.use(initReactI18next).init({
           Wykorzystuję takie technologie jak m.in. TypeScript, React.js, Tailwindcss po stronie front\u2011end'u oraz Node.js po stronie back\u2011end'u.
           Poniżej przedstawiam kilka swoich wykonanych projektów wraz z\xa0kodami źródłowymi oraz linkami do aplikacji.
           Oprócz tworzenia programów rozpocząłem naukę testowania aplikacji z\xa0wykorzystaniem React Testing Library, a\xa0także uczę się tworzyć aplikacje mobilne przy pomocy React Native.`,
-        bookstore: `Aplikacja jest symulacją internetowego sklepu z\xa0książkami.
-          Można utworzyć konto, wyszukać książki, dodać do koszyka i\xa0złożyć fikcyjne zamówienie.
-          Profil klienta pozwala zmienić hasło oraz przejrzeć historię zamówień.`,
-        weatherapp: `Aplikacja do sprawdzania pogody w\xa0wybranym mieście.
-          Po wpisaniu miasta dostajemy aktualne warunki pogodowe oraz prognozę na najbliższe godziny i\xa0dni.`,
-        metronome: `Aplikacja symulująca działanie metronomu.
-          Pozwala na ustawienie metrum oraz tempa, a\xa0także na zmianę parametrów w\xa0trakcie grania`,
-        ksmicroband:
-          'Strona mojego projektu muzycznego. Na stronie zaprogramowałem własny odtwarzacz muzyczny.',
-        metronomemobile:
-          'Moja pierwsza aplikacja wykonana podczas nauki podstaw programowania mobilnego oraz React Native. Jest to mobilna wersja mojej aplikacji internetowej.'
+        radio: `Internetowe radio pobierające strumień z\xa0zewnętrznego API.\n\nFunkcje dla wszystkich:
+          -\xa0wyszukiwanie i\xa0włączenie stacji
+          -\xa0utworzenie konta i\xa0logowanie
+          \nFunckje dla zalogowanych użytkowników:
+          -\xa0dodawanie stacji do ulubionych
+          -\xa0podgląd historii ostatnio odtwarzanych stacji
+          -\xa0zmiana hasła`,
+        vocabularyquiz: `Aplikacja językowa wspomagająca naukę słówek z\xa0lekcji angielskiego.\n\nFunkcje:
+          -\xa0pobranie listy kategorii i\xa0wyświetlenie ich na stronie głównej
+          -\xa0po wybraniu kategorii losowanych jest 10\xa0słówek lub fraz z\xa0wybranej kategorii
+          -\xa0do każdego słówka użytkownik podaje tłumaczenie i\xa0sprawdza poprawność
+          -\xa0po ostatnim słówku podana jest liczba poprawnych odpowiedzi`,
+        bookstore: `Aplikacja symulująca działanie internetowego sklepu z\xa0książkami.\n\nFunkcje:
+          -\xa0moduł rejestracji i\xa0logowania
+          -\xa0wyszukiwanie książek z\xa0zewnętrznego API
+          -\xa0dodawanie książek do koszyka i\xa0symulacja zamówienia
+          -\xa0strona profilu użytkownika
+          -\xa0historia zamówień użytkownika zapisywana do bazy danych`,
+        metronome: `Aplikacja symulująca działanie metronomu muzycznego.\n\nFunkcje:
+          -\xa0ustawienie metrum i\xa0tempa
+          -\xa0aktualizacja metrum i\xa0tempa w trakcie działania metronomu
+          -\xa0podawanie aktualnego tempa przez migającą diodę`,
+        weatherapp: `Aplikacja sprawdzająca pogodę w\xa0wybranym mieście.\n\nFunkcje:
+          -\xa0aktualne warunki pogodowe
+          -\xa0prognoza na najbliższe godziny i\xa0dni`,
+        ksmicroband: `Strona mojego projektu muzycznego z\xa0zaprogramowanym własnym odtwarzaczem.\n\nFunkcje odtwarzacza:
+          -\xa0pobranie plików muzycznych z\xa0serwera przez własne API
+          -\xa0przyciski play / stop / następny / poprzedni
+          -\xa0automatyczne rozpocznij kolejny utwór
+          -\xa0po ostatnim utworze zatrzymaj odtwarzanie`
       }
     }
   },
