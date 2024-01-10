@@ -14,14 +14,14 @@ export default function About() {
 
   return (
     <section
-      className="xs:px-6 flex h-full min-h-screen flex-col items-center justify-start px-3 lg:justify-center"
+      className="xs:px-6 flex h-full min-h-screen flex-col items-center justify-center px-3"
       id="about"
     >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="mt-20 flex w-full flex-col items-center lg:mt-0">
+        <header className="mt-20 flex w-full flex-col items-center">
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('about')}</h2>
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
