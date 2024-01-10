@@ -10,11 +10,12 @@ i18n.use(initReactI18next).init({
         stack: 'FRONT-END STACK',
         other: 'OTHER',
         projects: 'PROJECTS',
-        bio: `Hi! I am a\xa0web developer. In my current job, I\xa0create the front\u2011end of a\xa0system for managing the departments of a\xa0railway company.
-          After hours, I\xa0expand my knowledge and skills by developing my own applications and websites.
-          I\xa0use technologies such as TypeScript, React.js, Tailwindcss on the front\u2011end and Node.js on the back\u2011end.
-          Below I\xa0present some of my projects with source codes and links to the apps.
-          I\xa0started learning how to test applications using the React Testing Library, and I\xa0am also learning of mobile app development using React Native.`,
+        bio: `Hi! I\xa0am a\xa0web applications, websites and PWA developer.
+          In my current job, I\xa0am a\xa0front\u2011end developer working on an internal software for managing the departments of a\xa0railway company.
+          After hours, I\xa0expand my knowledge and improve my skills by developing my own applications and websites.`,
+        bio2: `Below I\xa0present some of my side\u2011projects developed as part of learning programming using modern front\u2011end technologies such as TypeScript, Angular, React.js and Tailwindcss.
+          All applications are hosted on my own server, configured by me. I\xa0use Node.js as the back\u2011end and MongoDB as the database.
+          I\xa0develop apps using responsive web design pattern to display correctly on mobile devices.`,
         radio: `The application is an online radio player streaming from 3rd party API.\n\nFeatures for all users:
           -\xa0search station and play
           -\xa0create an account and log in
@@ -54,11 +55,12 @@ i18n.use(initReactI18next).init({
         stack: `TECHNOLOGIE FRONT-END'OWE`,
         other: 'POZOSTAŁE',
         projects: 'PROJEKTY',
-        bio: `Cześć! Jestem programistą aplikacji web'owych. W\xa0swojej pracy tworzę front\u2011end wewnętrznego systemu do zarządzania działami firmy kolejowej.
-          Po godzinach poszerzam wiedzę oraz szlifuję umiejętności poprzez rozwijanie własnych aplikacji i\xa0stron internetowych.
-          Wykorzystuję takie technologie jak m.in. TypeScript, React.js, Tailwindcss po stronie front\u2011end'u oraz Node.js po stronie back\u2011end'u.
-          Poniżej przedstawiam kilka swoich wykonanych projektów wraz z\xa0kodami źródłowymi oraz linkami do aplikacji.
-          Oprócz tworzenia programów rozpocząłem naukę testowania aplikacji z\xa0wykorzystaniem React Testing Library, a\xa0także uczę się tworzyć aplikacje mobilne przy pomocy React Native.`,
+        bio: `Cześć! Jestem programistą aplikacji internetowych, stron internetowych oraz aplikacji PWA.
+          Pracuję jako front\u2011end developer przy rozwoju wewnętrznego systemu do zarządzania działami firmy kolejowej.
+          Po godzinach poszerzam wiedzę oraz szlifuję umiejętności poprzez rozwijanie własnych aplikacji i\xa0stron internetowych.`,
+        bio2: `Poniżej przedstawiam kilka swoich projektów wykonanych w\xa0ramach nauki nowoczesnych technologii front\u2011end'owych takich jak TypeScript, Angular, React.js czy Tailwindcss.
+          Wszystkie aplikacje są umieszczone na własnym, skonfigutowanym przeze mnie serwerze. Wykorzystuję środowisko Node.js jako back\u2011end oraz MongoDB jako bazę danych.
+          Aplikacje tworzę z\xa0zachowaniem zasad responsive web design, aby poprawnie wyświetlały się również na urządzeniach mobilnych.`,
         radio: `Internetowe radio pobierające strumień z\xa0zewnętrznego API.\n\nFunkcje dla wszystkich:
           -\xa0wyszukiwanie i\xa0włączenie stacji
           -\xa0utworzenie konta i\xa0logowanie

@@ -21,14 +21,14 @@ export default function About() {
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="my-20 flex w-full flex-col items-center lg:mt-0">
+        <header className="mt-20 flex w-full flex-col items-center lg:mt-0">
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('about')}</h2>
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>
       <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
-        <div>
-          <article className="xs:text-sm xs:leading-7 max-w-4xl text-justify text-xs leading-6">
+        <div className="mb-20">
+          <article className="xs:text-sm xs:leading-7 max-w-4xl text-justify text-xs leading-6 mt-12">
             {t('bio')}
           </article>
           <div className="xs:w-72 mx-auto my-6 flex flex-wrap justify-evenly">
@@ -51,7 +51,18 @@ export default function About() {
               <GitHub className="ml-2 h-4 w-4" aria-hidden="true" />
             </a>
           </div>
-          <div className="h-40"></div>
+
+          <article className="xs:text-sm xs:leading-7 max-w-4xl text-justify text-xs leading-6 mt-12">
+            {t('bio2')}
+          </article>
+          <div className="flex justify-center my-6">
+            <a
+              href="#projects"
+              className="border-main-dark text-main-dark hover:bg-main-dark focus:ring-main-light m-1 inline-flex items-center rounded-lg border px-3 py-2 text-center text-sm font-medium hover:text-neutral-200 focus:outline-none focus:ring-4"
+            >
+              <span>{t('projects')}</span>
+            </a>
+          </div>
         </div>
       </XyzTransition>
     </section>
