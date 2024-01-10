@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   darkMode: 'class',
@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     screens: {
       '2xs': '360px',
-      'xs': '480px',
+      xs: '480px',
       ...defaultTheme.screens,
-      'lg': '1100px'
+      lg: '1100px'
     },
     extend: {
       colors: {
@@ -22,7 +22,7 @@ module.exports = {
         'main-dark': '#010a0f'
       },
       fontSize: {
-        'xs': '13px'
+        xs: '13px'
       },
       backgroundImage: {
         wallpaper1: 'url("./img/wallpaper1.jpg")',

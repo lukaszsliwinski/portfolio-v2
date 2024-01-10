@@ -21,7 +21,7 @@ export default function PorjectCard({
       <div className="flex flex-col p-5 lg:h-[26rem]">
         <h3 className="xs:text-xl text-lg font-semibold tracking-tight">{title}</h3>
         <div className="flex items-center space-x-2 py-3">{children}</div>
-        <p className="xs:text-sm mb-3 text-xs leading-6 whitespace-pre-line">{description}</p>
+        <p className="xs:text-sm mb-3 whitespace-pre-line text-xs leading-6">{description}</p>
         <div className="mt-auto flex flex-wrap justify-evenly">
           <a
             href={sourceUrl}

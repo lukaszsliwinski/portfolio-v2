@@ -28,7 +28,7 @@ export default function About() {
       </XyzTransition>
       <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
         <div className="mb-20">
-          <article className="xs:text-sm xs:leading-7 max-w-4xl text-justify text-xs leading-6 mt-12">
+          <article className="xs:text-sm xs:leading-7 mt-12 max-w-4xl text-justify text-xs leading-6">
             {t('bio')}
           </article>
           <div className="xs:w-72 mx-auto my-6 flex flex-wrap justify-evenly">
@@ -52,10 +52,10 @@ export default function About() {
             </a>
           </div>
 
-          <article className="xs:text-sm xs:leading-7 max-w-4xl text-justify text-xs leading-6 mt-12">
+          <article className="xs:text-sm xs:leading-7 mt-12 max-w-4xl text-justify text-xs leading-6">
             {t('bio2')}
           </article>
-          <div className="flex justify-center my-6">
+          <div className="my-6 flex justify-center">
             <a
               href="#projects"
               className="border-main-dark text-main-dark hover:bg-main-dark focus:ring-main-light m-1 inline-flex items-center rounded-lg border px-3 py-2 text-center text-sm font-medium hover:text-neutral-200 focus:outline-none focus:ring-4"
