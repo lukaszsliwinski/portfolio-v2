@@ -16,7 +16,7 @@ i18n.use(initReactI18next).init({
         bio2: `Below I\xa0present some of my side\u2011projects developed as part of learning programming using modern front\u2011end technologies such as TypeScript, Angular, React.js and Tailwindcss.
           All applications are hosted on my own server, configured by me. I\xa0use Node.js as the back\u2011end and MongoDB as the database.
           I\xa0develop apps using responsive web design pattern to display correctly on mobile devices.`,
-        radio: `The application is an online radio player streaming from 3rd party API.\n\nFeatures for all users:
+        radio: `The application is an online radio player streaming audio from 3rd party API.\n\nFeatures for all users:
           -\xa0search station and play
           -\xa0create an account and log in
           \nFeatures only for logged in users:
@@ -61,7 +61,7 @@ i18n.use(initReactI18next).init({
         bio2: `Poniżej przedstawiam kilka swoich projektów wykonanych w\xa0ramach nauki nowoczesnych technologii front\u2011end'owych takich jak TypeScript, Angular, React.js czy Tailwindcss.
           Wszystkie aplikacje są umieszczone na własnym, skonfigutowanym przeze mnie serwerze. Wykorzystuję środowisko Node.js jako back\u2011end oraz MongoDB jako bazę danych.
           Aplikacje tworzę z\xa0zachowaniem zasad responsive web design, aby poprawnie wyświetlały się również na urządzeniach mobilnych.`,
-        radio: `Internetowe radio pobierające strumień z\xa0zewnętrznego API.\n\nFunkcje dla wszystkich:
+        radio: `Internetowe radio pobierające strumień audio z\xa0zewnętrznego API.\n\nFunkcje dla wszystkich:
           -\xa0wyszukiwanie i\xa0włączenie stacji
           -\xa0utworzenie konta i\xa0logowanie
           \nFunckje dla zalogowanych użytkowników:
