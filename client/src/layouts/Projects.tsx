@@ -69,7 +69,7 @@ export default function Projects() {
           </ProjectCard>
         </div>
 
-        {/* KSMicroband project card */}
+        {/* Vocabulary Quiz project card */}
         <div>
           <ProjectCard
             screenSrc={vocabularyQuizScreen}
@@ -85,68 +85,6 @@ export default function Projects() {
             <TechIcon project="VocabularyQuiz" tech="Scss" icon={scss} />
             <TechIcon project="VocabularyQuiz" tech="Node.js" icon={node} />
             <TechIcon project="VocabularyQuiz" tech="MongoDB" icon={mongo} />
-          </ProjectCard>
-        </div>
-
-        {/* Book store project card */}
-        <div>
-          <ProjectCard
-            screenSrc={bookStoreScreen}
-            title={'Book Store'}
-            description={t('bookstore')}
-            showSource={true}
-            sourceUrl={'https://github.com/lukaszsliwinski/book-store-v2/'}
-            showLink={true}
-            linkUrl={'https://bookstore.lukaszsliwinski.pl/'}
-          >
-            <TechIcon project="BookStore" tech="TypeScript" icon={typeScript} />
-            <TechIcon project="BookStore" tech="React.js" icon={react} />
-            <TechIcon project="BookStore" tech="Redux" icon={redux} />
-            <TechIcon project="BookStore" tech="Tailwindcss" icon={tailwind} />
-            <TechIcon project="BookStore" tech="Testing Library" icon={testingLibrary} />
-            <TechIcon project="BookStore" tech="Node.js" icon={node} />
-            <TechIcon project="BookStore" tech="MongoDB" icon={mongo} />
-          </ProjectCard>
-        </div>
-
-        {/* Metronome project card */}
-        <div>
-          <ProjectCard
-            screenSrc={metronomeScreen}
-            title={'Lightning Metronome'}
-            description={t('metronome')}
-            showSource={true}
-            sourceUrl={'https://github.com/lukaszsliwinski/metronome-v2/'}
-            showLink={true}
-            linkUrl={'https://metronome.lukaszsliwinski.pl'}
-          >
-            <TechIcon project="Metronome" tech="TypeScript" icon={typeScript} />
-            <TechIcon project="Metronome" tech="React.js" icon={react} />
-            <TechIcon project="Metronome" tech="Redux" icon={redux} />
-            <TechIcon project="Metronome" tech="Tailwindcss" icon={tailwind} />
-            <TechIcon project="Metronome" tech="Flowbite" icon={flowbite} />
-            <TechIcon project="Metronome" tech="Testing Library" icon={testingLibrary} />
-            <TechIcon project="Metronome" tech="Node.js" icon={node} />
-          </ProjectCard>
-        </div>
-
-        {/* Weather app project card */}
-        <div>
-          <ProjectCard
-            screenSrc={weatherAppScreen}
-            title={'Weather App'}
-            description={t('weatherapp')}
-            showSource={true}
-            sourceUrl={'https://github.com/lukaszsliwinski/weather-app-v2/'}
-            showLink={true}
-            linkUrl={'https://weatherapp.lukaszsliwinski.pl/'}
-          >
-            <TechIcon project="WeatherApp" tech="TypeScript" icon={typeScript} />
-            <TechIcon project="WeatherApp" tech="React.js" icon={react} />
-            <TechIcon project="WeatherApp" tech="Tailwindcss" icon={tailwind} />
-            <TechIcon project="WeatherApp" tech="Flowbite" icon={flowbite} />
-            <TechIcon project="WeatherApp" tech="Testing Library" icon={testingLibrary} />
-            <TechIcon project="WeatherApp" tech="Node.js" icon={node} />
           </ProjectCard>
         </div>
 

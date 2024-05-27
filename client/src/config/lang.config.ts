@@ -28,19 +28,6 @@ i18n.use(initReactI18next).init({
           -\xa0after selecting a\xa0category, app get random 10 words or phrases from chosen category
           -\xa0for each word, the user provides a\xa0translation and checks its correctness
           -\xa0after the last answer, the result is given`,
-        bookstore: `The application is a\xa0simulation of an online book store.\n\nFeatures:
-          -\xa0register and login module
-          -\xa0searching\xa0a book form 3rd party API
-          -\xa0adding books to cart and simulating an\xa0order
-          -\xa0profile page
-          -\xa0the history of orders stored in database`,
-        metronome: `The application is a\xa0simulation of a\xa0usical metronome.\n\nFeatures:
-          -\xa0set meter and tempo
-          -\xa0update meter and tempo while playing the metronome
-          -\xa0show tempo by glowing diode`,
-        weatherapp: `Web application for checking actual weather in choosen city.\n\nFeatures:
-          -\xa0current weather conditions in choosen city
-          -\xa0forecast for next hours and days`,
         ksmicroband: `Website of my musical project with custom music player.\n\nPlayer features:
           -\xa0get audio files from server by own API
           -\xa0play / stop / next / previous buttons
@@ -73,19 +60,6 @@ i18n.use(initReactI18next).init({
           -\xa0po wybraniu kategorii losowanych jest 10\xa0słówek lub fraz z\xa0wybranej kategorii
           -\xa0do każdego słówka użytkownik podaje tłumaczenie i\xa0sprawdza poprawność
           -\xa0po ostatnim słówku podana jest liczba poprawnych odpowiedzi`,
-        bookstore: `Aplikacja symulująca działanie internetowego sklepu z\xa0książkami.\n\nFunkcje:
-          -\xa0moduł rejestracji i\xa0logowania
-          -\xa0wyszukiwanie książek z\xa0zewnętrznego API
-          -\xa0dodawanie książek do koszyka i\xa0symulacja zamówienia
-          -\xa0strona profilu użytkownika
-          -\xa0historia zamówień użytkownika zapisywana do bazy danych`,
-        metronome: `Aplikacja symulująca działanie metronomu muzycznego.\n\nFunkcje:
-          -\xa0ustawienie metrum i\xa0tempa
-          -\xa0aktualizacja metrum i\xa0tempa w trakcie działania metronomu
-          -\xa0podawanie aktualnego tempa przez migającą diodę`,
-        weatherapp: `Aplikacja sprawdzająca pogodę w\xa0wybranym mieście.\n\nFunkcje:
-          -\xa0aktualne warunki pogodowe
-          -\xa0prognoza na najbliższe godziny i\xa0dni`,
         ksmicroband: `Strona mojego projektu muzycznego z\xa0zaprogramowanym własnym odtwarzaczem.\n\nFunkcje odtwarzacza:
           -\xa0pobranie plików muzycznych z\xa0serwera przez własne API
           -\xa0przyciski play / stop / następny / poprzedni
