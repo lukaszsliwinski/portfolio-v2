@@ -12,7 +12,7 @@ import Footer from './layouts/Footer';
 
 export default function Portfolio() {
   return (
-    <main className="text-main-dark overflow-x-hidden bg-neutral-200 tracking-wider">
+    <main className="text-main-dark overflow-x-hidden bg-neutral-200 tracking-widest">
       <Nav />
       <Landing />
       <About />
