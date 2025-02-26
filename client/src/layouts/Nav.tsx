@@ -1,4 +1,5 @@
 // packages
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // language config
@@ -11,10 +12,21 @@ import { ReactComponent as Eng } from '../assets/svg/eng.svg';
 
 // components
 import Scrollspy from 'react-scrollspy';
+import { useEffect } from 'react';
 
 export default function Nav() {
+  const [windowTop, setWindowTop] = useState(window.scrollY === 0);
+
   // useTranslation fn
   const { t } = useTranslation();
+
+  // handle window top
+  useEffect(() => {
+    const handleScroll = () => (window.scrollY === 0 ? setWindowTop(true) : setWindowTop(false));
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [windowTop]);
 
   // toggle language
   const toggleLanguage = () => {
@@ -23,11 +35,14 @@ export default function Nav() {
   };
   return (
     <nav
-      className="2xs:justify-between xs:h-12 bg-main-dark fixed z-40 flex h-10 w-screen items-center justify-center transition-transform sm:h-14"
+      className={`
+        2xs:justify-between xs:h-12 bg-main-dark fixed z-40 flex h-10 w-screen items-center justify-center transition-all
+        ${windowTop ? 'sm:h-16' : 'sm:opacity-90'}
+      `}
       aria-label="Sidebar"
     >
       <a href="#home" className="2xs:inline-block mx-2 hidden text-neutral-200 sm:mx-4">
-        <Home className="h-5 w-5 sm:h-7 sm:w-7" ria-hidden="true" />
+        <Home className="h-5 w-5 sm:h-7 sm:w-7" aria-hidden="true" />
       </a>
       <div className="xs:py-2 2xs:text-sm xs:text-base flex items-center py-1 text-xs sm:text-lg">
         <Scrollspy
@@ -39,13 +54,13 @@ export default function Nav() {
           <li>
             <a href="#home"></a>
           </li>
-          <li className="underline-offset-4 hover:underline">
+          <li>
             <a href="#about">{t('about')}</a>
           </li>
-          <li className="underline-offset-4 hover:underline">
+          <li>
             <a href="#technologies">{t('technologies')}</a>
           </li>
-          <li className="underline-offset-4 hover:underline">
+          <li>
             <a href="#projects">{t('projects')}</a>
           </li>
         </Scrollspy>
