@@ -8,7 +8,6 @@ import Landing from './layouts/Landing';
 import About from './layouts/About';
 import Technologies from './layouts/Technologies';
 import Projects from './layouts/Projects';
-import Footer from './layouts/Footer';
 
 export default function Portfolio() {
   return (
@@ -18,7 +17,6 @@ export default function Portfolio() {
       <About />
       <Technologies />
       <Projects />
-      <Footer />
     </main>
   );
 }
