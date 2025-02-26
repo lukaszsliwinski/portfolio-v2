@@ -44,59 +44,61 @@ export default function Projects() {
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>
-      <div>
-        <Carousel slideInterval={10000}>
-          {/* Radio project card */}
-          <ProjectCard
-            screenSrc={radioScreen}
-            title={'Radio App'}
-            description={t('radio')}
-            showSource={true}
-            sourceUrl={'https://github.com/lukaszsliwinski/radio/'}
-            showLink={true}
-            linkUrl={'https://radio.lukaszsliwinski.pl'}
-          >
-            <TechIcon project="Radio" tech="TypeScript" icon={typeScript} />
-            <TechIcon project="Radio" tech="Angular" icon={angular} />
-            <TechIcon project="Radio" tech="Scss" icon={scss} />
-            <TechIcon project="Radio" tech="Node.js" icon={node} />
-            <TechIcon project="Radio" tech="MongoDB" icon={mongo} />
-          </ProjectCard>
+      <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
+        <div>
+          <Carousel slideInterval={10000}>
+            {/* Radio project card */}
+            <ProjectCard
+              screenSrc={radioScreen}
+              title={'Radio App'}
+              description={t('radio')}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/radio/'}
+              showLink={true}
+              linkUrl={'https://radio.lukaszsliwinski.pl'}
+            >
+              <TechIcon project="Radio" tech="TypeScript" icon={typeScript} />
+              <TechIcon project="Radio" tech="Angular" icon={angular} />
+              <TechIcon project="Radio" tech="Scss" icon={scss} />
+              <TechIcon project="Radio" tech="Node.js" icon={node} />
+              <TechIcon project="Radio" tech="MongoDB" icon={mongo} />
+            </ProjectCard>
 
-          {/* Vocabulary Quiz project card */}
-          <ProjectCard
-            screenSrc={vocabularyQuizScreen}
-            title={'Vocabulary Quiz'}
-            description={t('vocabularyquiz')}
-            showSource={true}
-            sourceUrl={'https://github.com/lukaszsliwinski/vocabulary-quiz/'}
-            showLink={true}
-            linkUrl={'https://vocabularyquiz.lukaszsliwinski.pl'}
-          >
-            <TechIcon project="VocabularyQuiz" tech="TypeScript" icon={typeScript} />
-            <TechIcon project="VocabularyQuiz" tech="Angular" icon={angular} />
-            <TechIcon project="VocabularyQuiz" tech="Scss" icon={scss} />
-            <TechIcon project="VocabularyQuiz" tech="Node.js" icon={node} />
-            <TechIcon project="VocabularyQuiz" tech="MongoDB" icon={mongo} />
-          </ProjectCard>
-          
-          {/* KSMicroband project card */}
-          <ProjectCard
-            screenSrc={ksmbScreen}
-            title={'KSMicroband Website'}
-            description={t('ksmicroband')}
-            showSource={false}
-            sourceUrl={'#'}
-            showLink={true}
-            linkUrl={'https://ksmicroband.pl/'}
-          >
-            <TechIcon project="KSMicroband" tech="JavaScript" icon={javaScript} />
-            <TechIcon project="KSMicroband" tech="React.js" icon={react} />
-            <TechIcon project="KSMicroband" tech="Tailwindcss" icon={tailwind} />
-            <TechIcon project="KSMicroband" tech="Node.js" icon={node} />
-          </ProjectCard>
-        </Carousel>
-      </div>
+            {/* Vocabulary Quiz project card */}
+            <ProjectCard
+              screenSrc={vocabularyQuizScreen}
+              title={'Vocabulary Quiz'}
+              description={t('vocabularyquiz')}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/vocabulary-quiz/'}
+              showLink={true}
+              linkUrl={'https://vocabularyquiz.lukaszsliwinski.pl'}
+            >
+              <TechIcon project="VocabularyQuiz" tech="TypeScript" icon={typeScript} />
+              <TechIcon project="VocabularyQuiz" tech="Angular" icon={angular} />
+              <TechIcon project="VocabularyQuiz" tech="Scss" icon={scss} />
+              <TechIcon project="VocabularyQuiz" tech="Node.js" icon={node} />
+              <TechIcon project="VocabularyQuiz" tech="MongoDB" icon={mongo} />
+            </ProjectCard>
+            
+            {/* KSMicroband project card */}
+            <ProjectCard
+              screenSrc={ksmbScreen}
+              title={'KSMicroband Website'}
+              description={t('ksmicroband')}
+              showSource={false}
+              sourceUrl={'#'}
+              showLink={true}
+              linkUrl={'https://ksmicroband.pl/'}
+            >
+              <TechIcon project="KSMicroband" tech="JavaScript" icon={javaScript} />
+              <TechIcon project="KSMicroband" tech="React.js" icon={react} />
+              <TechIcon project="KSMicroband" tech="Tailwindcss" icon={tailwind} />
+              <TechIcon project="KSMicroband" tech="Node.js" icon={node} />
+            </ProjectCard>
+          </Carousel>
+        </div>
+      </XyzTransition>
       <div className="absolute bottom-0 left-[50%] -translate-x-[50%]">
         <Footer />
       </div>

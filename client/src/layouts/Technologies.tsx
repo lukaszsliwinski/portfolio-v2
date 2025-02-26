@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { BrowserView, MobileView } from 'react-device-detect';
 
 // components
+import { XyzTransition } from '@animxyz/react';
 import TechBall from '../components/TechBall';
 import TechBallMobile from '../components/TechBallMobile';
 
@@ -49,42 +50,60 @@ export default function Technologies() {
   return (
     <div className="bg-wallpaper2 top-0 min-h-screen bg-cover bg-fixed bg-center" id="technologies">
       <section className="bg-main-mid/50 flex h-full min-h-screen flex-col items-center justify-center py-20 text-neutral-200 md:py-16">
-        <h2 className="2xs:text-xl xs:text-2xl text-md font-medium">{t('stack')}</h2>
-        <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
-        <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
-          {frontTechList.map((tech, i) => (
-            <div key={i}>
-              <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
-                <Canvas>
-                  <TechBall techIcon={tech} />
-                </Canvas>
-              </BrowserView>
+        <XyzTransition
+          xyz="fade flip-left perspective-5 duration-10"
+          appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
+        >
+          <header className="flex flex-col items-center">
+            <h2 className="2xs:text-xl xs:text-2xl text-md font-medium">{t('stack')}</h2>
+            <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
+          </header>
+        </XyzTransition>
+        <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
+          <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
+            {frontTechList.map((tech, i) => (
+              <div key={i}>
+                <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                  <Canvas>
+                    <TechBall techIcon={tech} />
+                  </Canvas>
+                </BrowserView>
 
-              {/* prevent from WebGLRenderer error on mobile */}
-              <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
-                <TechBallMobile techIcon={tech} />
-              </MobileView>
-            </div>
-          ))}
-        </div>
-        <h2 className="2xs:text-xl xs:text-2xl text-md mt-12 font-medium">{t('other')}</h2>
-        <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
-        <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
-          {otherTechList.map((tech, i) => (
-            <div key={i}>
-              <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
-                <Canvas>
-                  <TechBall techIcon={tech} />
-                </Canvas>
-              </BrowserView>
+                {/* prevent from WebGLRenderer error on mobile */}
+                <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
+                  <TechBallMobile techIcon={tech} />
+                </MobileView>
+              </div>
+            ))}
+          </div>
+        </XyzTransition>
+        <XyzTransition
+          xyz="fade flip-left perspective-5 duration-10"
+          appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
+        >
+          <header className="flex flex-col items-center">
+            <h2 className="2xs:text-xl xs:text-2xl text-md mt-12 font-medium">{t('other')}</h2>
+            <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
+          </header>
+        </XyzTransition>
+        <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
+          <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
+            {otherTechList.map((tech, i) => (
+              <div key={i}>
+                <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                  <Canvas>
+                    <TechBall techIcon={tech} />
+                  </Canvas>
+                </BrowserView>
 
-              {/* prevent from WebGLRenderer error on mobile */}
-              <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
-                <TechBallMobile techIcon={tech} />
-              </MobileView>
-            </div>
-          ))}
-        </div>
+                {/* prevent from WebGLRenderer error on mobile */}
+                <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
+                  <TechBallMobile techIcon={tech} />
+                </MobileView>
+              </div>
+            ))}
+          </div>
+        </XyzTransition>
       </section>
     </div>
   );
