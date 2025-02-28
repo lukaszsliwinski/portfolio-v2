@@ -21,13 +21,13 @@ i18n.use(initReactI18next).init({
           features: [
             'search station and play',
             'create an account and log in',
-            'add station to favourites (logged in users only)',
-            'view the history of recently played stations (logged in users only)',
-            'change password (logged in users only)'
+            'add station to favourites (logged\xa0in users only)',
+            'view the history of recently played stations (logged\xa0in users only)',
+            'change password (logged\xa0in users only)'
           ]
         },
         vocabularyquiz: {
-          description: `Language application that helps me learn english vocabulary after lessons.`,
+          description: `Language application that helps me learn english vocabulary after lessons. You can install it on your phone (Progresive Web Application).`,
           features: [
             'app get list of categories from database and render categories on main page',
             'after selecting a\xa0category, app get random 10 words or phrases from chosen category',
@@ -70,7 +70,7 @@ i18n.use(initReactI18next).init({
           ]
         },
         vocabularyquiz: {
-          description: `Aplikacja językowa wspomagająca naukę słówek z\xa0lekcji angielskiego.`,
+          description: `Aplikacja językowa wspomagająca naukę słówek z\xa0lekcji angielskiego. Można ją zainstalować na telefonie (Progresive Web Application).`,
           features: [
             'pobranie listy kategorii i\xa0wyświetlenie ich na stronie głównej',
             'po wybraniu kategorii losowanych jest 10\xa0słówek lub fraz z\xa0wybranej kategorii',

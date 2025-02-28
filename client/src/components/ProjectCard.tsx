@@ -33,7 +33,7 @@ export default function PorjectCard({
         <div className="xs:text-sm whitespace-pre-line text-xs leading-6">
           <div>{t(`${app}.description`)}</div>
           <div className="mt-6 font-medium">Features:</div>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-5">
             {Array.isArray(features) ? (
               features.map((feature, index) => (
                 <li key={index}>{feature}</li>
