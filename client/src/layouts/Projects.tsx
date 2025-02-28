@@ -39,19 +39,19 @@ export default function Projects() {
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="flex w-full flex-col items-center">
+        <header className="flex w-full flex-col items-center my-4">
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('projects')}</h2>
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>
       <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
         <div>
-          <Carousel slideInterval={10000}>
+          <Carousel slideInterval={10000} slide={false}>
             {/* Radio project card */}
             <ProjectCard
               screenSrc={radioScreen}
               title={'Radio App'}
-              description={t('radio')}
+              app={'radio'}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/radio/'}
               showLink={true}
@@ -68,7 +68,7 @@ export default function Projects() {
             <ProjectCard
               screenSrc={vocabularyQuizScreen}
               title={'Vocabulary Quiz'}
-              description={t('vocabularyquiz')}
+              app={'vocabularyquiz'}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/vocabulary-quiz/'}
               showLink={true}
@@ -85,7 +85,7 @@ export default function Projects() {
             <ProjectCard
               screenSrc={ksmbScreen}
               title={'KSMicroband Website'}
-              description={t('ksmicroband')}
+              app={'ksmicroband'}
               showSource={false}
               sourceUrl={'#'}
               showLink={true}

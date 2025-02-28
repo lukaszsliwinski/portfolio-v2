@@ -4,7 +4,7 @@ export interface IProjectCard {
   children: ReactNode;
   screenSrc: string;
   title: string;
-  description: string;
+  app: string;
   showSource: boolean;
   sourceUrl: string;
   showLink: boolean;

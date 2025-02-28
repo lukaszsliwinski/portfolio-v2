@@ -16,23 +16,34 @@ i18n.use(initReactI18next).init({
         bio2: `Below I\xa0present some of my side\u2011projects developed as part of learning programming using modern front\u2011end technologies such as TypeScript, Angular, React.js and Tailwindcss.
           All applications are hosted on my own server, configured by me. I\xa0use Node.js as the back\u2011end and MongoDB as the database.
           I\xa0develop apps using responsive web design pattern to display correctly on mobile devices.`,
-        radio: `The application is an online radio player streaming audio from 3rd party API.\n\nFeatures for all users:
-          -\xa0search station and play
-          -\xa0create an account and log in
-          \nFeatures only for logged in users:
-          -\xa0add station to favourites
-          -\xa0view the history of recently played stations
-          -\xa0change password`,
-        vocabularyquiz: `Language application that helps me learn english vocabulary after lessons.\n\nFeatures:
-          -\xa0app get list of categories from database and render categories on main page
-          -\xa0after selecting a\xa0category, app get random 10 words or phrases from chosen category
-          -\xa0for each word, the user provides a\xa0translation and checks its correctness
-          -\xa0after the last answer, the result is given`,
-        ksmicroband: `Website of my musical project with custom music player.\n\nPlayer features:
-          -\xa0get audio files from server by own API
-          -\xa0play / stop / next / previous buttons
-          -\xa0autoplay next song
-          -\xa0stop player after last song`
+        radio: {
+          description: `The application is an online radio player streaming audio from 3rd party API.`,
+          features: [
+            'search station and play',
+            'create an account and log in',
+            'add station to favourites (logged in users only)',
+            'view the history of recently played stations (logged in users only)',
+            'change password (logged in users only)'
+          ]
+        },
+        vocabularyquiz: {
+          description: `Language application that helps me learn english vocabulary after lessons.`,
+          features: [
+            'app get list of categories from database and render categories on main page',
+            'after selecting a\xa0category, app get random 10 words or phrases from chosen category',
+            'for each word, the user provides a\xa0translation and checks its correctness',
+            'after the last answer, the result is given'
+          ]
+        },
+        ksmicroband: {
+          description: `Website of my musical project with custom music player.`,
+          features: [
+            'get audio files from server by own API',
+            'play / stop / next / previous buttons',
+            'autoplay next song',
+            'stop player after last song'
+          ]
+        }
       }
     },
     pl: {
@@ -48,23 +59,34 @@ i18n.use(initReactI18next).init({
         bio2: `Poniżej przedstawiam kilka swoich projektów wykonanych w\xa0ramach nauki nowoczesnych technologii front\u2011end'owych takich jak TypeScript, Angular, React.js czy Tailwindcss.
           Wszystkie aplikacje są umieszczone na własnym, skonfigutowanym przeze mnie serwerze. Wykorzystuję środowisko Node.js jako back\u2011end oraz MongoDB jako bazę danych.
           Aplikacje tworzę z\xa0zachowaniem zasad responsive web design, aby poprawnie wyświetlały się również na urządzeniach mobilnych.`,
-        radio: `Internetowe radio pobierające strumień audio z\xa0zewnętrznego API.\n\nFunkcje dla wszystkich:
-          -\xa0wyszukiwanie i\xa0włączenie stacji
-          -\xa0utworzenie konta i\xa0logowanie
-          \nFunckje dla zalogowanych użytkowników:
-          -\xa0dodawanie stacji do ulubionych
-          -\xa0podgląd historii ostatnio odtwarzanych stacji
-          -\xa0zmiana hasła`,
-        vocabularyquiz: `Aplikacja językowa wspomagająca naukę słówek z\xa0lekcji angielskiego.\n\nFunkcje:
-          -\xa0pobranie listy kategorii i\xa0wyświetlenie ich na stronie głównej
-          -\xa0po wybraniu kategorii losowanych jest 10\xa0słówek lub fraz z\xa0wybranej kategorii
-          -\xa0do każdego słówka użytkownik podaje tłumaczenie i\xa0sprawdza poprawność
-          -\xa0po ostatnim słówku podana jest liczba poprawnych odpowiedzi`,
-        ksmicroband: `Strona mojego projektu muzycznego z\xa0zaprogramowanym własnym odtwarzaczem.\n\nFunkcje odtwarzacza:
-          -\xa0pobranie plików muzycznych z\xa0serwera przez własne API
-          -\xa0przyciski play / stop / następny / poprzedni
-          -\xa0automatyczne rozpocznij kolejny utwór
-          -\xa0po ostatnim utworze zatrzymaj odtwarzanie`
+        radio: {
+          description: `Internetowe radio pobierające strumień audio z\xa0zewnętrznego API.`,
+          features: [
+            'wyszukiwanie i\xa0włączenie stacji',
+            'utworzenie konta i\xa0logowanie',
+            'dodawanie stacji do ulubionych (tylko zalogowani użytkownicy)',
+            'podgląd historii ostatnio odtwarzanych stacji (tylko zalogowani użytkownicy)',
+            'zmiana hasła (tylko zalogowani użytkownicy)'
+          ]
+        },
+        vocabularyquiz: {
+          description: `Aplikacja językowa wspomagająca naukę słówek z\xa0lekcji angielskiego.`,
+          features: [
+            'pobranie listy kategorii i\xa0wyświetlenie ich na stronie głównej',
+            'po wybraniu kategorii losowanych jest 10\xa0słówek lub fraz z\xa0wybranej kategorii',
+            'do każdego słówka użytkownik podaje tłumaczenie i\xa0sprawdza poprawność',
+            'po ostatnim słówku podana jest liczba poprawnych odpowiedzi'
+          ]
+        },
+        ksmicroband: {
+          description: `Strona mojego projektu muzycznego z\xa0zaprogramowanym własnym odtwarzaczem.`,
+          features: [
+            'pobranie plików muzycznych z\xa0serwera przez własne API',
+            'przyciski play / stop / następny / poprzedni',
+            'automatyczne rozpocznij kolejny utwór',
+            'po ostatnim utworze zatrzymaj odtwarzanie'
+          ]
+        }
       }
     }
   },
