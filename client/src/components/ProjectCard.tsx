@@ -24,7 +24,7 @@ export default function PorjectCard({
   const features = t(`${app}.features`, { returnObjects: true });
 
   return (
-    <div className="grid xl:grid-cols-2 gap-x-4 px-2 xs:px-4 sm:p-6 xl:px-20 py-12 w-screen max-w-7xl mx-auto">
+    <div className="grid xl:grid-cols-2 gap-x-4 px-2 xs:px-4 sm:p-6 xl:px-20 py-12 min-w-screen max-w-7xl mx-auto">
       
       <div className="mx-auto xl:px-10 max-w-[600px]">
         <h3 className="xs:text-3xl text-lg font-semibold tracking-tight">{title}</h3>
