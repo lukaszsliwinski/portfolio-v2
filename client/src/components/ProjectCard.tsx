@@ -24,14 +24,14 @@ export default function PorjectCard({
   const features = t(`${app}.features`, { returnObjects: true });
 
   return (
-    <div className="grid xl:grid-cols-2 gap-x-4 px-20 py-12 max-w-7xl mx-auto">
+    <div className="grid xl:grid-cols-2 gap-x-4 px-2 xs:px-4 sm:p-6 xl:px-20 py-12 w-screen max-w-7xl mx-auto">
       
       <div className="mx-auto xl:px-10 max-w-[600px]">
         <h3 className="xs:text-3xl text-lg font-semibold tracking-tight">{title}</h3>
         
         <div className="flex items-center space-x-2 py-3">{children}</div>
         
-        <div className="xs:text-sm whitespace-pre-line text-xs leading-6">
+        <div className="whitespace-pre-line">
           <div>{t(`${app}.description`)}</div>
           <div className="mt-6 font-medium">Features:</div>
           <ul className="list-disc pl-5">
@@ -44,7 +44,7 @@ export default function PorjectCard({
         </div>
       </div>
       
-      <div className="xl:px-10">
+      <div className="mt-4 xl:mt-0 xl:px-10">
         <img src={screenSrc} alt="apps screen" className="mx-auto rounded" />
         <div className="mt-4 flex flex-wrap justify-center">
           <a

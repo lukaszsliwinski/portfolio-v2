@@ -32,14 +32,14 @@ export default function Projects() {
 
   return (
     <section
-      className="relative xs:px-6 h-full min-h-screen flex flex-col items-center justify-center px-2 bg-main-mid text-neutral-200"
+      className="relative xs:px-6 sm:h-full min-h-screen flex flex-col items-center justify-center px-2 bg-main-mid text-neutral-200"
       id="projects"
     >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
         appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
       >
-        <header className="flex w-full flex-col items-center my-4">
+        <header className="flex w-full flex-col items-center mb-4 mt-16 xl:mt-4">
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('projects')}</h2>
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
@@ -99,7 +99,7 @@ export default function Projects() {
           </Carousel>
         </div>
       </XyzTransition>
-      <div className="absolute bottom-0 left-[50%] -translate-x-[50%]">
+      <div className="sm:absolute sm:bottom-0">
         <Footer />
       </div>
     </section>

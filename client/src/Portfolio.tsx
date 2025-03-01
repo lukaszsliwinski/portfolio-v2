@@ -11,7 +11,7 @@ import Projects from './layouts/Projects';
 
 export default function Portfolio() {
   return (
-    <main className="text-main-dark overflow-x-hidden bg-neutral-200 tracking-widest">
+    <main className="text-main-dark overflow-x-hidden bg-neutral-200 tracking-widest xs:text-sm xs:leading-7 text-xs leading-6">
       <Nav />
       <Landing />
       <About />
