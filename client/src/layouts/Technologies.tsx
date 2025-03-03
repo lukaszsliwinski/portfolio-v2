@@ -6,9 +6,9 @@ import { BrowserView, MobileView } from 'react-device-detect';
 
 // components
 import { XyzTransition } from '@animxyz/react';
-import { Button } from "flowbite-react";
 import TechBall from '../components/TechBall';
 import TechBallMobile from '../components/TechBallMobile';
+import TechBtn from '../components/TechBtn';
 
 // technologies icons
 import typeScript from '../assets/icons/typescript.png';
@@ -60,7 +60,7 @@ const otherTechList = [
 ];
 
 export default function Technologies() {
-  const [techList, setTechList] = useState<typeof frontTechList | typeof otherTechList>(otherTechList);
+  const [techList, setTechList] = useState<typeof frontTechList | typeof otherTechList>(frontTechList);
 
   // useTranslation fn
   const { t } = useTranslation();
@@ -72,62 +72,32 @@ export default function Technologies() {
           xyz="fade flip-left perspective-5 duration-10"
           appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
         >
-
-          <Button.Group>
-            <Button onClick={() => setTechList(frontTechList)} color="gray">{t('stack')}</Button>
-            <Button onClick={() => setTechList(otherTechList)} color="gray">{t('other')}</Button>
-          </Button.Group>
-          
-          {/* <header className="flex flex-col items-center">
-            <h2 className="2xs:text-xl xs:text-2xl text-md font-medium">{t('stack')}</h2>
-            <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
-          </header> */}
+            <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('technologies')}</h2>
         </XyzTransition>
         <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
-          <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
-            {techList.map((tech, i) => (
-              <div key={i}>
-                <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
-                  <Canvas>
-                    <TechBall techIcon={tech} />
-                  </Canvas>
-                </BrowserView>
+          <>
+            <div role="group" className="mt-4">
+              <TechBtn callback={() => setTechList(frontTechList)} label={t('front')} active={techList === frontTechList} />
+              <TechBtn callback={() => setTechList(otherTechList)} label={t('other')} active={techList === otherTechList} />
+            </div>
+            <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
+              {techList.map((tech, i) => (
+                <div key={i}>
+                  <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
+                    <Canvas>
+                      <TechBall techIcon={tech} />
+                    </Canvas>
+                  </BrowserView>
 
-                {/* prevent from WebGLRenderer error on mobile */}
-                <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
-                  <TechBallMobile techIcon={tech} />
-                </MobileView>
-              </div>
-            ))}
-          </div>
+                  {/* prevent from WebGLRenderer error on mobile */}
+                  <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
+                    <TechBallMobile techIcon={tech} />
+                  </MobileView>
+                </div>
+              ))}
+            </div>
+          </>
         </XyzTransition>
-        {/* <XyzTransition
-          xyz="fade flip-left perspective-5 duration-10"
-          appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
-        >
-          <header className="flex flex-col items-center">
-            <h2 className="2xs:text-xl xs:text-2xl text-md mt-12 font-medium">{t('other')}</h2>
-            <div className="bg-main-light mt-1 h-0.5 w-6 rounded"></div>
-          </header>
-        </XyzTransition>
-        <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
-          <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
-            {otherTechList.map((tech, i) => (
-              <div key={i}>
-                <BrowserView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 h-28 w-28">
-                  <Canvas>
-                    <TechBall techIcon={tech} />
-                  </Canvas>
-                </BrowserView> */}
-
-                {/* prevent from WebGLRenderer error on mobile */}
-                {/* <MobileView className="2xs:w-32 2xs:h-32 xs:w-36 xs:h-36 flex h-28 w-28 items-center justify-center">
-                  <TechBallMobile techIcon={tech} />
-                </MobileView>
-              </div>
-            ))}
-          </div>
-        </XyzTransition> */}
       </section>
     </div>
   );

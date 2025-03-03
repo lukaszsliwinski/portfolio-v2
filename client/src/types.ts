@@ -16,3 +16,9 @@ export interface ITechIcon {
   tech: string;
   icon: string;
 }
+
+export interface ITechBtn {
+  callback: () => void;
+  label: string;
+  active: boolean;
+}
