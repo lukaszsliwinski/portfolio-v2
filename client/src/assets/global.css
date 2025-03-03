@@ -34,3 +34,17 @@ html::-webkit-scrollbar-thumb:hover {
 html::-webkit-scrollbar-track {
   background: #e5e5e5;
 }
+
+
+/* Change carousel arrows position on mobile */
+@media only screen and (max-width: 768px) {
+  div:has(> button[data-testid="carousel-left-control"]),
+  div:has(> button[data-testid="carousel-right-control"]) {
+    align-items: end;
+  }
+
+  button[data-testid="carousel-left-control"],
+  button[data-testid="carousel-right-control"] {
+    margin-bottom: 8px;
+  }
+}
