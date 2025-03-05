@@ -14,6 +14,7 @@ import TechBtn from '../components/TechBtn';
 import typeScript from '../assets/icons/typescript.png';
 import javaScript from '../assets/icons/javascript.png';
 import react from '../assets/icons/react.png';
+import next from '../assets/icons/next.png';
 import angular from '../assets/icons/angular.png';
 import redux from '../assets/icons/redux.png';
 import tailwind from '../assets/icons/tailwind.png';
@@ -37,6 +38,7 @@ const frontTechList = [
   typeScript,
   javaScript,
   react,
+  next,
   angular,
   redux,
   tailwind,

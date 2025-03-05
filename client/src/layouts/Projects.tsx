@@ -9,14 +9,22 @@ import typeScript from '../assets/icons/typescript.png';
 import javaScript from '../assets/icons/javascript.png';
 import angular from '../assets/icons/angular.png';
 import react from '../assets/icons/react.png';
+import next from '../assets/icons/next.png';
 import scss from '../assets/icons/scss.png';
 import tailwind from '../assets/icons/tailwind.png';
 import node from '../assets/icons/node.png';
 import mongo from '../assets/icons/mongo.png';
+import python from '../assets/icons/python.png';
+import flask from '../assets/icons/flask.png';
+import pytorch from '../assets/icons/pytorch.png';
+import colab from '../assets/icons/colab.png';
+import openvino from '../assets/icons/openvino.png';
 
 // project screens
+import digitRecognizerScreen from '../assets/img/digit-recognizer-screen.png';
 import radioScreen from '../assets/img/radio-screen.png';
 import vocabularyQuizScreen from '../assets/img/vocabulary-quiz-screen.png';
+import soloWebsiteScreen from '../assets/img/solo-website-screen.png';
 import ksmbScreen from '../assets/img/ksmb-screen.png';
 
 // components
@@ -45,8 +53,28 @@ export default function Projects() {
         </header>
       </XyzTransition>
       <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
-        <div>
-          <Carousel slideInterval={10000} slide={false}>
+        <div className="max-w-[100vw]">
+          <Carousel slideInterval={10000}>
+            {/* Digit Recognizer project card */}
+            <ProjectCard
+              screenSrc={digitRecognizerScreen}
+              title={'Digit Recognizer'}
+              app={'digit'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/digit-recognizer/'}
+              showLink={true}
+              linkUrl={'https://digitrecognizer.lukaszsliwinski.pl'}
+            >
+              <TechIcon project="Digit" tech="TypeScript" icon={typeScript} />
+              <TechIcon project="Digit" tech="React.js" icon={react} />
+              <TechIcon project="Digit" tech="Tailwindcss" icon={tailwind} />
+              <TechIcon project="Digit" tech="Python" icon={python} />
+              <TechIcon project="Digit" tech="Flask" icon={flask} />
+              <TechIcon project="Digit" tech="Pytorch" icon={pytorch} />
+              <TechIcon project="Digit" tech="Colab" icon={colab} />
+              <TechIcon project="Digit" tech="OpenVINO" icon={openvino} />
+            </ProjectCard>
+
             {/* Radio project card */}
             <ProjectCard
               screenSrc={radioScreen}
@@ -80,14 +108,29 @@ export default function Projects() {
               <TechIcon project="VocabularyQuiz" tech="Node.js" icon={node} />
               <TechIcon project="VocabularyQuiz" tech="MongoDB" icon={mongo} />
             </ProjectCard>
+
+            {/* Personal Website project card */}
+            <ProjectCard
+              screenSrc={soloWebsiteScreen}
+              title={'Personal Music Webstie'}
+              app={'music'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/solo-website/'}
+              showLink={true}
+              linkUrl={'https://lukaszsliwinski.pl'}
+            >
+              <TechIcon project="SoloWebsite" tech="TypeScript" icon={typeScript} />
+              <TechIcon project="SoloWebsite" tech="Next.js" icon={next} />
+              <TechIcon project="SoloWebsite" tech="Tailwindcss" icon={tailwind} />
+            </ProjectCard>
             
             {/* KSMicroband project card */}
             <ProjectCard
               screenSrc={ksmbScreen}
               title={'KSMicroband Website'}
               app={'ksmicroband'}
-              showSource={false}
-              sourceUrl={'#'}
+              showSource={true}
+              sourceUrl={'https://github.com/lukaszsliwinski/ksmb-v2/'}
               showLink={true}
               linkUrl={'https://ksmicroband.pl/'}
             >
@@ -99,7 +142,7 @@ export default function Projects() {
           </Carousel>
         </div>
       </XyzTransition>
-      <div className="sm:absolute sm:bottom-0">
+      <div className="xl:absolute xl:bottom-0">
         <Footer />
       </div>
     </section>
