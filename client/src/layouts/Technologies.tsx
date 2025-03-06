@@ -77,8 +77,8 @@ export default function Technologies() {
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('technologies')}</h2>
         </XyzTransition>
         <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
-          <>
-            <div role="group" className="mt-4">
+          <div>
+            <div role="group" className="flex justify-center w-100 mt-4">
               <TechBtn
                 callback={() => setTechList(frontTechList)}
                 label={t('front')}
@@ -106,7 +106,7 @@ export default function Technologies() {
                 </div>
               ))}
             </div>
-          </>
+          </div>
         </XyzTransition>
       </section>
     </div>
