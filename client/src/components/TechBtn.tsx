@@ -1,5 +1,6 @@
 import { ITechBtn } from '../types';
 
+// TechBtn component to render a button with a label and an active state
 export default function TechBtn({ callback, label, active }: ITechBtn) {
   return (
     <div className="inline-flex flex-col items-center">

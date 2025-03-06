@@ -1,13 +1,9 @@
-// packages
 import { useTranslation } from 'react-i18next';
-
-// icons
 import { ReactComponent as Code } from '../assets/svg/code.svg';
 import { ReactComponent as Link } from '../assets/svg/link.svg';
-
-// type
 import { IProjectCard } from '../types';
 
+// ProjectCard component
 export default function PorjectCard({
   children,
   screenSrc,
@@ -18,9 +14,10 @@ export default function PorjectCard({
   showLink,
   linkUrl
 }: IProjectCard) {
-  // useTranslation fn
+  // Using the useTranslation hook to get the translation function
   const { t } = useTranslation();
 
+  // Getting the features array from the translation files
   const features = t(`${app}.features`, { returnObjects: true });
 
   return (

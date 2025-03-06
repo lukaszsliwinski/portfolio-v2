@@ -1,38 +1,35 @@
-// packages
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-// language config
 import i18n from '../config/lang.config';
-
-// icons
 import { ReactComponent as Home } from '../assets/svg/home.svg';
 import { ReactComponent as Pol } from '../assets/svg/pol.svg';
 import { ReactComponent as Eng } from '../assets/svg/eng.svg';
-
-// components
 import Scrollspy from 'react-scrollspy';
 import { useEffect } from 'react';
 
+// Navigation bar component
 export default function Nav() {
+  // State to track if the window is scrolled to the top
   const [windowTop, setWindowTop] = useState(window.scrollY === 0);
 
-  // useTranslation fn
+  // Using the useTranslation hook to get the translation function
   const { t } = useTranslation();
 
-  // handle window top
+  // Effect to handle window scroll event
   useEffect(() => {
     const handleScroll = () => (window.scrollY === 0 ? setWindowTop(true) : setWindowTop(false));
     window.addEventListener('scroll', handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => window.removeEventListener('scroll', handleScroll);
   }, [windowTop]);
 
-  // toggle language
+  // Function to toggle language between English and Polish
   const toggleLanguage = () => {
     i18n.language === 'en' ? i18n.changeLanguage('pl') : i18n.changeLanguage('en');
     localStorage.setItem('lang', i18n.language);
   };
+  
   return (
     <nav
       className={`

@@ -1,16 +1,13 @@
-// packages
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Canvas } from '@react-three/fiber';
 import { BrowserView, MobileView } from 'react-device-detect';
 
-// components
 import { XyzTransition } from '@animxyz/react';
 import TechBall from '../components/TechBall';
 import TechBallMobile from '../components/TechBallMobile';
 import TechBtn from '../components/TechBtn';
 
-// technologies icons
 import typeScript from '../assets/icons/typescript.png';
 import javaScript from '../assets/icons/javascript.png';
 import react from '../assets/icons/react.png';
@@ -33,7 +30,7 @@ import mongo from '../assets/icons/mongo.png';
 import mySql from '../assets/icons/mysql.png';
 import git from '../assets/icons/git.png';
 
-// lists with technologies
+// Lists with technologies
 const frontTechList = [
   typeScript,
   javaScript,
@@ -48,14 +45,26 @@ const frontTechList = [
   jQuery
 ];
 
-const otherTechList = [python, php, node, flask, pytorch, colab, openvino, mongo, mySql, git];
+const otherTechList = [
+  python,
+  php,
+  node,
+  flask,
+  pytorch,
+  colab,
+  openvino,
+  mongo,
+  mySql,
+  git
+];
 
 export default function Technologies() {
+  // State to manage the current list of technologies
   const [techList, setTechList] = useState<typeof frontTechList | typeof otherTechList>(
     frontTechList
   );
 
-  // useTranslation fn
+  // Using the useTranslation hook to get the translation function
   const { t } = useTranslation();
 
   return (

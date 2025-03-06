@@ -1,10 +1,6 @@
-'use client';
-
-// packages
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'flowbite-react';
 
-// technologies icons
 import typeScript from '../assets/icons/typescript.png';
 import javaScript from '../assets/icons/javascript.png';
 import angular from '../assets/icons/angular.png';
@@ -20,21 +16,20 @@ import pytorch from '../assets/icons/pytorch.png';
 import colab from '../assets/icons/colab.png';
 import openvino from '../assets/icons/openvino.png';
 
-// project screens
 import digitRecognizerScreen from '../assets/img/digit-recognizer-screen.png';
 import radioScreen from '../assets/img/radio-screen.png';
 import vocabularyQuizScreen from '../assets/img/vocabulary-quiz-screen.png';
 import soloWebsiteScreen from '../assets/img/solo-website-screen.png';
 import ksmbScreen from '../assets/img/ksmb-screen.png';
 
-// components
 import { XyzTransition } from '@animxyz/react';
 import ProjectCard from '../components/ProjectCard';
 import TechIcon from '../components/TechIcon';
 import Footer from './Footer';
 
+// Projects section component
 export default function Projects() {
-  // useTranslation fn
+  // Using the useTranslation hook to get the translation function
   const { t } = useTranslation();
 
   return (

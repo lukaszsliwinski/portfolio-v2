@@ -1,14 +1,10 @@
-// packages
 import { useTranslation } from 'react-i18next';
-
-// components
 import { XyzTransition } from '@animxyz/react';
-
-// profile photo
 import profilePhoto from '../assets/img/profile.jpg';
 
+// Landing page component
 export default function Landing() {
-  // useTranslation fn
+  // Using the useTranslation hook to get the translation function
   const { t } = useTranslation();
 
   return (

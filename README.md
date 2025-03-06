@@ -1,14 +1,30 @@
-# Portfolio website
+# Portfolio Website
 
 ## Preview
 
-<b>www.portfolio.lukaszsliwinski.pl</b>
+**[www.portfolio.lukaszsliwinski.pl](http://www.portfolio.lukaszsliwinski.pl)**
 
-## About project
+## About the Project
 
-Website with informations about my work as a front-end developer and some of my side-projects.
+This website showcases my work as a front-end developer, including some of my side projects. It provides information about my skills and the technologies I use.
 
-## Used technologies
+## Technologies Used
 
-frontend: Typescript / React / Tailwind / Flowbite<br>
-backend: Javascript / Node.js / Express.js
+### Frontend
+- TypeScript
+- React
+- Tailwind CSS
+- Flowbite
+
+### Backend
+- JavaScript
+- Node.js
+- Express.js
+
+## Features
+
+- Responsive design
+- Interactive UI components
+- Multi-language support
+- Project showcase with detailed descriptions
+- Contact form

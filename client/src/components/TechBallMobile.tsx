@@ -1,3 +1,4 @@
+// TechBallMobile component to render a tech icon inside a styled div
 export default function TechBallMobile({ techIcon }: { techIcon: string }) {
   return (
     <div

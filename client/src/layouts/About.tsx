@@ -1,15 +1,11 @@
-// packages
 import { useTranslation } from 'react-i18next';
-
-// link icons
 import { ReactComponent as LinkedIn } from '../assets/svg/linkedin.svg';
 import { ReactComponent as GitHub } from '../assets/svg/github.svg';
-
-// components
 import { XyzTransition } from '@animxyz/react';
 
+// About section component
 export default function About() {
-  // useTranslation fn
+  // Using the useTranslation hook to get the translation function
   const { t } = useTranslation();
 
   return (

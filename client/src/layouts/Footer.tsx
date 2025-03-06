@@ -1,6 +1,8 @@
 import moment from 'moment';
 
+// Footer component
 export default function Footer() {
+  // Getting the current year using moment
   const year = moment().year();
 
   return (

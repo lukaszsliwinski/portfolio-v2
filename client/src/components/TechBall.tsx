@@ -1,7 +1,8 @@
 import { Decal, Float, useTexture } from '@react-three/drei';
 
-// tech ball 3d geometry
+// TechBall component to render a 3D geometry with a decal
 export default function TechBall({ techIcon }: { techIcon: string }) {
+    // Loading the texture for the decal using the provided techIcon URL
   const [decal] = useTexture([techIcon]);
 
   return (
