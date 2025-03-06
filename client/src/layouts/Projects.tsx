@@ -67,10 +67,10 @@ export default function Projects() {
             >
               <TechIcon project="Digit" tech="TypeScript" icon={typeScript} />
               <TechIcon project="Digit" tech="React.js" icon={react} />
-              <TechIcon project="Digit" tech="Tailwindcss" icon={tailwind} />
+              <TechIcon project="Digit" tech="TailwindCSS" icon={tailwind} />
               <TechIcon project="Digit" tech="Python" icon={python} />
               <TechIcon project="Digit" tech="Flask" icon={flask} />
-              <TechIcon project="Digit" tech="Pytorch" icon={pytorch} />
+              <TechIcon project="Digit" tech="PyTorch" icon={pytorch} />
               <TechIcon project="Digit" tech="Colab" icon={colab} />
               <TechIcon project="Digit" tech="OpenVINO" icon={openvino} />
             </ProjectCard>
@@ -121,7 +121,7 @@ export default function Projects() {
             >
               <TechIcon project="SoloWebsite" tech="TypeScript" icon={typeScript} />
               <TechIcon project="SoloWebsite" tech="Next.js" icon={next} />
-              <TechIcon project="SoloWebsite" tech="Tailwindcss" icon={tailwind} />
+              <TechIcon project="SoloWebsite" tech="TailwindCSS" icon={tailwind} />
             </ProjectCard>
             
             {/* KSMicroband project card */}
@@ -136,7 +136,7 @@ export default function Projects() {
             >
               <TechIcon project="KSMicroband" tech="JavaScript" icon={javaScript} />
               <TechIcon project="KSMicroband" tech="React.js" icon={react} />
-              <TechIcon project="KSMicroband" tech="Tailwindcss" icon={tailwind} />
+              <TechIcon project="KSMicroband" tech="TailwindCSS" icon={tailwind} />
               <TechIcon project="KSMicroband" tech="Node.js" icon={node} />
             </ProjectCard>
           </Carousel>

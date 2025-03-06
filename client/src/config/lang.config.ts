@@ -10,12 +10,14 @@ i18n.use(initReactI18next).init({
         front: 'FRONT-END',
         other: 'OTHER',
         projects: 'PROJECTS',
-        bio: `Hi! I\xa0am a\xa0web applications, websites and PWA developer.
-          In my current job, I\xa0am a\xa0front\u2011end developer working on an internal software for managing the departments of a\xa0railway company.
-          After hours, I\xa0expand my knowledge and improve my skills by developing my own applications and websites.`,
-        bio2: `Below I\xa0present some of my side\u2011projects developed as part of learning programming using modern front\u2011end technologies such as TypeScript, Angular, React.js and Tailwindcss.
-          All applications are hosted on my own server, configured by me. I\xa0use Node.js as the back\u2011end and MongoDB as the database.
-          I\xa0develop apps using responsive web design pattern to display correctly on mobile devices.`,
+        bio: `Hi! I\xa0am a\xa0developer specializing in web applications, websites, and PWAs.
+          In my current job, I\xa0work as a\xa0front\u2011end developer developing internal software for managing the departments of a\xa0railway company.
+          After hours, I\xa0expand my knowledge and improve my skills by building my own applications and websites.
+          I\xa0am also developing in machine and deep learning area, integrating these technologies with web development.`,
+        bio2: `Below I\xa0present some of my side\u2011projects, created as a\xa0part of my learning process using modern front\u2011end technologies such as TypeScript, Angular, React.js and Tailwind\xa0CSS.
+          All applications are hosted on a\xa0server configured by me. I\xa0use Node.js as the back\u2011end and MongoDB as the database.
+          In deep learning projects, I work with Python and PyTorch to build models and use Flask for the back\u2011end.
+          I\xa0develop applications following responsive web design pattern to display correctly on mobile devices.`,
         digit: {
           description: `Complete convolutional neural network powered application for recognizing handwritten digits in real-time. It's a\xa0showcase of skills in: designing and training simple neural model, building full-stack production-ready application hosted on a\xa0server and connecting AI\xa0technologies with web applications. You can install it on your phone (Progresive Web Application).`,
           features: [
@@ -67,11 +69,13 @@ i18n.use(initReactI18next).init({
         front: `FRONT-END`,
         other: 'POZOSTAŁE',
         projects: 'PROJEKTY',
-        bio: `Cześć! Jestem programistą aplikacji internetowych, stron internetowych oraz aplikacji PWA.
+        bio: `Cześć! Jestem programistą aplikacji internetowych, stron WWW oraz aplikacji PWA.
           Pracuję jako front\u2011end developer przy rozwoju wewnętrznego systemu do zarządzania działami firmy kolejowej.
-          Po godzinach poszerzam wiedzę oraz szlifuję umiejętności poprzez rozwijanie własnych aplikacji i\xa0stron internetowych.`,
-        bio2: `Poniżej przedstawiam kilka swoich projektów wykonanych w\xa0ramach nauki nowoczesnych technologii front\u2011end'owych takich jak TypeScript, Angular, React.js czy Tailwindcss.
+          Po godzinach szlifuję umiejętności poprzez tworzenie własnych aplikacji i\xa0stron internetowych.
+          Dodatkowo rozwijam się w\xa0obszarze uczenia maszynowego i\xa0głębokiego oraz\xa0łączę nabytą wiedzę z\xa0web developmentem.`,
+        bio2: `Poniżej przedstawiam kilka swoich projektów wykonanych w\xa0nowoczesnych technologiach front\u2011end'owych takich jak TypeScript, React.js, Next.js, Angular, czy Tailwindcss.
           Wszystkie aplikacje są umieszczone na własnym, skonfigutowanym przeze mnie serwerze. Wykorzystuję środowisko Node.js jako back\u2011end oraz MongoDB jako bazę danych.
+          Projekty z obszaru deep learning tworzę z wykorzystaniem Python i PyTorch do tworzenia modeli oraz Flask jako back\u2011end.
           Aplikacje tworzę z\xa0zachowaniem zasad responsive web design, aby poprawnie wyświetlały się również na urządzeniach mobilnych.`,
         digit: {
           description: `Aplikacja oparta na konwolucyjnej sieci neuronowej do rozpoznawania odręcznych cyfr w\xa0czasie rzeczywistym. Przedstawia umiejętności w\xa0zakresie: projektowania i\xa0szkolenia prostego modelu neuronowego, budowania pełnej produkcyjnej aplikacji hostowanej na serwerze oraz łączenia technologii AI z\xa0aplikacjami internetowymi. Można ją zainstalować na telefonie (Progresive Web Application).`,
