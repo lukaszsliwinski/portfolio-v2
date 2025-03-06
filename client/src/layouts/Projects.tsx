@@ -106,7 +106,7 @@ export default function Projects() {
             {/* Personal Website project card */}
             <ProjectCard
               screenSrc={soloWebsiteScreen}
-              title={'Personal Music Webstie'}
+              title={'Personal Music Website'}
               app={'music'}
               showSource={true}
               sourceUrl={'https://github.com/lukaszsliwinski/solo-website/'}
