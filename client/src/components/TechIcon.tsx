@@ -1,7 +1,7 @@
 import { Tooltip } from 'flowbite-react';
 import { ITechIcon } from '../types';
 
-export default function TechIcon({ project, tech, icon }: ITechIcon) {
+export default function TechIcon({ tech, icon }: ITechIcon) {
   return (
     <Tooltip content={tech} placement="top" style="light">
       <div>

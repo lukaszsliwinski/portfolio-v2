@@ -48,21 +48,12 @@ const frontTechList = [
   jQuery
 ];
 
-const otherTechList = [
-  python,
-  php,
-  node,
-  flask,
-  pytorch,
-  colab,
-  openvino,
-  mongo,
-  mySql,
-  git
-];
+const otherTechList = [python, php, node, flask, pytorch, colab, openvino, mongo, mySql, git];
 
 export default function Technologies() {
-  const [techList, setTechList] = useState<typeof frontTechList | typeof otherTechList>(frontTechList);
+  const [techList, setTechList] = useState<typeof frontTechList | typeof otherTechList>(
+    frontTechList
+  );
 
   // useTranslation fn
   const { t } = useTranslation();
@@ -74,13 +65,21 @@ export default function Technologies() {
           xyz="fade flip-left perspective-5 duration-10"
           appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
         >
-            <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('technologies')}</h2>
+          <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('technologies')}</h2>
         </XyzTransition>
         <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
           <>
             <div role="group" className="mt-4">
-              <TechBtn callback={() => setTechList(frontTechList)} label={t('front')} active={techList === frontTechList} />
-              <TechBtn callback={() => setTechList(otherTechList)} label={t('other')} active={techList === otherTechList} />
+              <TechBtn
+                callback={() => setTechList(frontTechList)}
+                label={t('front')}
+                active={techList === frontTechList}
+              />
+              <TechBtn
+                callback={() => setTechList(otherTechList)}
+                label={t('other')}
+                active={techList === otherTechList}
+              />
             </div>
             <div className="flex h-fit max-w-[1000px] flex-wrap justify-center">
               {techList.map((tech, i) => (

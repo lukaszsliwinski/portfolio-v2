@@ -12,7 +12,6 @@ export interface IProjectCard {
 }
 
 export interface ITechIcon {
-  project: string;
   tech: string;
   icon: string;
 }

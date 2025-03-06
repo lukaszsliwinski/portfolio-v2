@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
 // packages
 import { useTranslation } from 'react-i18next';
-import { Carousel } from "flowbite-react";
+import { Carousel } from 'flowbite-react';
 
 // technologies icons
 import typeScript from '../assets/icons/typescript.png';
@@ -32,7 +32,6 @@ import { XyzTransition } from '@animxyz/react';
 import ProjectCard from '../components/ProjectCard';
 import TechIcon from '../components/TechIcon';
 import Footer from './Footer';
-
 
 export default function Projects() {
   // useTranslation fn
@@ -65,14 +64,14 @@ export default function Projects() {
               showLink={true}
               linkUrl={'https://digitrecognizer.lukaszsliwinski.pl'}
             >
-              <TechIcon project="Digit" tech="TypeScript" icon={typeScript} />
-              <TechIcon project="Digit" tech="React.js" icon={react} />
-              <TechIcon project="Digit" tech="TailwindCSS" icon={tailwind} />
-              <TechIcon project="Digit" tech="Python" icon={python} />
-              <TechIcon project="Digit" tech="Flask" icon={flask} />
-              <TechIcon project="Digit" tech="PyTorch" icon={pytorch} />
-              <TechIcon project="Digit" tech="Colab" icon={colab} />
-              <TechIcon project="Digit" tech="OpenVINO" icon={openvino} />
+              <TechIcon tech="TypeScript" icon={typeScript} />
+              <TechIcon tech="React.js" icon={react} />
+              <TechIcon tech="Tailwind CSS" icon={tailwind} />
+              <TechIcon tech="Python" icon={python} />
+              <TechIcon tech="Flask" icon={flask} />
+              <TechIcon tech="PyTorch" icon={pytorch} />
+              <TechIcon tech="Google Colab" icon={colab} />
+              <TechIcon tech="OpenVINO" icon={openvino} />
             </ProjectCard>
 
             {/* Radio project card */}
@@ -85,11 +84,11 @@ export default function Projects() {
               showLink={true}
               linkUrl={'https://radio.lukaszsliwinski.pl'}
             >
-              <TechIcon project="Radio" tech="TypeScript" icon={typeScript} />
-              <TechIcon project="Radio" tech="Angular" icon={angular} />
-              <TechIcon project="Radio" tech="Scss" icon={scss} />
-              <TechIcon project="Radio" tech="Node.js" icon={node} />
-              <TechIcon project="Radio" tech="MongoDB" icon={mongo} />
+              <TechIcon tech="TypeScript" icon={typeScript} />
+              <TechIcon tech="Angular" icon={angular} />
+              <TechIcon tech="Scss" icon={scss} />
+              <TechIcon tech="Node.js" icon={node} />
+              <TechIcon tech="MongoDB" icon={mongo} />
             </ProjectCard>
 
             {/* Vocabulary Quiz project card */}
@@ -102,11 +101,11 @@ export default function Projects() {
               showLink={true}
               linkUrl={'https://vocabularyquiz.lukaszsliwinski.pl'}
             >
-              <TechIcon project="VocabularyQuiz" tech="TypeScript" icon={typeScript} />
-              <TechIcon project="VocabularyQuiz" tech="Angular" icon={angular} />
-              <TechIcon project="VocabularyQuiz" tech="Scss" icon={scss} />
-              <TechIcon project="VocabularyQuiz" tech="Node.js" icon={node} />
-              <TechIcon project="VocabularyQuiz" tech="MongoDB" icon={mongo} />
+              <TechIcon tech="TypeScript" icon={typeScript} />
+              <TechIcon tech="Angular" icon={angular} />
+              <TechIcon tech="Scss" icon={scss} />
+              <TechIcon tech="Node.js" icon={node} />
+              <TechIcon tech="MongoDB" icon={mongo} />
             </ProjectCard>
 
             {/* Personal Website project card */}
@@ -119,11 +118,11 @@ export default function Projects() {
               showLink={true}
               linkUrl={'https://lukaszsliwinski.pl'}
             >
-              <TechIcon project="SoloWebsite" tech="TypeScript" icon={typeScript} />
-              <TechIcon project="SoloWebsite" tech="Next.js" icon={next} />
-              <TechIcon project="SoloWebsite" tech="TailwindCSS" icon={tailwind} />
+              <TechIcon tech="TypeScript" icon={typeScript} />
+              <TechIcon tech="Next.js" icon={next} />
+              <TechIcon tech="Tailwind CSS" icon={tailwind} />
             </ProjectCard>
-            
+
             {/* KSMicroband project card */}
             <ProjectCard
               screenSrc={ksmbScreen}
@@ -134,10 +133,10 @@ export default function Projects() {
               showLink={true}
               linkUrl={'https://ksmicroband.pl/'}
             >
-              <TechIcon project="KSMicroband" tech="JavaScript" icon={javaScript} />
-              <TechIcon project="KSMicroband" tech="React.js" icon={react} />
-              <TechIcon project="KSMicroband" tech="TailwindCSS" icon={tailwind} />
-              <TechIcon project="KSMicroband" tech="Node.js" icon={node} />
+              <TechIcon tech="JavaScript" icon={javaScript} />
+              <TechIcon tech="React.js" icon={react} />
+              <TechIcon tech="Tailwind CSS" icon={tailwind} />
+              <TechIcon tech="Node.js" icon={node} />
             </ProjectCard>
           </Carousel>
         </div>

@@ -46,10 +46,7 @@ i18n.use(initReactI18next).init({
         },
         music: {
           description: `Personal music website of my solo project. It's a\xa0lightweight, SSR application written in Next.js.`,
-          features: [
-            'server side rendering',
-            'integration with SoundCloud API',
-          ]
+          features: ['server side rendering', 'integration with SoundCloud API']
         },
         ksmicroband: {
           description: `Website of my last musical duo with custom music player.`,
@@ -105,10 +102,7 @@ i18n.use(initReactI18next).init({
         },
         music: {
           description: `Strona opisująca moją solową działalność muzyczną. Jest to lekka aplikacja napisana w\xa0Next.js wykorzystująca technologię SSR.`,
-          features: [
-            'renderowanie po stronie serwera',
-            'integracja z\xa0SoundCloud API'
-          ]
+          features: ['renderowanie po stronie serwera', 'integracja z\xa0SoundCloud API']
         },
         ksmicroband: {
           description: `Strona mojego ostatniego duetu muzycznego z\xa0zaprogramowanym własnym odtwarzaczem.`,

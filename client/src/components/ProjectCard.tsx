@@ -25,24 +25,21 @@ export default function PorjectCard({
 
   return (
     <div className="grid xl:grid-cols-2 gap-x-4 px-2 xs:px-4 sm:p-6 xl:px-20 py-12 mx-auto xl:mb-6">
-      
       <div className="mx-auto xl:px-10 w-full max-w-[600px]">
         <h3 className="xs:text-3xl text-lg font-semibold tracking-tight">{title}</h3>
-        
+
         <div className="flex items-center space-x-2 py-3">{children}</div>
-        
+
         <div className="whitespace-pre-line">
           <div>{t(`${app}.description`)}</div>
           <ul className="list-disc mt-6 pl-5">
-            {Array.isArray(features) ? (
-              features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))
-            ) : null}
+            {Array.isArray(features)
+              ? features.map((feature, index) => <li key={index}>{feature}</li>)
+              : null}
           </ul>
         </div>
       </div>
-      
+
       <div className="mt-4 xl:mt-0 xl:px-10">
         <img src={screenSrc} alt="apps screen" className="mx-auto rounded" />
         <div className="mt-4 flex flex-wrap justify-center">
