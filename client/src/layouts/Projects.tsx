@@ -39,14 +39,14 @@ export default function Projects() {
     >
       <XyzTransition
         xyz="fade flip-left perspective-5 duration-10"
-        appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
+        appearVisible={{ threshold: 0.2, rootMargin: '0px' }}
       >
         <header className="flex w-full flex-col items-center mb-4 mt-16 xl:mt-4">
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('projects')}</h2>
           <div className="bg-main-light mt-2 h-0.5 w-6 rounded"></div>
         </header>
       </XyzTransition>
-      <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
+      <XyzTransition xyz="fade duration-10" appearVisible={{ threshold: 0.2, rootMargin: '0px' }}>
         <div className="max-w-[100vw]">
           <Carousel slideInterval={10000}>
             {/* Digit Recognizer project card */}

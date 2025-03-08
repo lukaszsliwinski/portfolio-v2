@@ -72,11 +72,11 @@ export default function Technologies() {
       <section className="bg-main-mid/50 flex h-full min-h-screen flex-col items-center justify-center py-20 text-neutral-200 md:py-16">
         <XyzTransition
           xyz="fade flip-left perspective-5 duration-10"
-          appearVisible={{ threshold: 0.5, rootMargin: '0px' }}
+          appearVisible={{ threshold: 0.2, rootMargin: '0px' }}
         >
           <h2 className="2xs:text-2xl text-xl font-medium sm:text-3xl">{t('technologies')}</h2>
         </XyzTransition>
-        <XyzTransition xyz="fade duration-30" appearVisible={{ threshold: 0.5, rootMargin: '0px' }}>
+        <XyzTransition xyz="fade duration-10" appearVisible={{ threshold: 0.2, rootMargin: '0px' }}>
           <div>
             <div role="group" className="flex justify-center w-100 mt-4">
               <TechBtn
