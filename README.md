@@ -4,6 +4,8 @@
 
 **[www.portfolio.lukaszsliwinski.pl](http://www.portfolio.lukaszsliwinski.pl)**
 
+![Website Preview](./preview.gif)
+
 ## About the Project
 
 This website showcases my work as a front-end developer, including some of my side projects. It provides information about my skills and the technologies I use.
