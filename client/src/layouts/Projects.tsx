@@ -16,11 +16,11 @@ import pytorch from '../assets/icons/pytorch.png';
 import colab from '../assets/icons/colab.png';
 import openvino from '../assets/icons/openvino.png';
 
-import digitRecognizerScreen from '../assets/img/digit-recognizer-screen.png';
-import radioScreen from '../assets/img/radio-screen.png';
-import vocabularyQuizScreen from '../assets/img/vocabulary-quiz-screen.png';
-import soloWebsiteScreen from '../assets/img/solo-website-screen.png';
-import ksmbScreen from '../assets/img/ksmb-screen.png';
+import digitPreview from '../assets/gif/digit-preview.gif';
+import radioPreview from '../assets/gif/radio-preview.gif';
+import vocabularyPreview from '../assets/gif/vocabulary-preview.gif';
+import soloPreview from '../assets/gif/solo-preview.gif';
+import ksmbPreview from '../assets/gif/ksmb-preview.gif';
 
 import { XyzTransition } from '@animxyz/react';
 import ProjectCard from '../components/ProjectCard';
@@ -51,7 +51,7 @@ export default function Projects() {
           <Carousel slideInterval={10000}>
             {/* Digit Recognizer project card */}
             <ProjectCard
-              screenSrc={digitRecognizerScreen}
+              previewSrc={digitPreview}
               title={'Digit Recognizer'}
               app={'digit'}
               showSource={true}
@@ -71,7 +71,7 @@ export default function Projects() {
 
             {/* Radio project card */}
             <ProjectCard
-              screenSrc={radioScreen}
+              previewSrc={radioPreview}
               title={'Radio App'}
               app={'radio'}
               showSource={true}
@@ -88,7 +88,7 @@ export default function Projects() {
 
             {/* Vocabulary Quiz project card */}
             <ProjectCard
-              screenSrc={vocabularyQuizScreen}
+              previewSrc={vocabularyPreview}
               title={'Vocabulary Quiz'}
               app={'vocabularyquiz'}
               showSource={true}
@@ -105,7 +105,7 @@ export default function Projects() {
 
             {/* Personal Website project card */}
             <ProjectCard
-              screenSrc={soloWebsiteScreen}
+              previewSrc={soloPreview}
               title={'Personal Music Website'}
               app={'music'}
               showSource={true}
@@ -120,7 +120,7 @@ export default function Projects() {
 
             {/* KSMicroband project card */}
             <ProjectCard
-              screenSrc={ksmbScreen}
+              previewSrc={ksmbPreview}
               title={'KSMicroband Website'}
               app={'ksmicroband'}
               showSource={true}

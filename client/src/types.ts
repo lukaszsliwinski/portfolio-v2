@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export interface IProjectCard {
   children: ReactNode;
-  screenSrc: string;
+  previewSrc: string;
   title: string;
   app: string;
   showSource: boolean;

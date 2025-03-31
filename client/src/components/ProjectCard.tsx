@@ -6,7 +6,7 @@ import { IProjectCard } from '../types';
 // ProjectCard component
 export default function PorjectCard({
   children,
-  screenSrc,
+  previewSrc,
   title,
   app,
   showSource,
@@ -38,7 +38,7 @@ export default function PorjectCard({
       </div>
 
       <div className="mt-4 xl:mt-0 xl:px-10">
-        <img src={screenSrc} alt="apps screen" className="mx-auto rounded" />
+        <img src={previewSrc} alt="apps screen" className="mx-auto rounded max-w-[600px]" />
         <div className="mt-4 flex flex-wrap justify-center">
           <a
             href={sourceUrl}
