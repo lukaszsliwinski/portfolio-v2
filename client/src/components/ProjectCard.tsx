@@ -38,7 +38,7 @@ export default function PorjectCard({
       </div>
 
       <div className="mt-4 xl:mt-0 xl:px-10">
-        <img src={previewSrc} alt="apps screen" className="mx-auto rounded max-w-[600px]" />
+        <img src={previewSrc} alt="apps screen" className="mx-auto rounded w-76 xs:w-[450px] sm:w-[600px]" />
         <div className="mt-4 flex flex-wrap justify-center">
           <a
             href={sourceUrl}
