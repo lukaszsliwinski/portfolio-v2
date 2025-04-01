@@ -23,6 +23,7 @@ module.exports = {
         'main-dark': '#010a0f'
       },
       fontSize: {
+        xxs: '10px',
         xs: '13px'
       },
       backgroundImage: {
