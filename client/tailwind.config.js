@@ -27,8 +27,8 @@ module.exports = {
         xs: '13px'
       },
       backgroundImage: {
-        wallpaper1: 'url("./img/wallpaper1.jpg")',
-        wallpaper2: 'url("./img/wallpaper2.jpg")'
+        wallpaper1: 'url("./img/wallpaper1.webp")',
+        wallpaper2: 'url("./img/wallpaper2.webp")'
       }
     }
   },
